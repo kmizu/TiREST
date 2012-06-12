@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E6D62EA1586DB8700E81A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62E91586DB8700E81A6E /* UIKit.framework */; };
+		2E6D62EC1586DB8700E81A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62EB1586DB8700E81A6E /* Foundation.framework */; };
+		2E6D62EE1586DB8700E81A6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62ED1586DB8700E81A6E /* CoreGraphics.framework */; };
+		2E6D62F41586DB8700E81A6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E6D62F21586DB8700E81A6E /* InfoPlist.strings */; };
+		2E6D62F61586DB8800E81A6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D62F51586DB8800E81A6E /* main.m */; };
+		2E6D62FA1586DB8800E81A6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D62F91586DB8800E81A6E /* AppDelegate.m */; };
+		2E6D62FD1586DB8800E81A6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D62FC1586DB8800E81A6E /* ViewController.m */; };
+		2E6D63001586DB8800E81A6E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6D62FE1586DB8800E81A6E /* ViewController.xib */; };
+		2E6D63081586DB8800E81A6E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D63071586DB8800E81A6E /* SenTestingKit.framework */; };
+		2E6D63091586DB8800E81A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62E91586DB8700E81A6E /* UIKit.framework */; };
+		2E6D630A1586DB8800E81A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62EB1586DB8700E81A6E /* Foundation.framework */; };
+		2E6D63121586DB8800E81A6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E6D63101586DB8800E81A6E /* InfoPlist.strings */; };
+		2E6D63151586DB8800E81A6E /* ubilocal_experimentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D63141586DB8800E81A6E /* ubilocal_experimentTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E6D630B1586DB8800E81A6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E6D62DC1586DB8700E81A6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E6D62E41586DB8700E81A6E;
+			remoteInfo = "ubilocal-experiment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E6D62E51586DB8700E81A6E /* ubilocal-experiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ubilocal-experiment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6D62E91586DB8700E81A6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2E6D62EB1586DB8700E81A6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2E6D62ED1586DB8700E81A6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2E6D62F11586DB8700E81A6E /* ubilocal-experiment-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ubilocal-experiment-Info.plist"; sourceTree = "<group>"; };
+		2E6D62F31586DB8700E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2E6D62F51586DB8800E81A6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E6D62F71586DB8800E81A6E /* ubilocal-experiment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ubilocal-experiment-Prefix.pch"; sourceTree = "<group>"; };
+		2E6D62F81586DB8800E81A6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2E6D62F91586DB8800E81A6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2E6D62FB1586DB8800E81A6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2E6D62FC1586DB8800E81A6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2E6D62FF1586DB8800E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		2E6D63061586DB8800E81A6E /* ubilocal-experimentTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ubilocal-experimentTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6D63071586DB8800E81A6E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2E6D630F1586DB8800E81A6E /* ubilocal-experimentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ubilocal-experimentTests-Info.plist"; sourceTree = "<group>"; };
+		2E6D63111586DB8800E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2E6D63131586DB8800E81A6E /* ubilocal_experimentTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ubilocal_experimentTests.h; sourceTree = "<group>"; };
+		2E6D63141586DB8800E81A6E /* ubilocal_experimentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ubilocal_experimentTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E6D62E21586DB8700E81A6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6D62EA1586DB8700E81A6E /* UIKit.framework in Frameworks */,
+				2E6D62EC1586DB8700E81A6E /* Foundation.framework in Frameworks */,
+				2E6D62EE1586DB8700E81A6E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E6D63021586DB8800E81A6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6D63081586DB8800E81A6E /* SenTestingKit.framework in Frameworks */,
+				2E6D63091586DB8800E81A6E /* UIKit.framework in Frameworks */,
+				2E6D630A1586DB8800E81A6E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E6D62DA1586DB8700E81A6E = {
+			isa = PBXGroup;
+			children = (
+				2E6D62EF1586DB8700E81A6E /* ubilocal-experiment */,
+				2E6D630D1586DB8800E81A6E /* ubilocal-experimentTests */,
+				2E6D62E81586DB8700E81A6E /* Frameworks */,
+				2E6D62E61586DB8700E81A6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E6D62E61586DB8700E81A6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E6D62E51586DB8700E81A6E /* ubilocal-experiment.app */,
+				2E6D63061586DB8800E81A6E /* ubilocal-experimentTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E6D62E81586DB8700E81A6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E6D62E91586DB8700E81A6E /* UIKit.framework */,
+				2E6D62EB1586DB8700E81A6E /* Foundation.framework */,
+				2E6D62ED1586DB8700E81A6E /* CoreGraphics.framework */,
+				2E6D63071586DB8800E81A6E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E6D62EF1586DB8700E81A6E /* ubilocal-experiment */ = {
+			isa = PBXGroup;
+			children = (
+				2E6D62F81586DB8800E81A6E /* AppDelegate.h */,
+				2E6D62F91586DB8800E81A6E /* AppDelegate.m */,
+				2E6D62FB1586DB8800E81A6E /* ViewController.h */,
+				2E6D62FC1586DB8800E81A6E /* ViewController.m */,
+				2E6D62FE1586DB8800E81A6E /* ViewController.xib */,
+				2E6D62F01586DB8700E81A6E /* Supporting Files */,
+			);
+			path = "ubilocal-experiment";
+			sourceTree = "<group>";
+		};
+		2E6D62F01586DB8700E81A6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E6D62F11586DB8700E81A6E /* ubilocal-experiment-Info.plist */,
+				2E6D62F21586DB8700E81A6E /* InfoPlist.strings */,
+				2E6D62F51586DB8800E81A6E /* main.m */,
+				2E6D62F71586DB8800E81A6E /* ubilocal-experiment-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E6D630D1586DB8800E81A6E /* ubilocal-experimentTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E6D63131586DB8800E81A6E /* ubilocal_experimentTests.h */,
+				2E6D63141586DB8800E81A6E /* ubilocal_experimentTests.m */,
+				2E6D630E1586DB8800E81A6E /* Supporting Files */,
+			);
+			path = "ubilocal-experimentTests";
+			sourceTree = "<group>";
+		};
+		2E6D630E1586DB8800E81A6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E6D630F1586DB8800E81A6E /* ubilocal-experimentTests-Info.plist */,
+				2E6D63101586DB8800E81A6E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E6D62E41586DB8700E81A6E /* ubilocal-experiment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E6D63181586DB8800E81A6E /* Build configuration list for PBXNativeTarget "ubilocal-experiment" */;
+			buildPhases = (
+				2E6D62E11586DB8700E81A6E /* Sources */,
+				2E6D62E21586DB8700E81A6E /* Frameworks */,
+				2E6D62E31586DB8700E81A6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ubilocal-experiment";
+			productName = "ubilocal-experiment";
+			productReference = 2E6D62E51586DB8700E81A6E /* ubilocal-experiment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E6D63051586DB8800E81A6E /* ubilocal-experimentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E6D631B1586DB8800E81A6E /* Build configuration list for PBXNativeTarget "ubilocal-experimentTests" */;
+			buildPhases = (
+				2E6D63011586DB8800E81A6E /* Sources */,
+				2E6D63021586DB8800E81A6E /* Frameworks */,
+				2E6D63031586DB8800E81A6E /* Resources */,
+				2E6D63041586DB8800E81A6E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E6D630C1586DB8800E81A6E /* PBXTargetDependency */,
+			);
+			name = "ubilocal-experimentTests";
+			productName = "ubilocal-experimentTests";
+			productReference = 2E6D63061586DB8800E81A6E /* ubilocal-experimentTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E6D62DC1586DB8700E81A6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2E6D62DF1586DB8700E81A6E /* Build configuration list for PBXProject "ubilocal-experiment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2E6D62DA1586DB8700E81A6E;
+			productRefGroup = 2E6D62E61586DB8700E81A6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E6D62E41586DB8700E81A6E /* ubilocal-experiment */,
+				2E6D63051586DB8800E81A6E /* ubilocal-experimentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E6D62E31586DB8700E81A6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6D62F41586DB8700E81A6E /* InfoPlist.strings in Resources */,
+				2E6D63001586DB8800E81A6E /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E6D63031586DB8800E81A6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6D63121586DB8800E81A6E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E6D63041586DB8800E81A6E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E6D62E11586DB8700E81A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6D62F61586DB8800E81A6E /* main.m in Sources */,
+				2E6D62FA1586DB8800E81A6E /* AppDelegate.m in Sources */,
+				2E6D62FD1586DB8800E81A6E /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E6D63011586DB8800E81A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6D63151586DB8800E81A6E /* ubilocal_experimentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E6D630C1586DB8800E81A6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E6D62E41586DB8700E81A6E /* ubilocal-experiment */;
+			targetProxy = 2E6D630B1586DB8800E81A6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E6D62F21586DB8700E81A6E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E6D62F31586DB8700E81A6E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2E6D62FE1586DB8800E81A6E /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E6D62FF1586DB8800E81A6E /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		2E6D63101586DB8800E81A6E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E6D63111586DB8800E81A6E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E6D63161586DB8800E81A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		2E6D63171586DB8800E81A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E6D63191586DB8800E81A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ubilocal-experiment/ubilocal-experiment-Prefix.pch";
+				INFOPLIST_FILE = "ubilocal-experiment/ubilocal-experiment-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2E6D631A1586DB8800E81A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ubilocal-experiment/ubilocal-experiment-Prefix.pch";
+				INFOPLIST_FILE = "ubilocal-experiment/ubilocal-experiment-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2E6D631C1586DB8800E81A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ubilocal-experiment.app/ubilocal-experiment";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ubilocal-experiment/ubilocal-experiment-Prefix.pch";
+				INFOPLIST_FILE = "ubilocal-experimentTests/ubilocal-experimentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2E6D631D1586DB8800E81A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ubilocal-experiment.app/ubilocal-experiment";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ubilocal-experiment/ubilocal-experiment-Prefix.pch";
+				INFOPLIST_FILE = "ubilocal-experimentTests/ubilocal-experimentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E6D62DF1586DB8700E81A6E /* Build configuration list for PBXProject "ubilocal-experiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E6D63161586DB8800E81A6E /* Debug */,
+				2E6D63171586DB8800E81A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E6D63181586DB8800E81A6E /* Build configuration list for PBXNativeTarget "ubilocal-experiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E6D63191586DB8800E81A6E /* Debug */,
+				2E6D631A1586DB8800E81A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2E6D631B1586DB8800E81A6E /* Build configuration list for PBXNativeTarget "ubilocal-experimentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E6D631C1586DB8800E81A6E /* Debug */,
+				2E6D631D1586DB8800E81A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E6D62DC1586DB8700E81A6E /* Project object */;
+}
