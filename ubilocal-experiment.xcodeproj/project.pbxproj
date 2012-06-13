@@ -167,6 +167,7 @@
 			children = (
 			);
 			name = CocoaHTTPServer;
+			path = Vendor/CocoaHTTPServer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
