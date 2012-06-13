@@ -1,0 +1,3 @@
+[submodule "Vendor"]
+	path = Vendor
+	url = git@github.com:ubiregiinc/CocoaHTTPServer.git
