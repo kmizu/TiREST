@@ -33,6 +33,12 @@
 		2E2B9289158863C200C4EC33 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B9288158863C200C4EC33 /* GCDAsyncSocket.m */; };
 		2E2B928B158864BB00C4EC33 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
 		2E2B928E158865BA00C4EC33 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
+		2E2B929315886A3200C4EC33 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92311588622500C4EC33 /* HTTPAuthenticationRequest.m */; };
+		2E2B929515886A4000C4EC33 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92331588622500C4EC33 /* HTTPConnection.m */; };
+		2E2B929615886A4A00C4EC33 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92361588622500C4EC33 /* HTTPMessage.m */; };
+		2E2B929715886A5100C4EC33 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92391588622500C4EC33 /* HTTPServer.m */; };
+		2E2B929815886A7300C4EC33 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B923B1588622500C4EC33 /* WebSocket.m */; };
+		2E2B929B15886CD300C4EC33 /* EchoHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B929A15886CD300C4EC33 /* EchoHTTPConnection.m */; };
 		2E6D62EA1586DB8700E81A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62E91586DB8700E81A6E /* UIKit.framework */; };
 		2E6D62EC1586DB8700E81A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62EB1586DB8700E81A6E /* Foundation.framework */; };
 		2E6D62EE1586DB8700E81A6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62ED1586DB8700E81A6E /* CoreGraphics.framework */; };
@@ -111,6 +117,8 @@
 		2E2B9288158863C200C4EC33 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		2E2B928A158864BB00C4EC33 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2E2B928C158864FD00C4EC33 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2E2B929915886CD300C4EC33 /* EchoHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchoHTTPConnection.h; sourceTree = "<group>"; };
+		2E2B929A15886CD300C4EC33 /* EchoHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EchoHTTPConnection.m; sourceTree = "<group>"; };
 		2E6D62E51586DB8700E81A6E /* ubilocal-experiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ubilocal-experiment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6D62E91586DB8700E81A6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2E6D62EB1586DB8700E81A6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -321,6 +329,8 @@
 		2E6D62EF1586DB8700E81A6E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2E2B929915886CD300C4EC33 /* EchoHTTPConnection.h */,
+				2E2B929A15886CD300C4EC33 /* EchoHTTPConnection.m */,
 				2E6D62F81586DB8800E81A6E /* AppDelegate.h */,
 				2E6D62F91586DB8800E81A6E /* AppDelegate.m */,
 				2E6D62FB1586DB8800E81A6E /* ViewController.h */,
@@ -502,6 +512,12 @@
 				2E2B92841588639C00C4EC33 /* ContextFilterLogFormatter.m in Sources */,
 				2E2B92851588639C00C4EC33 /* DispatchQueueLogFormatter.m in Sources */,
 				2E2B9289158863C200C4EC33 /* GCDAsyncSocket.m in Sources */,
+				2E2B929315886A3200C4EC33 /* HTTPAuthenticationRequest.m in Sources */,
+				2E2B929515886A4000C4EC33 /* HTTPConnection.m in Sources */,
+				2E2B929615886A4A00C4EC33 /* HTTPMessage.m in Sources */,
+				2E2B929715886A5100C4EC33 /* HTTPServer.m in Sources */,
+				2E2B929815886A7300C4EC33 /* WebSocket.m in Sources */,
+				2E2B929B15886CD300C4EC33 /* EchoHTTPConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,12 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "HTTPServer.h"
+#import "DDLog.h"
+#import "DDTTYLogger.h"
+#import "EchoHTTPConnection.h"
+
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @implementation AppDelegate
 
@@ -22,6 +28,32 @@
 	self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+	
+	// Configure our logging framework.
+	// To keep things simple and fast, we're just going to log to the Xcode console.
+	[DDLog addLogger:[DDTTYLogger sharedInstance]];
+	
+	httpServer_ = [[HTTPServer alloc] init];
+	
+	// Tell the server to broadcast its presence via Bonjour.
+	// This allows browsers such as Safari to automatically discover our service.
+	[httpServer_ setType:@"_http._tcp."];
+	
+	[httpServer_ setConnectionClass:[EchoHTTPConnection class]];
+	
+	[httpServer_ setPort:12345];
+	
+	NSString* webPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Web"];
+	
+	[httpServer_ setDocumentRoot:webPath];
+	
+	NSError* error = nil;
+	if(![httpServer_ start:&error]) {
+		DDLogError(@"Error starting HTTP Server: %@", error);
+		return NO;
+	} 
+	NSLog(@"Started HTTP Server on port %u, %@, domain=%@", [httpServer_ listeningPort], [httpServer_ documentRoot], [httpServer_ domain]);
+	
     return YES;
 }
 
