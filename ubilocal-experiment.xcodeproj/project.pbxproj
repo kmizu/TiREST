@@ -78,11 +78,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E4FE5CD15883B210012C41C /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
 		2E6D62DA1586DB8700E81A6E = {
 			isa = PBXGroup;
 			children = (
-				2E6D62EF1586DB8700E81A6E /* ubilocal-experiment */,
-				2E6D630D1586DB8800E81A6E /* ubilocal-experimentTests */,
+				2E4FE5CD15883B210012C41C /* Vendor */,
+				2E6D62EF1586DB8700E81A6E /* Classes */,
+				2E6D630D1586DB8800E81A6E /* Tests */,
 				2E6D62E81586DB8700E81A6E /* Frameworks */,
 				2E6D62E61586DB8700E81A6E /* Products */,
 			);
@@ -108,7 +116,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2E6D62EF1586DB8700E81A6E /* ubilocal-experiment */ = {
+		2E6D62EF1586DB8700E81A6E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				2E6D62F81586DB8800E81A6E /* AppDelegate.h */,
@@ -118,6 +126,7 @@
 				2E6D62FE1586DB8800E81A6E /* ViewController.xib */,
 				2E6D62F01586DB8700E81A6E /* Supporting Files */,
 			);
+			name = Classes;
 			path = "ubilocal-experiment";
 			sourceTree = "<group>";
 		};
@@ -132,13 +141,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2E6D630D1586DB8800E81A6E /* ubilocal-experimentTests */ = {
+		2E6D630D1586DB8800E81A6E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				2E6D63131586DB8800E81A6E /* ubilocal_experimentTests.h */,
 				2E6D63141586DB8800E81A6E /* ubilocal_experimentTests.m */,
 				2E6D630E1586DB8800E81A6E /* Supporting Files */,
 			);
+			name = Tests;
 			path = "ubilocal-experimentTests";
 			sourceTree = "<group>";
 		};
@@ -431,6 +441,7 @@
 				2E6D631A1586DB8800E81A6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E6D631B1586DB8800E81A6E /* Build configuration list for PBXNativeTarget "ubilocal-experimentTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +450,7 @@
 				2E6D631D1586DB8800E81A6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
