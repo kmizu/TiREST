@@ -81,6 +81,7 @@
 		2E4FE5CD15883B210012C41C /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				2E7BC2BF158858B60063D02B /* CocoaHTTPServer */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -159,6 +160,13 @@
 				2E6D63101586DB8800E81A6E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E7BC2BF158858B60063D02B /* CocoaHTTPServer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CocoaHTTPServer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
