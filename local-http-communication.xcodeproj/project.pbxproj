@@ -52,6 +52,9 @@
 		2E6D630A1586DB8800E81A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62EB1586DB8700E81A6E /* Foundation.framework */; };
 		2E6D63121586DB8800E81A6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E6D63101586DB8800E81A6E /* InfoPlist.strings */; };
 		2E6D63151586DB8800E81A6E /* HTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D63141586DB8800E81A6E /* HTTPServerTests.m */; };
+		2EDE085A158F03420048EC9E /* RequestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE0859158F03420048EC9E /* RequestRouter.m */; };
+		2EDE085D158F04490048EC9E /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE085C158F04490048EC9E /* Action.m */; };
+		2EDE0860158F06CD0048EC9E /* RoutableHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE085F158F06CD0048EC9E /* RoutableHTTPConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +141,12 @@
 		2E6D63111586DB8800E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E6D63131586DB8800E81A6E /* HTTPServerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPServerTests.h; sourceTree = "<group>"; };
 		2E6D63141586DB8800E81A6E /* HTTPServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPServerTests.m; sourceTree = "<group>"; };
+		2EDE0858158F03420048EC9E /* RequestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestRouter.h; sourceTree = "<group>"; };
+		2EDE0859158F03420048EC9E /* RequestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestRouter.m; sourceTree = "<group>"; };
+		2EDE085B158F04490048EC9E /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
+		2EDE085C158F04490048EC9E /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Action.m; sourceTree = "<group>"; };
+		2EDE085E158F06CD0048EC9E /* RoutableHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutableHTTPConnection.h; sourceTree = "<group>"; };
+		2EDE085F158F06CD0048EC9E /* RoutableHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutableHTTPConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +338,7 @@
 		2E6D62EF1586DB8700E81A6E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2EDE0856158F02E80048EC9E /* Routing */,
 				2E2B929915886CD300C4EC33 /* EchoHTTPConnection.h */,
 				2E2B929A15886CD300C4EC33 /* EchoHTTPConnection.m */,
 				2E6D62F81586DB8800E81A6E /* AppDelegate.h */,
@@ -380,6 +390,19 @@
 			);
 			name = CocoaHTTPServer;
 			path = Vendor/CocoaHTTPServer;
+			sourceTree = "<group>";
+		};
+		2EDE0856158F02E80048EC9E /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				2EDE0858158F03420048EC9E /* RequestRouter.h */,
+				2EDE0859158F03420048EC9E /* RequestRouter.m */,
+				2EDE085B158F04490048EC9E /* Action.h */,
+				2EDE085C158F04490048EC9E /* Action.m */,
+				2EDE085E158F06CD0048EC9E /* RoutableHTTPConnection.h */,
+				2EDE085F158F06CD0048EC9E /* RoutableHTTPConnection.m */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +539,9 @@
 				2E2B929715886A5100C4EC33 /* HTTPServer.m in Sources */,
 				2E2B929815886A7300C4EC33 /* WebSocket.m in Sources */,
 				2E2B929B15886CD300C4EC33 /* EchoHTTPConnection.m in Sources */,
+				2EDE085A158F03420048EC9E /* RequestRouter.m in Sources */,
+				2EDE085D158F04490048EC9E /* Action.m in Sources */,
+				2EDE0860158F06CD0048EC9E /* RoutableHTTPConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
