@@ -7,7 +7,14 @@
 //
 
 #import "HTTPConnection.h"
+#import "RequestRouter.h"
 
-@interface RoutableHTTPConnection : HTTPConnection
+@interface RoutableHTTPConnection : HTTPConnection {
+	NSData* dataBody_;
+	RequestRouter* router_;
+}
+
+@property (nonatomic) NSData* dataBody;
+@property (nonatomic) RequestRouter* router;
 
 @end

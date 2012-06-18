@@ -14,6 +14,6 @@
 /**
  Process HTTP request.  This method is abstract and must be implemented in subclasses.
  */
-- (void)process:(NSDictionary*)params;
+- (void)process:(NSDictionary*)params body:(NSData*)body;
 
 @end

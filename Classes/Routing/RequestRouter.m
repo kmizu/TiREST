@@ -26,7 +26,12 @@
 }
 
 - (void)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body {
-	assert(YES); //TODO implement this
+	for (NSInteger i = 0; i < pathPatterns_.count; i++) {
+		NSString* pattern = [pathPatterns_ objectAtIndex:i];
+		Action* action = [actions_ objectAtIndex:i];
+		// TODO Temporal implementation.
+		if ([pattern hasPrefix:path]) [action process:nil body:body];
+	}
 }
 
 @end

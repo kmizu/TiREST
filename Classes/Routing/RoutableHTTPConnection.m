@@ -16,6 +16,15 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 
 @implementation RoutableHTTPConnection
 
+@synthesize dataBody=dataBody_;
+@synthesize router=router_;
+
+- (id)init {
+	self = [self init];
+	router_ = [[RequestRouter alloc] init];
+	return self;
+}
+
 - (BOOL)supportsMethod:(NSString *)method atPath:(NSString *)path {
 	HTTPLogTrace();
 	if ([method isEqualToString:@"GET"]) return YES;
@@ -28,15 +37,13 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 - (BOOL)expectsRequestBodyFromMethod:(NSString *)method atPath:(NSString *)path {
 	HTTPLogTrace();
 	
-	//TODO Implement this
-	
-	return [super expectsRequestBodyFromMethod:method atPath:path];
+	return [method isEqualToString:@"GET"];
 }
 
 - (NSObject<HTTPResponse> *)httpResponseForMethod:(NSString *)method URI:(NSString *)path {
 	HTTPLogTrace();
 	
-	//TODO Immplement this
+	[router_ dispatchFor:method path:path body:dataBody_];
 	
 	/// This is just an example.
 	NSString* hello = @"Hello";
@@ -55,7 +62,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 - (void)processBodyData:(NSData *)postDataChunk {
 	HTTPLogTrace();
 	
-	//TODO implement this
+	dataBody_ = postDataChunk;
 }
 
 @end
