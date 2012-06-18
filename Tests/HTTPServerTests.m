@@ -24,9 +24,23 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testTop
 {
-    STFail(@"Unit tests are not implemented yet in Tests");
+	NSURL* url = [NSURL URLWithString:@"http://scala.local:12345/"];
+	NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
+	[request setHTTPMethod:@"GET"];
+	NSURLResponse* response;
+	NSError* error;
+	NSData* data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+	if (error) {
+		STFail(@"HTTP GET on %@ failed", url);
+		return;
+	}
+	NSString* responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+	
+	NSLog(@"response = %@", responseString);
+	
+	STAssertTrue(YES, @"This assertion succeed");
 }
 
 @end
