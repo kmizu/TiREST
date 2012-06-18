@@ -7,16 +7,25 @@
 //
 
 #import "RequestRouter.h"
+#import "HTTPConnection.h"
 
 @implementation RequestRouter {
 	NSMutableArray* pathPatterns_;
 	NSMutableArray* actions_;
+	__weak HTTPConnection* connection_;
 }
 
-- (id)init {
+@synthesize connection=connection_;
+
++ (RequestRouter*)newRequestRouter:(HTTPConnection*)connection {
+	return [[RequestRouter alloc] initWithHTTPConnection:connection];
+}
+
+- (id)initWithHTTPConnection:(HTTPConnection*)connection {
 	self = [super init];
 	pathPatterns_ = [NSMutableArray array];
 	actions_ = [NSMutableArray array];
+	connection_ = connection;
 	return self;
 }
 
@@ -25,12 +34,21 @@
 	[actions_ addObject:action];
 }
 
-- (void)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body {
+- (NSData*)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body {
+	NSLog(@"httpMethod = %@, path = %@", httpMethod, path);
 	for (NSInteger i = 0; i < pathPatterns_.count; i++) {
 		NSString* pattern = [pathPatterns_ objectAtIndex:i];
 		Action* action = [actions_ objectAtIndex:i];
 		// TODO Temporal implementation.
-		if ([pattern hasPrefix:path]) [action process:nil body:body];
+		NSDictionary* params;
+		if ([httpMethod isEqualToString:@"GET"]) {
+			params = [connection_ parseGetParams];
+		} else if ([httpMethod isEqualToString:@"POST"]) {
+			params = [connection_ parseParams:path];
+		}
+		if ([pattern hasPrefix:path]) {
+			return [action process:params body:body];
+		}
 	}
 }
 

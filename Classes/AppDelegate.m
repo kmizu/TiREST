@@ -12,7 +12,7 @@
 #import "HTTPServer.h"
 #import "DDLog.h"
 #import "DDTTYLogger.h"
-#import "EchoHTTPConnection.h"
+#import "RoutableHTTPConnection.h"
 
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
@@ -39,7 +39,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	// This allows browsers such as Safari to automatically discover our service.
 	[httpServer_ setType:@"_http._tcp."];
 	
-	[httpServer_ setConnectionClass:[EchoHTTPConnection class]];
+	[httpServer_ setConnectionClass:[RoutableHTTPConnection class]];
 	
 	[httpServer_ setPort:12345];
 	

@@ -10,8 +10,8 @@
 
 @implementation Action
 
-- (void)process:(NSDictionary*)params body:(NSData*)body {
-  assert(YES);
+- (NSData*)process:(NSDictionary*)params body:(NSData*)body {
+	assert(NO);
 }
 
 @end

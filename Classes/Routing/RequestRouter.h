@@ -8,11 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "Action.h"
+#import "HTTPConnection.h"
 
 @interface RequestRouter : NSObject
 
+@property (nonatomic, weak) HTTPConnection* connection;
+
++ (RequestRouter*)newRequestRouter:(HTTPConnection*)connection;
+
 - (void)addRoute:(NSString*)pathPattern to:(Action*)action;
 
-- (void)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body;
+- (NSData*)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body;
 
 @end

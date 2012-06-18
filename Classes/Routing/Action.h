@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NSData* (^ActionFunction)(NSDictionary* params, NSData* body);
+
 @interface Action : NSObject
 
 //TODO should be enable to return a response depending on |params|
 /**
  Process HTTP request.  This method is abstract and must be implemented in subclasses.
  */
-- (void)process:(NSDictionary*)params body:(NSData*)body;
+- (NSData*)process:(NSDictionary*)params body:(NSData*)body;
 
 @end

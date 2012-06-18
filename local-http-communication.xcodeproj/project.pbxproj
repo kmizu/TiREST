@@ -38,7 +38,6 @@
 		2E2B929615886A4A00C4EC33 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92361588622500C4EC33 /* HTTPMessage.m */; };
 		2E2B929715886A5100C4EC33 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92391588622500C4EC33 /* HTTPServer.m */; };
 		2E2B929815886A7300C4EC33 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B923B1588622500C4EC33 /* WebSocket.m */; };
-		2E2B929B15886CD300C4EC33 /* EchoHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B929A15886CD300C4EC33 /* EchoHTTPConnection.m */; };
 		2E6D62EA1586DB8700E81A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62E91586DB8700E81A6E /* UIKit.framework */; };
 		2E6D62EC1586DB8700E81A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62EB1586DB8700E81A6E /* Foundation.framework */; };
 		2E6D62EE1586DB8700E81A6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62ED1586DB8700E81A6E /* CoreGraphics.framework */; };
@@ -52,6 +51,7 @@
 		2E6D630A1586DB8800E81A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62EB1586DB8700E81A6E /* Foundation.framework */; };
 		2E6D63121586DB8800E81A6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E6D63101586DB8800E81A6E /* InfoPlist.strings */; };
 		2E6D63151586DB8800E81A6E /* HTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D63141586DB8800E81A6E /* HTTPServerTests.m */; };
+		2EBB079E158F3207004F2E9B /* BlocksAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBB079D158F3207004F2E9B /* BlocksAction.m */; };
 		2EDE085A158F03420048EC9E /* RequestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE0859158F03420048EC9E /* RequestRouter.m */; };
 		2EDE085D158F04490048EC9E /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE085C158F04490048EC9E /* Action.m */; };
 		2EDE0860158F06CD0048EC9E /* RoutableHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE085F158F06CD0048EC9E /* RoutableHTTPConnection.m */; };
@@ -122,8 +122,6 @@
 		2E2B9288158863C200C4EC33 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		2E2B928A158864BB00C4EC33 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2E2B928C158864FD00C4EC33 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		2E2B929915886CD300C4EC33 /* EchoHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchoHTTPConnection.h; sourceTree = "<group>"; };
-		2E2B929A15886CD300C4EC33 /* EchoHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EchoHTTPConnection.m; sourceTree = "<group>"; };
 		2E6D62E51586DB8700E81A6E /* local-http-communication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "local-http-communication.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6D62E91586DB8700E81A6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2E6D62EB1586DB8700E81A6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,6 +141,8 @@
 		2E6D63111586DB8800E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E6D63131586DB8800E81A6E /* HTTPServerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPServerTests.h; sourceTree = "<group>"; };
 		2E6D63141586DB8800E81A6E /* HTTPServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPServerTests.m; sourceTree = "<group>"; };
+		2EBB079C158F3207004F2E9B /* BlocksAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksAction.h; sourceTree = "<group>"; };
+		2EBB079D158F3207004F2E9B /* BlocksAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksAction.m; sourceTree = "<group>"; };
 		2EDE0858158F03420048EC9E /* RequestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestRouter.h; sourceTree = "<group>"; };
 		2EDE0859158F03420048EC9E /* RequestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestRouter.m; sourceTree = "<group>"; };
 		2EDE085B158F04490048EC9E /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
@@ -343,8 +343,6 @@
 			isa = PBXGroup;
 			children = (
 				2EDE0856158F02E80048EC9E /* Routing */,
-				2E2B929915886CD300C4EC33 /* EchoHTTPConnection.h */,
-				2E2B929A15886CD300C4EC33 /* EchoHTTPConnection.m */,
 				2E6D62F81586DB8800E81A6E /* AppDelegate.h */,
 				2E6D62F91586DB8800E81A6E /* AppDelegate.m */,
 				2E6D62FB1586DB8800E81A6E /* ViewController.h */,
@@ -403,6 +401,8 @@
 				2EDE0859158F03420048EC9E /* RequestRouter.m */,
 				2EDE085B158F04490048EC9E /* Action.h */,
 				2EDE085C158F04490048EC9E /* Action.m */,
+				2EBB079C158F3207004F2E9B /* BlocksAction.h */,
+				2EBB079D158F3207004F2E9B /* BlocksAction.m */,
 				2EDE085E158F06CD0048EC9E /* RoutableHTTPConnection.h */,
 				2EDE085F158F06CD0048EC9E /* RoutableHTTPConnection.m */,
 			);
@@ -542,10 +542,10 @@
 				2E2B929615886A4A00C4EC33 /* HTTPMessage.m in Sources */,
 				2E2B929715886A5100C4EC33 /* HTTPServer.m in Sources */,
 				2E2B929815886A7300C4EC33 /* WebSocket.m in Sources */,
-				2E2B929B15886CD300C4EC33 /* EchoHTTPConnection.m in Sources */,
 				2EDE085A158F03420048EC9E /* RequestRouter.m in Sources */,
 				2EDE085D158F04490048EC9E /* Action.m in Sources */,
 				2EDE0860158F06CD0048EC9E /* RoutableHTTPConnection.m in Sources */,
+				2EBB079E158F3207004F2E9B /* BlocksAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

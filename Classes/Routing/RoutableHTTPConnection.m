@@ -22,6 +22,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 - (id)init {
 	self = [self init];
 	router_ = [[RequestRouter alloc] init];
+	
 	return self;
 }
 
