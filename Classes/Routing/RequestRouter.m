@@ -13,16 +13,20 @@
 	NSMutableArray* actions_;
 }
 
--(id) init {
+- (id)init {
 	self = [super init];
 	pathPatterns_ = [NSMutableArray array];
 	actions_ = [NSMutableArray array];
 	return self;
 }
 
--(void) route:(NSString *)pathPattern to:(Action *)action {
+- (void)addRoute:(NSString *)pathPattern to:(Action *)action {
 	[pathPatterns_ addObject:pathPattern];
 	[actions_ addObject:action];
+}
+
+- (void)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body {
+	assert(YES); //TODO implement this
 }
 
 @end

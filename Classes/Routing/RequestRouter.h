@@ -11,6 +11,8 @@
 
 @interface RequestRouter : NSObject
 
--(void) route:(NSString*)pathPattern to:(Action*)action;
+- (void)addRoute:(NSString*)pathPattern to:(Action*)action;
+
+- (void)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body;
 
 @end
