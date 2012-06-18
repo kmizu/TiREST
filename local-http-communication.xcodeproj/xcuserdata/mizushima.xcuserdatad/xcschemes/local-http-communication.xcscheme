@@ -14,9 +14,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
-               BuildableName = "ubilocal-experiment.app"
-               BlueprintName = "ubilocal-experiment"
-               ReferencedContainer = "container:ubilocal-experiment.xcodeproj">
+               BuildableName = "local-http-communication.app"
+               BlueprintName = "local-http-communication"
+               ReferencedContainer = "container:local-http-communication.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,9 +32,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2E6D63051586DB8800E81A6E"
-               BuildableName = "ubilocal-experimentTests.octest"
-               BlueprintName = "ubilocal-experimentTests"
-               ReferencedContainer = "container:ubilocal-experiment.xcodeproj">
+               BuildableName = "local-http-communicationTests.octest"
+               BlueprintName = "local-http-communicationTests"
+               ReferencedContainer = "container:local-http-communication.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -42,9 +42,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
-            BuildableName = "ubilocal-experiment.app"
-            BlueprintName = "ubilocal-experiment"
-            ReferencedContainer = "container:ubilocal-experiment.xcodeproj">
+            BuildableName = "local-http-communication.app"
+            BlueprintName = "local-http-communication"
+            ReferencedContainer = "container:local-http-communication.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
-            BuildableName = "ubilocal-experiment.app"
-            BlueprintName = "ubilocal-experiment"
-            ReferencedContainer = "container:ubilocal-experiment.xcodeproj">
+            BuildableName = "local-http-communication.app"
+            BlueprintName = "local-http-communication"
+            ReferencedContainer = "container:local-http-communication.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,9 +79,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
-            BuildableName = "ubilocal-experiment.app"
-            BlueprintName = "ubilocal-experiment"
-            ReferencedContainer = "container:ubilocal-experiment.xcodeproj">
+            BuildableName = "local-http-communication.app"
+            BlueprintName = "local-http-communication"
+            ReferencedContainer = "container:local-http-communication.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

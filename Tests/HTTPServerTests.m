@@ -1,14 +1,14 @@
 //
 //  ubilocal_experimentTests.m
-//  ubilocal-experimentTests
+//  Tests
 //
 //  Created by Mizushima Kota on 12/06/12.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "ubilocal_experimentTests.h"
+#import "HTTPServerTests.h"
 
-@implementation ubilocal_experimentTests
+@implementation HTTPServerTests
 
 - (void)setUp
 {
@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in ubilocal-experimentTests");
+    STFail(@"Unit tests are not implemented yet in Tests");
 }
 
 @end

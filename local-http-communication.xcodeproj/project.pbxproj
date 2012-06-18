@@ -51,7 +51,7 @@
 		2E6D63091586DB8800E81A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62E91586DB8700E81A6E /* UIKit.framework */; };
 		2E6D630A1586DB8800E81A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62EB1586DB8700E81A6E /* Foundation.framework */; };
 		2E6D63121586DB8800E81A6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E6D63101586DB8800E81A6E /* InfoPlist.strings */; };
-		2E6D63151586DB8800E81A6E /* ubilocal_experimentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D63141586DB8800E81A6E /* ubilocal_experimentTests.m */; };
+		2E6D63151586DB8800E81A6E /* HTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D63141586DB8800E81A6E /* HTTPServerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,25 +119,25 @@
 		2E2B928C158864FD00C4EC33 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		2E2B929915886CD300C4EC33 /* EchoHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchoHTTPConnection.h; sourceTree = "<group>"; };
 		2E2B929A15886CD300C4EC33 /* EchoHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EchoHTTPConnection.m; sourceTree = "<group>"; };
-		2E6D62E51586DB8700E81A6E /* ubilocal-experiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ubilocal-experiment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6D62E51586DB8700E81A6E /* local-http-communication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "local-http-communication.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6D62E91586DB8700E81A6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2E6D62EB1586DB8700E81A6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2E6D62ED1586DB8700E81A6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2E6D62F11586DB8700E81A6E /* ubilocal-experiment-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ubilocal-experiment-Info.plist"; sourceTree = "<group>"; };
+		2E6D62F11586DB8700E81A6E /* local-http-communication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "local-http-communication-Info.plist"; sourceTree = "<group>"; };
 		2E6D62F31586DB8700E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E6D62F51586DB8800E81A6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2E6D62F71586DB8800E81A6E /* ubilocal-experiment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ubilocal-experiment-Prefix.pch"; sourceTree = "<group>"; };
+		2E6D62F71586DB8800E81A6E /* local-http-communication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "local-http-communication-Prefix.pch"; sourceTree = "<group>"; };
 		2E6D62F81586DB8800E81A6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2E6D62F91586DB8800E81A6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2E6D62FB1586DB8800E81A6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2E6D62FC1586DB8800E81A6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2E6D62FF1586DB8800E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		2E6D63061586DB8800E81A6E /* ubilocal-experimentTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ubilocal-experimentTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6D63061586DB8800E81A6E /* local-http-communicationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "local-http-communicationTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6D63071586DB8800E81A6E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		2E6D630F1586DB8800E81A6E /* ubilocal-experimentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ubilocal-experimentTests-Info.plist"; sourceTree = "<group>"; };
+		2E6D630F1586DB8800E81A6E /* local-http-communicationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "local-http-communicationTests-Info.plist"; sourceTree = "<group>"; };
 		2E6D63111586DB8800E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2E6D63131586DB8800E81A6E /* ubilocal_experimentTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ubilocal_experimentTests.h; sourceTree = "<group>"; };
-		2E6D63141586DB8800E81A6E /* ubilocal_experimentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ubilocal_experimentTests.m; sourceTree = "<group>"; };
+		2E6D63131586DB8800E81A6E /* HTTPServerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPServerTests.h; sourceTree = "<group>"; };
+		2E6D63141586DB8800E81A6E /* HTTPServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPServerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,8 +307,8 @@
 		2E6D62E61586DB8700E81A6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E6D62E51586DB8700E81A6E /* ubilocal-experiment.app */,
-				2E6D63061586DB8800E81A6E /* ubilocal-experimentTests.octest */,
+				2E6D62E51586DB8700E81A6E /* local-http-communication.app */,
+				2E6D63061586DB8800E81A6E /* local-http-communicationTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -338,17 +338,16 @@
 				2E6D62FE1586DB8800E81A6E /* ViewController.xib */,
 				2E6D62F01586DB8700E81A6E /* Supporting Files */,
 			);
-			name = Classes;
-			path = "ubilocal-experiment";
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		2E6D62F01586DB8700E81A6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E6D62F11586DB8700E81A6E /* ubilocal-experiment-Info.plist */,
+				2E6D62F11586DB8700E81A6E /* local-http-communication-Info.plist */,
 				2E6D62F21586DB8700E81A6E /* InfoPlist.strings */,
 				2E6D62F51586DB8800E81A6E /* main.m */,
-				2E6D62F71586DB8800E81A6E /* ubilocal-experiment-Prefix.pch */,
+				2E6D62F71586DB8800E81A6E /* local-http-communication-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -356,18 +355,17 @@
 		2E6D630D1586DB8800E81A6E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2E6D63131586DB8800E81A6E /* ubilocal_experimentTests.h */,
-				2E6D63141586DB8800E81A6E /* ubilocal_experimentTests.m */,
+				2E6D63131586DB8800E81A6E /* HTTPServerTests.h */,
+				2E6D63141586DB8800E81A6E /* HTTPServerTests.m */,
 				2E6D630E1586DB8800E81A6E /* Supporting Files */,
 			);
-			name = Tests;
-			path = "ubilocal-experimentTests";
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		2E6D630E1586DB8800E81A6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E6D630F1586DB8800E81A6E /* ubilocal-experimentTests-Info.plist */,
+				2E6D630F1586DB8800E81A6E /* local-http-communicationTests-Info.plist */,
 				2E6D63101586DB8800E81A6E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -387,9 +385,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2E6D62E41586DB8700E81A6E /* ubilocal-experiment */ = {
+		2E6D62E41586DB8700E81A6E /* local-http-communication */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E6D63181586DB8800E81A6E /* Build configuration list for PBXNativeTarget "ubilocal-experiment" */;
+			buildConfigurationList = 2E6D63181586DB8800E81A6E /* Build configuration list for PBXNativeTarget "local-http-communication" */;
 			buildPhases = (
 				2E6D62E11586DB8700E81A6E /* Sources */,
 				2E6D62E21586DB8700E81A6E /* Frameworks */,
@@ -399,14 +397,14 @@
 			);
 			dependencies = (
 			);
-			name = "ubilocal-experiment";
-			productName = "ubilocal-experiment";
-			productReference = 2E6D62E51586DB8700E81A6E /* ubilocal-experiment.app */;
+			name = "local-http-communication";
+			productName = "local-http-communication";
+			productReference = 2E6D62E51586DB8700E81A6E /* local-http-communication.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2E6D63051586DB8800E81A6E /* ubilocal-experimentTests */ = {
+		2E6D63051586DB8800E81A6E /* local-http-communicationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E6D631B1586DB8800E81A6E /* Build configuration list for PBXNativeTarget "ubilocal-experimentTests" */;
+			buildConfigurationList = 2E6D631B1586DB8800E81A6E /* Build configuration list for PBXNativeTarget "local-http-communicationTests" */;
 			buildPhases = (
 				2E6D63011586DB8800E81A6E /* Sources */,
 				2E6D63021586DB8800E81A6E /* Frameworks */,
@@ -418,9 +416,9 @@
 			dependencies = (
 				2E6D630C1586DB8800E81A6E /* PBXTargetDependency */,
 			);
-			name = "ubilocal-experimentTests";
-			productName = "ubilocal-experimentTests";
-			productReference = 2E6D63061586DB8800E81A6E /* ubilocal-experimentTests.octest */;
+			name = "local-http-communicationTests";
+			productName = "local-http-communicationTests";
+			productReference = 2E6D63061586DB8800E81A6E /* local-http-communicationTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -431,7 +429,7 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = 2E6D62DF1586DB8700E81A6E /* Build configuration list for PBXProject "ubilocal-experiment" */;
+			buildConfigurationList = 2E6D62DF1586DB8700E81A6E /* Build configuration list for PBXProject "local-http-communication" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -443,8 +441,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E6D62E41586DB8700E81A6E /* ubilocal-experiment */,
-				2E6D63051586DB8800E81A6E /* ubilocal-experimentTests */,
+				2E6D62E41586DB8700E81A6E /* local-http-communication */,
+				2E6D63051586DB8800E81A6E /* local-http-communicationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -525,7 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E6D63151586DB8800E81A6E /* ubilocal_experimentTests.m in Sources */,
+				2E6D63151586DB8800E81A6E /* HTTPServerTests.m in Sources */,
 				2E2B923C1588622500C4EC33 /* HTTPAuthenticationRequest.m in Sources */,
 				2E2B923D1588622500C4EC33 /* HTTPConnection.m in Sources */,
 				2E2B923E1588622500C4EC33 /* HTTPMessage.m in Sources */,
@@ -539,7 +537,7 @@
 /* Begin PBXTargetDependency section */
 		2E6D630C1586DB8800E81A6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E6D62E41586DB8700E81A6E /* ubilocal-experiment */;
+			target = 2E6D62E41586DB8700E81A6E /* local-http-communication */;
 			targetProxy = 2E6D630B1586DB8800E81A6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -624,10 +622,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ubilocal-experiment/ubilocal-experiment-Prefix.pch";
-				INFOPLIST_FILE = "ubilocal-experiment/ubilocal-experiment-Info.plist";
+				GCC_PREFIX_HEADER = "Classes/local-http-communication-Prefix.pch";
+				INFOPLIST_FILE = "Classes/local-http-communication-Info.plist";
 				LIBRARY_SEARCH_PATHS = "Vendor/**";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "local-http-communication";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -637,10 +635,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ubilocal-experiment/ubilocal-experiment-Prefix.pch";
-				INFOPLIST_FILE = "ubilocal-experiment/ubilocal-experiment-Info.plist";
+				GCC_PREFIX_HEADER = "Classes/local-http-communication-Prefix.pch";
+				INFOPLIST_FILE = "Classes/local-http-communication-Info.plist";
 				LIBRARY_SEARCH_PATHS = "Vendor/**";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "local-http-communication";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -648,15 +646,15 @@
 		2E6D631C1586DB8800E81A6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ubilocal-experiment.app/ubilocal-experiment";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/http-local-communication.app/local-http-communication";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ubilocal-experiment/ubilocal-experiment-Prefix.pch";
-				INFOPLIST_FILE = "ubilocal-experimentTests/ubilocal-experimentTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Classes/local-http-communication-Prefix.pch";
+				INFOPLIST_FILE = "Tests/local-http-communicationTests-Info.plist";
+				PRODUCT_NAME = "local-http-communicationTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -665,15 +663,15 @@
 		2E6D631D1586DB8800E81A6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ubilocal-experiment.app/ubilocal-experiment";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/local-http-communication.app/local-http-communication";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ubilocal-experiment/ubilocal-experiment-Prefix.pch";
-				INFOPLIST_FILE = "ubilocal-experimentTests/ubilocal-experimentTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Classes/local-http-communication-Prefix.pch";
+				INFOPLIST_FILE = "Tests/local-http-communicationTests-Info.plist";
+				PRODUCT_NAME = "local-http-communicationTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -682,7 +680,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E6D62DF1586DB8700E81A6E /* Build configuration list for PBXProject "ubilocal-experiment" */ = {
+		2E6D62DF1586DB8700E81A6E /* Build configuration list for PBXProject "local-http-communication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E6D63161586DB8800E81A6E /* Debug */,
@@ -691,7 +689,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E6D63181586DB8800E81A6E /* Build configuration list for PBXNativeTarget "ubilocal-experiment" */ = {
+		2E6D63181586DB8800E81A6E /* Build configuration list for PBXNativeTarget "local-http-communication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E6D63191586DB8800E81A6E /* Debug */,
@@ -700,7 +698,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E6D631B1586DB8800E81A6E /* Build configuration list for PBXNativeTarget "ubilocal-experimentTests" */ = {
+		2E6D631B1586DB8800E81A6E /* Build configuration list for PBXNativeTarget "local-http-communicationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E6D631C1586DB8800E81A6E /* Debug */,
