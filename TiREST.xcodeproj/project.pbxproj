@@ -60,6 +60,8 @@
 		2EDE086B158F23600048EC9E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
 		2EE13F63159041E700409481 /* libTiREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA178B15901F1400FD31C3 /* libTiREST.a */; };
 		2EEC8C84159074C500C23FD0 /* TRExampleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */; };
+		2EEC8C881590798800C23FD0 /* TRHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */; };
+		2EEC8C891590798800C23FD0 /* TRHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C871590798800C23FD0 /* TRHTTPResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +164,8 @@
 		2EDE085F158F06CD0048EC9E /* TRRoutableHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRoutableHTTPConnection.m; sourceTree = "<group>"; };
 		2EEC8C82159074C500C23FD0 /* TRExampleRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRExampleRouter.h; sourceTree = "<group>"; };
 		2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRExampleRouter.m; sourceTree = "<group>"; };
+		2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRHTTPResponse.h; sourceTree = "<group>"; };
+		2EEC8C871590798800C23FD0 /* TRHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHTTPResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -430,6 +434,8 @@
 				2EBB079D158F3207004F2E9B /* TRBlocksAction.m */,
 				2EDE085E158F06CD0048EC9E /* TRRoutableHTTPConnection.h */,
 				2EDE085F158F06CD0048EC9E /* TRRoutableHTTPConnection.m */,
+				2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */,
+				2EEC8C871590798800C23FD0 /* TRHTTPResponse.m */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -441,6 +447,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EEC8C881590798800C23FD0 /* TRHTTPResponse.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +628,7 @@
 				2EBA17AF1590214400FD31C3 /* GCDAsyncSocket.m in Sources */,
 				2EBA17B01590215D00FD31C3 /* ContextFilterLogFormatter.m in Sources */,
 				2EBA17B11590215D00FD31C3 /* DispatchQueueLogFormatter.m in Sources */,
+				2EEC8C891590798800C23FD0 /* TRHTTPResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
