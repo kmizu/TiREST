@@ -11,6 +11,7 @@
 #import "HTTPDataResponse.h"
 #import "DDNumber.h"
 #import "HTTPLogging.h"
+#import "BlocksAction.h"
 
 static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 
@@ -19,10 +20,17 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 @synthesize dataBody=dataBody_;
 @synthesize router=router_;
 
-- (id)init {
-	self = [self init];
-	router_ = [[RequestRouter alloc] init];
+- (NSUInteger)contentLength {
+	return contentLength_;
+}
+
+- (id)initWithAsyncSocket:(GCDAsyncSocket *)newSocket configuration:(HTTPConfig *)aConfig {
+	self = [super initWithAsyncSocket:newSocket configuration:aConfig];
+	router_ = [RequestRouter newRequestRouter:self];
 	
+	[router_ addRoute:@"/" to:[BlocksAction newAction:^(NSDictionary* params, NSData* body) {
+		return [@"<html><head><title>Hello, iPad</title></head><body><h1>Hello, iPad</h1>" dataUsingEncoding:NSUTF8StringEncoding];
+	}]];
 	return self;
 }
 
@@ -30,7 +38,6 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 	HTTPLogTrace();
 	if ([method isEqualToString:@"GET"]) return YES;
 	if ([method isEqualToString:@"POST"]) return YES;
-	if ([method isEqualToString:@"PUT"]) return YES;
 	
 	return NO;
 }
@@ -38,18 +45,13 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 - (BOOL)expectsRequestBodyFromMethod:(NSString *)method atPath:(NSString *)path {
 	HTTPLogTrace();
 	
-	return [method isEqualToString:@"GET"];
+	return [method isEqualToString:@"POST"];
 }
 
 - (NSObject<HTTPResponse> *)httpResponseForMethod:(NSString *)method URI:(NSString *)path {
 	HTTPLogTrace();
 	
-	[router_ dispatchFor:method path:path body:dataBody_];
-	
-	/// This is just an example.
-	NSString* hello = @"Hello";
-	
-	NSData* response = [hello dataUsingEncoding:NSUTF8StringEncoding];
+	NSData* response = [router_ dispatchFor:method path:path body:dataBody_];
 	
 	return [[HTTPDataResponse alloc] initWithData:response];
 }
@@ -57,7 +59,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 - (void)prepareForBodyWithSize:(UInt64)contentLength {
 	HTTPLogTrace();
 	
-	//TODO implement this
+	contentLength_ = contentLength;
 }
 
 - (void)processBodyData:(NSData *)postDataChunk {

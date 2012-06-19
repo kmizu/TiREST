@@ -35,21 +35,23 @@
 }
 
 - (NSData*)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body {
-	NSLog(@"httpMethod = %@, path = %@", httpMethod, path);
+	NSString* pathWithoutQuery = path;
+	NSRange found = [path rangeOfString:QUERY_DELIMITER];
+	if (found.location != NSNotFound) {
+		pathWithoutQuery = [path substringToIndex:found.location];
+	}
+	
+	NSDictionary* params = [connection_ parseGetParams];
+	
 	for (NSInteger i = 0; i < pathPatterns_.count; i++) {
 		NSString* pattern = [pathPatterns_ objectAtIndex:i];
 		Action* action = [actions_ objectAtIndex:i];
-		// TODO Temporal implementation.
-		NSDictionary* params;
-		if ([httpMethod isEqualToString:@"GET"]) {
-			params = [connection_ parseGetParams];
-		} else if ([httpMethod isEqualToString:@"POST"]) {
-			params = [connection_ parseParams:path];
-		}
-		if ([pattern hasPrefix:path]) {
+		// TODO support richer pattern
+		if ([pattern hasPrefix:pathWithoutQuery]) {
 			return [action process:params body:body];
 		}
 	}
+	return nil;
 }
 
 @end

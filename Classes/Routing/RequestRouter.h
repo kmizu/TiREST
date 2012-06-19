@@ -10,6 +10,8 @@
 #import "Action.h"
 #import "HTTPConnection.h"
 
+#define QUERY_DELIMITER (@"?")
+
 @interface RequestRouter : NSObject
 
 @property (nonatomic, weak) HTTPConnection* connection;
