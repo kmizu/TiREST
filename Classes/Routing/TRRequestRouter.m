@@ -70,4 +70,8 @@
 	return nil;
 }
 
+- (void)configure {
+	assert(NO);
+}
+
 @end

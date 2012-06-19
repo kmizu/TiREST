@@ -13,6 +13,7 @@
 #import "DDLog.h"
 #import "DDTTYLogger.h"
 #import "TRRoutableHTTPConnection.h"
+#import "TRExampleRouter.h"
 
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
@@ -39,6 +40,8 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	// This allows browsers such as Safari to automatically discover our service.
 	[httpServer_ setType:@"_http._tcp."];
 	
+	// Note that call of [TRRoutableHTTPConnection setRouterClass:(Class)klass] is needed.
+	[TRRoutableHTTPConnection setRouterClass:[TRExampleRouter class]];
 	[httpServer_ setConnectionClass:[TRRoutableHTTPConnection class]];
 	
 	[httpServer_ setPort:12345];

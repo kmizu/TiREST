@@ -18,26 +18,25 @@
 /// * Use __weak when using blocks
 
 static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
+static Class routerClass__;
 
 @implementation TRRoutableHTTPConnection
 
 @synthesize dataBody=dataBody_;
 @synthesize router=router_;
 
++ (void)setRouterClass:(Class)routerClass {
+	routerClass__ = routerClass;
+}
+
++ (Class)routerClass {
+	return routerClass__;
+}
+
 - (id)initWithAsyncSocket:(GCDAsyncSocket *)newSocket configuration:(HTTPConfig *)aConfig {
 	self = [super initWithAsyncSocket:newSocket configuration:aConfig];
-	router_ = [TRRequestRouter newRequestRouter:self];
-	
-	[router_ addRouteForGET:@"/" to:[TRBlocksAction newAction:^(TRAction* action, NSDictionary* params, NSData* body) {
-		return [action successWithText:@"<html><head><title>Hello, iPad</title></head><body><h1>Hello, iPad</h1>"];
-	}]];
-	[router_ addRouteForGET:@"/hello" to:[TRBlocksAction newAction:^(TRAction* action, NSDictionary* params, NSData* body) {
-		return [action successWithJSON:[NSDictionary
-										dictionaryWithObjectsAndKeys:@"Hello", @"message", nil]];
-	}]];
-	[router_ addRouteForGET:@"/params" to:[TRBlocksAction newAction:^(TRAction* action, NSDictionary* params, NSData* body) {
-		return [action successWithJSON:params];
-	}]];
+	router_ = (TRRequestRouter*)[[routerClass__ alloc] initWithHTTPConnection:self];
+	[router_ configure];
 	return self;
 }
 

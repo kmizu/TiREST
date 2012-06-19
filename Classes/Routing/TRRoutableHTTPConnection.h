@@ -18,4 +18,7 @@
 @property (nonatomic) NSData* dataBody;
 @property (nonatomic) TRRequestRouter* router;
 
++ (void)setRouterClass:(Class)routerClass;
++ (Class)routerClass;
+
 @end

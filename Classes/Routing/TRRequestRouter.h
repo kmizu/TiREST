@@ -18,6 +18,8 @@
 
 + (TRRequestRouter*)newRequestRouter:(HTTPConnection*)connection;
 
+- (id)initWithHTTPConnection:(HTTPConnection*)connection;
+
 - (void)addRouteForGET:(NSString*)pathPattern to:(TRAction*)action;
 
 - (void)addRouteForPOST:(NSString*)pathPattern to:(TRAction*)action;
@@ -27,5 +29,7 @@
 - (void)addRoute:(NSString*)pathPattern to:(TRAction*)action method:(NSString*)httpMethod;
 
 - (NSDictionary*)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body;
+
+- (void)configure;
 
 @end

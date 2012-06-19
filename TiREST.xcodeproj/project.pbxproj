@@ -59,6 +59,7 @@
 		2EDE0869158F23590048EC9E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
 		2EDE086B158F23600048EC9E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
 		2EE13F63159041E700409481 /* libTiREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA178B15901F1400FD31C3 /* libTiREST.a */; };
+		2EEC8C84159074C500C23FD0 /* TRExampleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,26 +140,28 @@
 		2E6D62F31586DB8700E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E6D62F51586DB8800E81A6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E6D62F71586DB8800E81A6E /* TiREST-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TiREST-Prefix.pch"; sourceTree = "<group>"; };
-		2E6D62F81586DB8800E81A6E /* TRAppDelegate.h */ = {isa = PBXFileReference; path = TRAppDelegate.h; sourceTree = "<group>"; };
+		2E6D62F81586DB8800E81A6E /* TRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAppDelegate.h; sourceTree = "<group>"; };
 		2E6D62F91586DB8800E81A6E /* TRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
-		2E6D62FB1586DB8800E81A6E /* TRViewController.h */ = {isa = PBXFileReference; path = TRViewController.h; sourceTree = "<group>"; };
+		2E6D62FB1586DB8800E81A6E /* TRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRViewController.h; sourceTree = "<group>"; };
 		2E6D62FC1586DB8800E81A6E /* TRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRViewController.m; sourceTree = "<group>"; };
 		2E6D62FF1586DB8800E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TRViewController.xib; sourceTree = "<group>"; };
 		2E6D63061586DB8800E81A6E /* TiRESTTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiRESTTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6D63071586DB8800E81A6E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2E6D630F1586DB8800E81A6E /* TiRESTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TiRESTTests-Info.plist"; sourceTree = "<group>"; };
 		2E6D63111586DB8800E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2E6D63131586DB8800E81A6E /* TRHTTPServerTests.h */ = {isa = PBXFileReference; path = TRHTTPServerTests.h; sourceTree = "<group>"; };
+		2E6D63131586DB8800E81A6E /* TRHTTPServerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRHTTPServerTests.h; sourceTree = "<group>"; };
 		2E6D63141586DB8800E81A6E /* TRHTTPServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRHTTPServerTests.m; sourceTree = "<group>"; };
 		2EBA178B15901F1400FD31C3 /* libTiREST.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTiREST.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EBB079C158F3207004F2E9B /* TRBlocksAction.h */ = {isa = PBXFileReference; fileEncoding = 4; path = TRBlocksAction.h; sourceTree = "<group>"; };
+		2EBB079C158F3207004F2E9B /* TRBlocksAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRBlocksAction.h; sourceTree = "<group>"; };
 		2EBB079D158F3207004F2E9B /* TRBlocksAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRBlocksAction.m; sourceTree = "<group>"; };
-		2EDE0858158F03420048EC9E /* TRRequestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; path = TRRequestRouter.h; sourceTree = "<group>"; };
+		2EDE0858158F03420048EC9E /* TRRequestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRequestRouter.h; sourceTree = "<group>"; };
 		2EDE0859158F03420048EC9E /* TRRequestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRequestRouter.m; sourceTree = "<group>"; };
-		2EDE085B158F04490048EC9E /* TRAction.h */ = {isa = PBXFileReference; fileEncoding = 4; path = TRAction.h; sourceTree = "<group>"; };
+		2EDE085B158F04490048EC9E /* TRAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAction.h; sourceTree = "<group>"; };
 		2EDE085C158F04490048EC9E /* TRAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAction.m; sourceTree = "<group>"; };
-		2EDE085E158F06CD0048EC9E /* TRRoutableHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; path = TRRoutableHTTPConnection.h; sourceTree = "<group>"; };
+		2EDE085E158F06CD0048EC9E /* TRRoutableHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRoutableHTTPConnection.h; sourceTree = "<group>"; };
 		2EDE085F158F06CD0048EC9E /* TRRoutableHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRoutableHTTPConnection.m; sourceTree = "<group>"; };
+		2EEC8C82159074C500C23FD0 /* TRExampleRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRExampleRouter.h; sourceTree = "<group>"; };
+		2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRExampleRouter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -425,6 +428,8 @@
 				2EBB079D158F3207004F2E9B /* TRBlocksAction.m */,
 				2EDE085E158F06CD0048EC9E /* TRRoutableHTTPConnection.h */,
 				2EDE085F158F06CD0048EC9E /* TRRoutableHTTPConnection.m */,
+				2EEC8C82159074C500C23FD0 /* TRExampleRouter.h */,
+				2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -567,6 +572,7 @@
 				2E6D62F61586DB8800E81A6E /* main.m in Sources */,
 				2E6D62FA1586DB8800E81A6E /* TRAppDelegate.m in Sources */,
 				2E6D62FD1586DB8800E81A6E /* TRViewController.m in Sources */,
+				2EEC8C84159074C500C23FD0 /* TRExampleRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
