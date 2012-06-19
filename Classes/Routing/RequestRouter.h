@@ -20,6 +20,8 @@
 
 - (void)addRoute:(NSString*)pathPattern to:(Action*)action;
 
+- (void)addRoute:(NSString*)pathPattern to:(Action*)action method:(NSString*)httpMethod;
+
 - (NSDictionary*)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body;
 
 @end

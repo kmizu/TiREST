@@ -27,7 +27,9 @@
 
 - (NSDictionary*)response:(NSUInteger)statusCode data:(NSData*)data {
 	NSNumber* wrappedCode = [NSNumber numberWithInt:statusCode];
-	NSDictionary* responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+	
+	NSDictionary* responseDictionary;
+	if (data) responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
 	return [NSDictionary dictionaryWithObjectsAndKeys:
 		wrappedCode,		@"status",
 		responseDictionary, @"response", nil];
@@ -42,8 +44,11 @@
 }
 
 - (NSDictionary*)successWithJSON:(NSDictionary*)json {
-	NSData* jsonData = [NSJSONSerialization dataWithJSONObject:json options:NSJSONWritingPrettyPrinted error:nil];
-	return [self response:200 data:jsonData];
+	if (json) {
+		NSData* jsonData = [NSJSONSerialization dataWithJSONObject:json options:NSJSONWritingPrettyPrinted error:nil];
+		return [self response:200 data:jsonData];
+	}
+	return [self response:200 data:nil];
 }
 
 - (NSDictionary*)success:(NSData*)data {

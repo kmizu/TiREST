@@ -12,6 +12,7 @@
 @implementation RequestRouter {
 	NSMutableArray* pathPatterns_;
 	NSMutableArray* actions_;
+	NSMutableArray* httpMethods_;
 	__weak HTTPConnection* connection_;
 }
 
@@ -25,13 +26,19 @@
 	self = [super init];
 	pathPatterns_ = [NSMutableArray array];
 	actions_ = [NSMutableArray array];
+	httpMethods_ = [NSMutableArray array];
 	connection_ = connection;
 	return self;
 }
 
 - (void)addRoute:(NSString *)pathPattern to:(Action *)action {
+	[self addRoute:pathPattern to:action method:@"GET"];
+}
+
+- (void)addRoute:(NSString *)pathPattern to:(Action *)action method:(NSString *)httpMethod {
 	[pathPatterns_ addObject:pathPattern];
 	[actions_ addObject:action];
+	[httpMethods_ addObject:httpMethod];
 }
 
 - (NSDictionary*)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body {
@@ -46,8 +53,9 @@
 	for (NSInteger i = 0; i < pathPatterns_.count; i++) {
 		NSString* pattern = [pathPatterns_ objectAtIndex:i];
 		Action* action = [actions_ objectAtIndex:i];
+		NSString* method = [httpMethods_ objectAtIndex:i];
 		// TODO support richer pattern
-		if ([pattern hasPrefix:pathWithoutQuery]) {
+		if ([pattern hasPrefix:pathWithoutQuery] && [httpMethod isEqualToString:method]) {
 			return [action process:params body:body];
 		}
 	}
