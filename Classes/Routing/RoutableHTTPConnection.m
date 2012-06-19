@@ -31,6 +31,9 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 		return [action successWithJSON:[NSDictionary
 										dictionaryWithObjectsAndKeys:@"Hello", @"message", nil]];
 	}]];
+	[router_ addRoute:@"/params" to:[BlocksAction newAction:^(Action* action, NSDictionary* params, NSData* body) {
+		return [action successWithJSON:params];
+	}]];
 	return self;
 }
 
