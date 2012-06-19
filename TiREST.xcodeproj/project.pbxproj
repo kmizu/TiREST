@@ -62,6 +62,8 @@
 		2EEC8C84159074C500C23FD0 /* TRExampleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */; };
 		2EEC8C881590798800C23FD0 /* TRHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */; };
 		2EEC8C891590798800C23FD0 /* TRHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C871590798800C23FD0 /* TRHTTPResponse.m */; };
+		2EEC8C8C15907EBA00C23FD0 /* TRCinatraRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C8A15907EBA00C23FD0 /* TRCinatraRouter.h */; };
+		2EEC8C8D15907EBA00C23FD0 /* TRCinatraRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C8B15907EBA00C23FD0 /* TRCinatraRouter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +168,8 @@
 		2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRExampleRouter.m; sourceTree = "<group>"; };
 		2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRHTTPResponse.h; sourceTree = "<group>"; };
 		2EEC8C871590798800C23FD0 /* TRHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHTTPResponse.m; sourceTree = "<group>"; };
+		2EEC8C8A15907EBA00C23FD0 /* TRCinatraRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCinatraRouter.h; sourceTree = "<group>"; };
+		2EEC8C8B15907EBA00C23FD0 /* TRCinatraRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCinatraRouter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -436,6 +440,8 @@
 				2EDE085F158F06CD0048EC9E /* TRRoutableHTTPConnection.m */,
 				2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */,
 				2EEC8C871590798800C23FD0 /* TRHTTPResponse.m */,
+				2EEC8C8A15907EBA00C23FD0 /* TRCinatraRouter.h */,
+				2EEC8C8B15907EBA00C23FD0 /* TRCinatraRouter.m */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -448,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EEC8C881590798800C23FD0 /* TRHTTPResponse.h in Headers */,
+				2EEC8C8C15907EBA00C23FD0 /* TRCinatraRouter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +636,7 @@
 				2EBA17B01590215D00FD31C3 /* ContextFilterLogFormatter.m in Sources */,
 				2EBA17B11590215D00FD31C3 /* DispatchQueueLogFormatter.m in Sources */,
 				2EEC8C891590798800C23FD0 /* TRHTTPResponse.m in Sources */,
+				2EEC8C8D15907EBA00C23FD0 /* TRCinatraRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
