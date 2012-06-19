@@ -15,7 +15,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
                BuildableName = "local-http-communication.app"
-               BlueprintName = "TiREST"
+               BlueprintName = "TiRESTExample"
                ReferencedContainer = "container:TiREST.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,7 +43,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
             BuildableName = "local-http-communication.app"
-            BlueprintName = "TiREST"
+            BlueprintName = "TiRESTExample"
             ReferencedContainer = "container:TiREST.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -62,7 +62,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
             BuildableName = "local-http-communication.app"
-            BlueprintName = "TiREST"
+            BlueprintName = "TiRESTExample"
             ReferencedContainer = "container:TiREST.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -80,7 +80,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
             BuildableName = "local-http-communication.app"
-            BlueprintName = "TiREST"
+            BlueprintName = "TiRESTExample"
             ReferencedContainer = "container:TiREST.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
