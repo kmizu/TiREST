@@ -18,7 +18,11 @@
 
 + (RequestRouter*)newRequestRouter:(HTTPConnection*)connection;
 
-- (void)addRoute:(NSString*)pathPattern to:(Action*)action;
+- (void)addRouteForGET:(NSString*)pathPattern to:(Action*)action;
+
+- (void)addRouteForPOST:(NSString*)pathPattern to:(Action*)action;
+
+- (void)addRouteForPUT:(NSString*)pathPattern to:(Action*)action;
 
 - (void)addRoute:(NSString*)pathPattern to:(Action*)action method:(NSString*)httpMethod;
 

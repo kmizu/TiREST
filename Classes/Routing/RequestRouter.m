@@ -31,8 +31,16 @@
 	return self;
 }
 
-- (void)addRoute:(NSString *)pathPattern to:(Action *)action {
+- (void)addRouteForGET:(NSString *)pathPattern to:(Action *)action {
 	[self addRoute:pathPattern to:action method:@"GET"];
+}
+
+- (void)addRouteForPOST:(NSString *)pathPattern to:(Action *)action {
+	[self addRoute:pathPattern to:action method:@"POST"];
+}
+
+- (void)addRouteForPUT:(NSString *)pathPattern to:(Action *)action {
+	[self addRoute:pathPattern to:action method:@"PUT"];
 }
 
 - (void)addRoute:(NSString *)pathPattern to:(Action *)action method:(NSString *)httpMethod {

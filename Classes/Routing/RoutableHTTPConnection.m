@@ -31,14 +31,14 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 	self = [super initWithAsyncSocket:newSocket configuration:aConfig];
 	router_ = [RequestRouter newRequestRouter:self];
 	
-	[router_ addRoute:@"/" to:[BlocksAction newAction:^(Action* action, NSDictionary* params, NSData* body) {
+	[router_ addRouteForGET:@"/" to:[BlocksAction newAction:^(Action* action, NSDictionary* params, NSData* body) {
 		return [action successWithText:@"<html><head><title>Hello, iPad</title></head><body><h1>Hello, iPad</h1>"];
 	}]];
-	[router_ addRoute:@"/hello" to:[BlocksAction newAction:^(Action* action, NSDictionary* params, NSData* body) {
+	[router_ addRouteForGET:@"/hello" to:[BlocksAction newAction:^(Action* action, NSDictionary* params, NSData* body) {
 		return [action successWithJSON:[NSDictionary
 										dictionaryWithObjectsAndKeys:@"Hello", @"message", nil]];
 	}]];
-	[router_ addRoute:@"/params" to:[BlocksAction newAction:^(Action* action, NSDictionary* params, NSData* body) {
+	[router_ addRouteForGET:@"/params" to:[BlocksAction newAction:^(Action* action, NSDictionary* params, NSData* body) {
 		return [action successWithJSON:params];
 	}]];
 	return self;
@@ -46,8 +46,10 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 
 - (BOOL)supportsMethod:(NSString *)method atPath:(NSString *)path {
 	HTTPLogTrace();
+	
 	if ([method isEqualToString:@"GET"]) return YES;
 	if ([method isEqualToString:@"POST"]) return YES;
+	if ([method isEqualToString:@"PUT"]) return YES;
 	
 	return NO;
 }
@@ -66,7 +68,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 	NSObject* responseObject = [response objectForKey:@"response"];
 	
 	if (statusCode.integerValue != 200) {
-		//TODO kindful error
+		// TODO kindful error
 		return nil;
 	}
 	
