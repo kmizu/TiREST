@@ -370,6 +370,8 @@
 				2E6D62F91586DB8800E81A6E /* TRAppDelegate.m */,
 				2E6D62FB1586DB8800E81A6E /* TRViewController.h */,
 				2E6D62FC1586DB8800E81A6E /* TRViewController.m */,
+				2EEC8C82159074C500C23FD0 /* TRExampleRouter.h */,
+				2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */,
 				2E6D62FE1586DB8800E81A6E /* TRViewController.xib */,
 				2E6D62F01586DB8700E81A6E /* Supporting Files */,
 			);
@@ -428,8 +430,6 @@
 				2EBB079D158F3207004F2E9B /* TRBlocksAction.m */,
 				2EDE085E158F06CD0048EC9E /* TRRoutableHTTPConnection.h */,
 				2EDE085F158F06CD0048EC9E /* TRRoutableHTTPConnection.m */,
-				2EEC8C82159074C500C23FD0 /* TRExampleRouter.h */,
-				2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
