@@ -13,9 +13,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
-               BuildableName = "TiREST.app"
-               BlueprintName = "TiRESTExample"
+               BlueprintIdentifier = "2EBA178A15901F1400FD31C3"
+               BuildableName = "libTiREST.a"
+               BlueprintName = "TiREST"
                ReferencedContainer = "container:TiREST.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,26 +27,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E6D63051586DB8800E81A6E"
-               BuildableName = "TiRESTTests.octest"
-               BlueprintName = "TiRESTTests"
-               ReferencedContainer = "container:TiREST.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
-            BuildableName = "TiREST.app"
-            BlueprintName = "TiRESTExample"
-            ReferencedContainer = "container:TiREST.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -57,15 +38,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
-            BuildableName = "TiREST.app"
-            BlueprintName = "TiRESTExample"
-            ReferencedContainer = "container:TiREST.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -75,15 +47,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
-            BuildableName = "TiREST.app"
-            BlueprintName = "TiRESTExample"
-            ReferencedContainer = "container:TiREST.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
