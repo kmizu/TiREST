@@ -6,16 +6,16 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "BlocksAction.h"
+#import "TRBlocksAction.h"
 
-@implementation BlocksAction 
+@implementation TRBlocksAction 
 
 - (ActionFunction)action {
 	return action_;
 }
 
-+ (BlocksAction*)newAction:(ActionFunction)action {
-	BlocksAction* blocksAction = [[BlocksAction alloc] initWithActionFunction:action];
++ (TRBlocksAction*)newAction:(ActionFunction)action {
+	TRBlocksAction* blocksAction = [[TRBlocksAction alloc] initWithActionFunction:action];
 	return blocksAction;
 }
 

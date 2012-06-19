@@ -9,14 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "HTTPServer.h"
 
-@class ViewController;
+@class TRViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+@interface TRAppDelegate : UIResponder <UIApplicationDelegate> {
 	HTTPServer* httpServer_;
 }
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ViewController *viewController;
+@property (strong, nonatomic) TRViewController *viewController;
 
 @end

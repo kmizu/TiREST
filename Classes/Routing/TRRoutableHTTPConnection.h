@@ -7,15 +7,15 @@
 //
 
 #import "HTTPConnection.h"
-#import "RequestRouter.h"
+#import "TRRequestRouter.h"
 
-@interface RoutableHTTPConnection : HTTPConnection {
+@interface TRRoutableHTTPConnection : HTTPConnection {
 	NSData* dataBody_;
 	NSUInteger contentLength_;
-	RequestRouter* router_;
+	TRRequestRouter* router_;
 }
 
 @property (nonatomic) NSData* dataBody;
-@property (nonatomic) RequestRouter* router;
+@property (nonatomic) TRRequestRouter* router;
 
 @end

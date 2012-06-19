@@ -6,13 +6,13 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TRViewController.h"
 
-@interface ViewController ()
+@interface TRViewController ()
 
 @end
 
-@implementation ViewController
+@implementation TRViewController
 
 - (void)viewDidLoad
 {

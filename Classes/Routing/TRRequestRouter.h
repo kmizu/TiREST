@@ -7,24 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Action.h"
+#import "TRAction.h"
 #import "HTTPConnection.h"
 
 #define QUERY_DELIMITER (@"?")
 
-@interface RequestRouter : NSObject
+@interface TRRequestRouter : NSObject
 
 @property (nonatomic, weak) HTTPConnection* connection;
 
-+ (RequestRouter*)newRequestRouter:(HTTPConnection*)connection;
++ (TRRequestRouter*)newRequestRouter:(HTTPConnection*)connection;
 
-- (void)addRouteForGET:(NSString*)pathPattern to:(Action*)action;
+- (void)addRouteForGET:(NSString*)pathPattern to:(TRAction*)action;
 
-- (void)addRouteForPOST:(NSString*)pathPattern to:(Action*)action;
+- (void)addRouteForPOST:(NSString*)pathPattern to:(TRAction*)action;
 
-- (void)addRouteForPUT:(NSString*)pathPattern to:(Action*)action;
+- (void)addRouteForPUT:(NSString*)pathPattern to:(TRAction*)action;
 
-- (void)addRoute:(NSString*)pathPattern to:(Action*)action method:(NSString*)httpMethod;
+- (void)addRoute:(NSString*)pathPattern to:(TRAction*)action method:(NSString*)httpMethod;
 
 - (NSDictionary*)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body;
 

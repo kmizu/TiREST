@@ -6,9 +6,9 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "HTTPServerTests.h"
+#import "TRHTTPServerTests.h"
 
-@implementation HTTPServerTests
+@implementation TRHTTPServerTests
 
 - (void)setUp
 {

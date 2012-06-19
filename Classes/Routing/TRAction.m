@@ -6,9 +6,9 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "Action.h"
+#import "TRAction.h"
 
-@implementation Action
+@implementation TRAction
 
 - (NSDictionary*)process:(NSDictionary*)params body:(NSData*)body {
 	assert(NO);

@@ -6,17 +6,17 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "Action.h"
+#import "TRAction.h"
 
-typedef NSDictionary* (^ActionFunction)(Action* action, NSDictionary* params, NSData* body);
+typedef NSDictionary* (^ActionFunction)(TRAction* action, NSDictionary* params, NSData* body);
 
-@interface BlocksAction : Action {
+@interface TRBlocksAction : TRAction {
 	ActionFunction action_;
 }
 
 @property (nonatomic, readonly) ActionFunction action;
 
-+ (BlocksAction*)newAction:(ActionFunction)action;
++ (TRBlocksAction*)newAction:(ActionFunction)action;
 
 - (id)initWithActionFunction:(ActionFunction)action;
 

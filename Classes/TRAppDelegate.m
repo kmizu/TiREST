@@ -6,17 +6,17 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "TRAppDelegate.h"
 
-#import "ViewController.h"
+#import "TRViewController.h"
 #import "HTTPServer.h"
 #import "DDLog.h"
 #import "DDTTYLogger.h"
-#import "RoutableHTTPConnection.h"
+#import "TRRoutableHTTPConnection.h"
 
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
-@implementation AppDelegate
+@implementation TRAppDelegate
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
@@ -25,7 +25,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-	self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+	self.viewController = [[TRViewController alloc] initWithNibName:@"ViewController" bundle:nil];
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
 	
@@ -39,7 +39,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	// This allows browsers such as Safari to automatically discover our service.
 	[httpServer_ setType:@"_http._tcp."];
 	
-	[httpServer_ setConnectionClass:[RoutableHTTPConnection class]];
+	[httpServer_ setConnectionClass:[TRRoutableHTTPConnection class]];
 	
 	[httpServer_ setPort:12345];
 	

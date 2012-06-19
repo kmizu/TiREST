@@ -6,12 +6,12 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "RoutableHTTPConnection.h"
+#import "TRRoutableHTTPConnection.h"
 #import "HTTPMessage.h"
 #import "HTTPDataResponse.h"
 #import "DDNumber.h"
 #import "HTTPLogging.h"
-#import "BlocksAction.h"
+#import "TRBlocksAction.h"
 
 /// TODO
 /// * Add appreciate prefix to all classes.  e.g. "UB"
@@ -22,23 +22,23 @@
 
 static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 
-@implementation RoutableHTTPConnection
+@implementation TRRoutableHTTPConnection
 
 @synthesize dataBody=dataBody_;
 @synthesize router=router_;
 
 - (id)initWithAsyncSocket:(GCDAsyncSocket *)newSocket configuration:(HTTPConfig *)aConfig {
 	self = [super initWithAsyncSocket:newSocket configuration:aConfig];
-	router_ = [RequestRouter newRequestRouter:self];
+	router_ = [TRRequestRouter newRequestRouter:self];
 	
-	[router_ addRouteForGET:@"/" to:[BlocksAction newAction:^(Action* action, NSDictionary* params, NSData* body) {
+	[router_ addRouteForGET:@"/" to:[TRBlocksAction newAction:^(TRAction* action, NSDictionary* params, NSData* body) {
 		return [action successWithText:@"<html><head><title>Hello, iPad</title></head><body><h1>Hello, iPad</h1>"];
 	}]];
-	[router_ addRouteForGET:@"/hello" to:[BlocksAction newAction:^(Action* action, NSDictionary* params, NSData* body) {
+	[router_ addRouteForGET:@"/hello" to:[TRBlocksAction newAction:^(TRAction* action, NSDictionary* params, NSData* body) {
 		return [action successWithJSON:[NSDictionary
 										dictionaryWithObjectsAndKeys:@"Hello", @"message", nil]];
 	}]];
-	[router_ addRouteForGET:@"/params" to:[BlocksAction newAction:^(Action* action, NSDictionary* params, NSData* body) {
+	[router_ addRouteForGET:@"/params" to:[TRBlocksAction newAction:^(TRAction* action, NSDictionary* params, NSData* body) {
 		return [action successWithJSON:params];
 	}]];
 	return self;

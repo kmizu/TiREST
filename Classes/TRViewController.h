@@ -1,13 +1,13 @@
 //
-//  ubilocal_experimentTests.h
-//  Tests
+//  ViewController.h
+//  
 //
 //  Created by Mizushima Kota on 12/06/12.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <UIKit/UIKit.h>
 
-@interface HTTPServerTests : SenTestCase
+@interface TRViewController : UIViewController
 
 @end

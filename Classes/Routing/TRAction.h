@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Action : NSObject
+@interface TRAction : NSObject
 
 
 //TODO should be enable to return a response depending on |params|
