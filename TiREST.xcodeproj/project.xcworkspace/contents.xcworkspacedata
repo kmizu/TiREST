@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:local-http-communication.xcodeproj">
+      location = "self:TiREST.xcodeproj">
    </FileRef>
 </Workspace>

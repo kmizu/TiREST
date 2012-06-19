@@ -122,22 +122,22 @@
 		2E2B9288158863C200C4EC33 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		2E2B928A158864BB00C4EC33 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2E2B928C158864FD00C4EC33 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		2E6D62E51586DB8700E81A6E /* local-http-communication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "local-http-communication.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6D62E51586DB8700E81A6E /* TiREST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiREST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6D62E91586DB8700E81A6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2E6D62EB1586DB8700E81A6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2E6D62ED1586DB8700E81A6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2E6D62F11586DB8700E81A6E /* local-http-communication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "local-http-communication-Info.plist"; sourceTree = "<group>"; };
+		2E6D62F11586DB8700E81A6E /* TiREST-Info.plist */ = {isa = PBXFileReference; path = "TiREST-Info.plist"; sourceTree = "<group>"; };
 		2E6D62F31586DB8700E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E6D62F51586DB8800E81A6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2E6D62F71586DB8800E81A6E /* local-http-communication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "local-http-communication-Prefix.pch"; sourceTree = "<group>"; };
+		2E6D62F71586DB8800E81A6E /* TiREST-Prefix.pch */ = {isa = PBXFileReference; path = "TiREST-Prefix.pch"; sourceTree = "<group>"; };
 		2E6D62F81586DB8800E81A6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2E6D62F91586DB8800E81A6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2E6D62FB1586DB8800E81A6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2E6D62FC1586DB8800E81A6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2E6D62FF1586DB8800E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		2E6D63061586DB8800E81A6E /* local-http-communicationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "local-http-communicationTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6D63061586DB8800E81A6E /* TiRESTTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiRESTTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6D63071586DB8800E81A6E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		2E6D630F1586DB8800E81A6E /* local-http-communicationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "local-http-communicationTests-Info.plist"; sourceTree = "<group>"; };
+		2E6D630F1586DB8800E81A6E /* TiRESTTests-Info.plist */ = {isa = PBXFileReference; path = "TiRESTTests-Info.plist"; sourceTree = "<group>"; };
 		2E6D63111586DB8800E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E6D63131586DB8800E81A6E /* HTTPServerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPServerTests.h; sourceTree = "<group>"; };
 		2E6D63141586DB8800E81A6E /* HTTPServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPServerTests.m; sourceTree = "<group>"; };
@@ -320,8 +320,8 @@
 		2E6D62E61586DB8700E81A6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E6D62E51586DB8700E81A6E /* local-http-communication.app */,
-				2E6D63061586DB8800E81A6E /* local-http-communicationTests.octest */,
+				2E6D62E51586DB8700E81A6E /* TiREST.app */,
+				2E6D63061586DB8800E81A6E /* TiRESTTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -356,10 +356,10 @@
 		2E6D62F01586DB8700E81A6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E6D62F11586DB8700E81A6E /* local-http-communication-Info.plist */,
+				2E6D62F11586DB8700E81A6E /* TiREST-Info.plist */,
 				2E6D62F21586DB8700E81A6E /* InfoPlist.strings */,
 				2E6D62F51586DB8800E81A6E /* main.m */,
-				2E6D62F71586DB8800E81A6E /* local-http-communication-Prefix.pch */,
+				2E6D62F71586DB8800E81A6E /* TiREST-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -377,7 +377,7 @@
 		2E6D630E1586DB8800E81A6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E6D630F1586DB8800E81A6E /* local-http-communicationTests-Info.plist */,
+				2E6D630F1586DB8800E81A6E /* TiRESTTests-Info.plist */,
 				2E6D63101586DB8800E81A6E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -412,9 +412,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2E6D62E41586DB8700E81A6E /* local-http-communication */ = {
+		2E6D62E41586DB8700E81A6E /* TiREST */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E6D63181586DB8800E81A6E /* Build configuration list for PBXNativeTarget "local-http-communication" */;
+			buildConfigurationList = 2E6D63181586DB8800E81A6E /* Build configuration list for PBXNativeTarget "TiREST" */;
 			buildPhases = (
 				2E6D62E11586DB8700E81A6E /* Sources */,
 				2E6D62E21586DB8700E81A6E /* Frameworks */,
@@ -424,14 +424,14 @@
 			);
 			dependencies = (
 			);
-			name = "local-http-communication";
+			name = TiREST;
 			productName = "local-http-communication";
-			productReference = 2E6D62E51586DB8700E81A6E /* local-http-communication.app */;
+			productReference = 2E6D62E51586DB8700E81A6E /* TiREST.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2E6D63051586DB8800E81A6E /* local-http-communicationTests */ = {
+		2E6D63051586DB8800E81A6E /* TiRESTTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E6D631B1586DB8800E81A6E /* Build configuration list for PBXNativeTarget "local-http-communicationTests" */;
+			buildConfigurationList = 2E6D631B1586DB8800E81A6E /* Build configuration list for PBXNativeTarget "TiRESTTests" */;
 			buildPhases = (
 				2E6D63011586DB8800E81A6E /* Sources */,
 				2E6D63021586DB8800E81A6E /* Frameworks */,
@@ -443,9 +443,9 @@
 			dependencies = (
 				2E6D630C1586DB8800E81A6E /* PBXTargetDependency */,
 			);
-			name = "local-http-communicationTests";
+			name = TiRESTTests;
 			productName = "local-http-communicationTests";
-			productReference = 2E6D63061586DB8800E81A6E /* local-http-communicationTests.octest */;
+			productReference = 2E6D63061586DB8800E81A6E /* TiRESTTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -456,7 +456,7 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = 2E6D62DF1586DB8700E81A6E /* Build configuration list for PBXProject "local-http-communication" */;
+			buildConfigurationList = 2E6D62DF1586DB8700E81A6E /* Build configuration list for PBXProject "TiREST" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -468,8 +468,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E6D62E41586DB8700E81A6E /* local-http-communication */,
-				2E6D63051586DB8800E81A6E /* local-http-communicationTests */,
+				2E6D62E41586DB8700E81A6E /* TiREST */,
+				2E6D63051586DB8800E81A6E /* TiRESTTests */,
 			);
 		};
 /* End PBXProject section */
@@ -567,7 +567,7 @@
 /* Begin PBXTargetDependency section */
 		2E6D630C1586DB8800E81A6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E6D62E41586DB8700E81A6E /* local-http-communication */;
+			target = 2E6D62E41586DB8700E81A6E /* TiREST */;
 			targetProxy = 2E6D630B1586DB8800E81A6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -653,10 +653,10 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Classes/local-http-communication-Prefix.pch";
-				INFOPLIST_FILE = "Classes/local-http-communication-Info.plist";
+				GCC_PREFIX_HEADER = "Classes/TiREST-Prefix.pch";
+				INFOPLIST_FILE = "Classes/TiREST-Info.plist";
 				LIBRARY_SEARCH_PATHS = "Vendor/**";
-				PRODUCT_NAME = "local-http-communication";
+				PRODUCT_NAME = TiREST;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -667,10 +667,10 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Classes/local-http-communication-Prefix.pch";
-				INFOPLIST_FILE = "Classes/local-http-communication-Info.plist";
+				GCC_PREFIX_HEADER = "Classes/TiREST-Prefix.pch";
+				INFOPLIST_FILE = "Classes/TiREST-Info.plist";
 				LIBRARY_SEARCH_PATHS = "Vendor/**";
-				PRODUCT_NAME = "local-http-communication";
+				PRODUCT_NAME = TiREST;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -685,8 +685,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/local-http-communication-Prefix.pch";
-				INFOPLIST_FILE = "Tests/local-http-communicationTests-Info.plist";
-				PRODUCT_NAME = "local-http-communicationTests";
+				INFOPLIST_FILE = "Tests/TiRESTTests-Info.plist";
+				PRODUCT_NAME = TiRESTTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -702,8 +702,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/local-http-communication-Prefix.pch";
-				INFOPLIST_FILE = "Tests/local-http-communicationTests-Info.plist";
-				PRODUCT_NAME = "local-http-communicationTests";
+				INFOPLIST_FILE = "Tests/TiRESTTests-Info.plist";
+				PRODUCT_NAME = TiRESTTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -712,7 +712,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E6D62DF1586DB8700E81A6E /* Build configuration list for PBXProject "local-http-communication" */ = {
+		2E6D62DF1586DB8700E81A6E /* Build configuration list for PBXProject "TiREST" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E6D63161586DB8800E81A6E /* Debug */,
@@ -721,7 +721,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E6D63181586DB8800E81A6E /* Build configuration list for PBXNativeTarget "local-http-communication" */ = {
+		2E6D63181586DB8800E81A6E /* Build configuration list for PBXNativeTarget "TiREST" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E6D63191586DB8800E81A6E /* Debug */,
@@ -730,7 +730,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E6D631B1586DB8800E81A6E /* Build configuration list for PBXNativeTarget "local-http-communicationTests" */ = {
+		2E6D631B1586DB8800E81A6E /* Build configuration list for PBXNativeTarget "TiRESTTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E6D631C1586DB8800E81A6E /* Debug */,

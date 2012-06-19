@@ -15,8 +15,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
                BuildableName = "local-http-communication.app"
-               BlueprintName = "local-http-communication"
-               ReferencedContainer = "container:local-http-communication.xcodeproj">
+               BlueprintName = "TiREST"
+               ReferencedContainer = "container:TiREST.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,8 +33,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2E6D63051586DB8800E81A6E"
                BuildableName = "local-http-communicationTests.octest"
-               BlueprintName = "local-http-communicationTests"
-               ReferencedContainer = "container:local-http-communication.xcodeproj">
+               BlueprintName = "TiRESTTests"
+               ReferencedContainer = "container:TiREST.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,8 +43,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
             BuildableName = "local-http-communication.app"
-            BlueprintName = "local-http-communication"
-            ReferencedContainer = "container:local-http-communication.xcodeproj">
+            BlueprintName = "TiREST"
+            ReferencedContainer = "container:TiREST.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,8 +62,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
             BuildableName = "local-http-communication.app"
-            BlueprintName = "local-http-communication"
-            ReferencedContainer = "container:local-http-communication.xcodeproj">
+            BlueprintName = "TiREST"
+            ReferencedContainer = "container:TiREST.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,8 +80,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
             BuildableName = "local-http-communication.app"
-            BlueprintName = "local-http-communication"
-            ReferencedContainer = "container:local-http-communication.xcodeproj">
+            BlueprintName = "TiREST"
+            ReferencedContainer = "container:TiREST.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
