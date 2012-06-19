@@ -14,11 +14,8 @@
 #import "TRBlocksAction.h"
 
 /// TODO
-/// * Add appreciate prefix to all classes.  e.g. "UB"
 /// * Support "/:id/checkout" form pattern.
-/// * Support PUT method.
 /// * Use __weak when using blocks
-/// * Provide better naming for addRoute:to:.
 
 static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 
