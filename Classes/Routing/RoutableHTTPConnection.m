@@ -20,16 +20,16 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 @synthesize dataBody=dataBody_;
 @synthesize router=router_;
 
-- (NSUInteger)contentLength {
-	return contentLength_;
-}
-
 - (id)initWithAsyncSocket:(GCDAsyncSocket *)newSocket configuration:(HTTPConfig *)aConfig {
 	self = [super initWithAsyncSocket:newSocket configuration:aConfig];
 	router_ = [RequestRouter newRequestRouter:self];
 	
-	[router_ addRoute:@"/" to:[BlocksAction newAction:^(NSDictionary* params, NSData* body) {
-		return [@"<html><head><title>Hello, iPad</title></head><body><h1>Hello, iPad</h1>" dataUsingEncoding:NSUTF8StringEncoding];
+	[router_ addRoute:@"/" to:[BlocksAction newAction:^(Action* action, NSDictionary* params, NSData* body) {
+		return [action successWithText:@"<html><head><title>Hello, iPad</title></head><body><h1>Hello, iPad</h1>"];
+	}]];
+	[router_ addRoute:@"/hello" to:[BlocksAction newAction:^(Action* action, NSDictionary* params, NSData* body) {
+		return [action successWithJSON:[NSDictionary
+										dictionaryWithObjectsAndKeys:@"Hello", @"message", nil]];
 	}]];
 	return self;
 }
@@ -51,9 +51,26 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN;
 - (NSObject<HTTPResponse> *)httpResponseForMethod:(NSString *)method URI:(NSString *)path {
 	HTTPLogTrace();
 	
-	NSData* response = [router_ dispatchFor:method path:path body:dataBody_];
+	NSDictionary* response = [router_ dispatchFor:method path:path body:dataBody_];
+	NSNumber* statusCode = [response objectForKey:@"status"];
+	NSObject* responseObject = [response objectForKey:@"response"];
 	
-	return [[HTTPDataResponse alloc] initWithData:response];
+	if (statusCode.integerValue != 200) {
+		//TODO kindful error
+		return nil;
+	}
+	
+	NSData* responseData;
+	if ([responseObject isKindOfClass:[NSString class]]) {
+		NSString* responseString = (NSString*)responseObject;
+		responseData = [responseString dataUsingEncoding:NSUTF8StringEncoding];
+	} else if ([responseObject isKindOfClass:[NSDictionary class]]) {
+		responseData = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
+	} else {
+		responseData = (NSData*)responseObject;
+	}
+	
+	return [[HTTPDataResponse alloc] initWithData:responseData];
 }
 
 - (void)prepareForBodyWithSize:(UInt64)contentLength {

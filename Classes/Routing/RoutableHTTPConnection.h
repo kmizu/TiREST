@@ -18,6 +18,4 @@
 @property (nonatomic) NSData* dataBody;
 @property (nonatomic) RequestRouter* router;
 
-- (NSUInteger)contentLength;
-
 @end

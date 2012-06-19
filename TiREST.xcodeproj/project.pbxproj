@@ -12,32 +12,8 @@
 		2E2B923E1588622500C4EC33 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92361588622500C4EC33 /* HTTPMessage.m */; };
 		2E2B923F1588622500C4EC33 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92391588622500C4EC33 /* HTTPServer.m */; };
 		2E2B92401588622500C4EC33 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B923B1588622500C4EC33 /* WebSocket.m */; };
-		2E2B92471588624500C4EC33 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92421588624500C4EC33 /* DDData.m */; };
-		2E2B92481588624500C4EC33 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92441588624500C4EC33 /* DDNumber.m */; };
-		2E2B92491588624500C4EC33 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92461588624500C4EC33 /* DDRange.m */; };
-		2E2B92501588626000C4EC33 /* MultipartFormDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B924B1588626000C4EC33 /* MultipartFormDataParser.m */; };
-		2E2B92511588626000C4EC33 /* MultipartMessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B924D1588626000C4EC33 /* MultipartMessageHeader.m */; };
-		2E2B92521588626000C4EC33 /* MultipartMessageHeaderField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B924F1588626000C4EC33 /* MultipartMessageHeaderField.m */; };
-		2E2B925D1588627A00C4EC33 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92541588627A00C4EC33 /* HTTPAsyncFileResponse.m */; };
-		2E2B925E1588627A00C4EC33 /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92561588627A00C4EC33 /* HTTPDataResponse.m */; };
-		2E2B925F1588627A00C4EC33 /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92581588627A00C4EC33 /* HTTPDynamicFileResponse.m */; };
-		2E2B92601588627A00C4EC33 /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B925A1588627A00C4EC33 /* HTTPFileResponse.m */; };
-		2E2B92611588627A00C4EC33 /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B925C1588627A00C4EC33 /* HTTPRedirectResponse.m */; };
-		2E2B92791588635D00C4EC33 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92701588635D00C4EC33 /* DDAbstractDatabaseLogger.m */; };
-		2E2B927A1588635D00C4EC33 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92721588635D00C4EC33 /* DDASLLogger.m */; };
-		2E2B927B1588635D00C4EC33 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92741588635D00C4EC33 /* DDFileLogger.m */; };
-		2E2B927C1588635D00C4EC33 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92761588635D00C4EC33 /* DDLog.m */; };
-		2E2B927D1588635D00C4EC33 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92781588635D00C4EC33 /* DDTTYLogger.m */; };
-		2E2B92841588639C00C4EC33 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92801588639C00C4EC33 /* ContextFilterLogFormatter.m */; };
-		2E2B92851588639C00C4EC33 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92821588639C00C4EC33 /* DispatchQueueLogFormatter.m */; };
-		2E2B9289158863C200C4EC33 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B9288158863C200C4EC33 /* GCDAsyncSocket.m */; };
 		2E2B928B158864BB00C4EC33 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
 		2E2B928E158865BA00C4EC33 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
-		2E2B929315886A3200C4EC33 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92311588622500C4EC33 /* HTTPAuthenticationRequest.m */; };
-		2E2B929515886A4000C4EC33 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92331588622500C4EC33 /* HTTPConnection.m */; };
-		2E2B929615886A4A00C4EC33 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92361588622500C4EC33 /* HTTPMessage.m */; };
-		2E2B929715886A5100C4EC33 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92391588622500C4EC33 /* HTTPServer.m */; };
-		2E2B929815886A7300C4EC33 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B923B1588622500C4EC33 /* WebSocket.m */; };
 		2E6D62EA1586DB8700E81A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62E91586DB8700E81A6E /* UIKit.framework */; };
 		2E6D62EC1586DB8700E81A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62EB1586DB8700E81A6E /* Foundation.framework */; };
 		2E6D62EE1586DB8700E81A6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62ED1586DB8700E81A6E /* CoreGraphics.framework */; };
@@ -56,12 +32,33 @@
 		2EBA179715901F5B00FD31C3 /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE085C158F04490048EC9E /* Action.m */; };
 		2EBA179815901F5E00FD31C3 /* BlocksAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBB079D158F3207004F2E9B /* BlocksAction.m */; };
 		2EBA179915901F6200FD31C3 /* RoutableHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE085F158F06CD0048EC9E /* RoutableHTTPConnection.m */; };
-		2EBB079E158F3207004F2E9B /* BlocksAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBB079D158F3207004F2E9B /* BlocksAction.m */; };
-		2EDE085A158F03420048EC9E /* RequestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE0859158F03420048EC9E /* RequestRouter.m */; };
-		2EDE085D158F04490048EC9E /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE085C158F04490048EC9E /* Action.m */; };
-		2EDE0860158F06CD0048EC9E /* RoutableHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE085F158F06CD0048EC9E /* RoutableHTTPConnection.m */; };
+		2EBA179A1590204300FD31C3 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92311588622500C4EC33 /* HTTPAuthenticationRequest.m */; };
+		2EBA179B1590204300FD31C3 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92331588622500C4EC33 /* HTTPConnection.m */; };
+		2EBA179C1590204300FD31C3 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92361588622500C4EC33 /* HTTPMessage.m */; };
+		2EBA179D1590204300FD31C3 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92391588622500C4EC33 /* HTTPServer.m */; };
+		2EBA179E1590204300FD31C3 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B923B1588622500C4EC33 /* WebSocket.m */; };
+		2EBA179F1590205800FD31C3 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92421588624500C4EC33 /* DDData.m */; };
+		2EBA17A01590205800FD31C3 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92441588624500C4EC33 /* DDNumber.m */; };
+		2EBA17A11590205800FD31C3 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92461588624500C4EC33 /* DDRange.m */; };
+		2EBA17A21590209100FD31C3 /* MultipartFormDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B924B1588626000C4EC33 /* MultipartFormDataParser.m */; };
+		2EBA17A31590209100FD31C3 /* MultipartMessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B924D1588626000C4EC33 /* MultipartMessageHeader.m */; };
+		2EBA17A41590209100FD31C3 /* MultipartMessageHeaderField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B924F1588626000C4EC33 /* MultipartMessageHeaderField.m */; };
+		2EBA17A5159020B900FD31C3 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92541588627A00C4EC33 /* HTTPAsyncFileResponse.m */; };
+		2EBA17A6159020B900FD31C3 /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92561588627A00C4EC33 /* HTTPDataResponse.m */; };
+		2EBA17A7159020B900FD31C3 /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92581588627A00C4EC33 /* HTTPDynamicFileResponse.m */; };
+		2EBA17A8159020B900FD31C3 /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B925A1588627A00C4EC33 /* HTTPFileResponse.m */; };
+		2EBA17A9159020B900FD31C3 /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B925C1588627A00C4EC33 /* HTTPRedirectResponse.m */; };
+		2EBA17AA159020FE00FD31C3 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92701588635D00C4EC33 /* DDAbstractDatabaseLogger.m */; };
+		2EBA17AB1590212600FD31C3 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92721588635D00C4EC33 /* DDASLLogger.m */; };
+		2EBA17AC1590212600FD31C3 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92741588635D00C4EC33 /* DDFileLogger.m */; };
+		2EBA17AD1590212600FD31C3 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92761588635D00C4EC33 /* DDLog.m */; };
+		2EBA17AE1590212600FD31C3 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92781588635D00C4EC33 /* DDTTYLogger.m */; };
+		2EBA17AF1590214400FD31C3 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B9288158863C200C4EC33 /* GCDAsyncSocket.m */; };
+		2EBA17B01590215D00FD31C3 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92801588639C00C4EC33 /* ContextFilterLogFormatter.m */; };
+		2EBA17B11590215D00FD31C3 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92821588639C00C4EC33 /* DispatchQueueLogFormatter.m */; };
 		2EDE0869158F23590048EC9E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
 		2EDE086B158F23600048EC9E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
+		2EE13F63159041E700409481 /* libTiREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA178B15901F1400FD31C3 /* libTiREST.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +68,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2E6D62E41586DB8700E81A6E;
 			remoteInfo = "ubilocal-experiment";
+		};
+		2EE13F60159041A000409481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E6D62DC1586DB8700E81A6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EBA178A15901F1400FD31C3;
+			remoteInfo = TiREST;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -162,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE13F63159041E700409481 /* libTiREST.a in Frameworks */,
 				2E2B928E158865BA00C4EC33 /* CFNetwork.framework in Frameworks */,
 				2E2B928B158864BB00C4EC33 /* Security.framework in Frameworks */,
 				2E6D62EA1586DB8700E81A6E /* UIKit.framework in Frameworks */,
@@ -448,6 +453,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2EE13F61159041A000409481 /* PBXTargetDependency */,
 			);
 			name = TiRESTExample;
 			productName = "local-http-communication";
@@ -561,34 +567,6 @@
 				2E6D62F61586DB8800E81A6E /* main.m in Sources */,
 				2E6D62FA1586DB8800E81A6E /* AppDelegate.m in Sources */,
 				2E6D62FD1586DB8800E81A6E /* ViewController.m in Sources */,
-				2E2B92471588624500C4EC33 /* DDData.m in Sources */,
-				2E2B92481588624500C4EC33 /* DDNumber.m in Sources */,
-				2E2B92491588624500C4EC33 /* DDRange.m in Sources */,
-				2E2B92501588626000C4EC33 /* MultipartFormDataParser.m in Sources */,
-				2E2B92511588626000C4EC33 /* MultipartMessageHeader.m in Sources */,
-				2E2B92521588626000C4EC33 /* MultipartMessageHeaderField.m in Sources */,
-				2E2B925D1588627A00C4EC33 /* HTTPAsyncFileResponse.m in Sources */,
-				2E2B925E1588627A00C4EC33 /* HTTPDataResponse.m in Sources */,
-				2E2B925F1588627A00C4EC33 /* HTTPDynamicFileResponse.m in Sources */,
-				2E2B92601588627A00C4EC33 /* HTTPFileResponse.m in Sources */,
-				2E2B92611588627A00C4EC33 /* HTTPRedirectResponse.m in Sources */,
-				2E2B92791588635D00C4EC33 /* DDAbstractDatabaseLogger.m in Sources */,
-				2E2B927A1588635D00C4EC33 /* DDASLLogger.m in Sources */,
-				2E2B927B1588635D00C4EC33 /* DDFileLogger.m in Sources */,
-				2E2B927C1588635D00C4EC33 /* DDLog.m in Sources */,
-				2E2B927D1588635D00C4EC33 /* DDTTYLogger.m in Sources */,
-				2E2B92841588639C00C4EC33 /* ContextFilterLogFormatter.m in Sources */,
-				2E2B92851588639C00C4EC33 /* DispatchQueueLogFormatter.m in Sources */,
-				2E2B9289158863C200C4EC33 /* GCDAsyncSocket.m in Sources */,
-				2E2B929315886A3200C4EC33 /* HTTPAuthenticationRequest.m in Sources */,
-				2E2B929515886A4000C4EC33 /* HTTPConnection.m in Sources */,
-				2E2B929615886A4A00C4EC33 /* HTTPMessage.m in Sources */,
-				2E2B929715886A5100C4EC33 /* HTTPServer.m in Sources */,
-				2E2B929815886A7300C4EC33 /* WebSocket.m in Sources */,
-				2EDE085A158F03420048EC9E /* RequestRouter.m in Sources */,
-				2EDE085D158F04490048EC9E /* Action.m in Sources */,
-				2EDE0860158F06CD0048EC9E /* RoutableHTTPConnection.m in Sources */,
-				2EBB079E158F3207004F2E9B /* BlocksAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +591,30 @@
 				2EBA179715901F5B00FD31C3 /* Action.m in Sources */,
 				2EBA179815901F5E00FD31C3 /* BlocksAction.m in Sources */,
 				2EBA179915901F6200FD31C3 /* RoutableHTTPConnection.m in Sources */,
+				2EBA179A1590204300FD31C3 /* HTTPAuthenticationRequest.m in Sources */,
+				2EBA179B1590204300FD31C3 /* HTTPConnection.m in Sources */,
+				2EBA179C1590204300FD31C3 /* HTTPMessage.m in Sources */,
+				2EBA179D1590204300FD31C3 /* HTTPServer.m in Sources */,
+				2EBA179E1590204300FD31C3 /* WebSocket.m in Sources */,
+				2EBA179F1590205800FD31C3 /* DDData.m in Sources */,
+				2EBA17A01590205800FD31C3 /* DDNumber.m in Sources */,
+				2EBA17A11590205800FD31C3 /* DDRange.m in Sources */,
+				2EBA17A21590209100FD31C3 /* MultipartFormDataParser.m in Sources */,
+				2EBA17A31590209100FD31C3 /* MultipartMessageHeader.m in Sources */,
+				2EBA17A41590209100FD31C3 /* MultipartMessageHeaderField.m in Sources */,
+				2EBA17A5159020B900FD31C3 /* HTTPAsyncFileResponse.m in Sources */,
+				2EBA17A6159020B900FD31C3 /* HTTPDataResponse.m in Sources */,
+				2EBA17A7159020B900FD31C3 /* HTTPDynamicFileResponse.m in Sources */,
+				2EBA17A8159020B900FD31C3 /* HTTPFileResponse.m in Sources */,
+				2EBA17A9159020B900FD31C3 /* HTTPRedirectResponse.m in Sources */,
+				2EBA17AA159020FE00FD31C3 /* DDAbstractDatabaseLogger.m in Sources */,
+				2EBA17AB1590212600FD31C3 /* DDASLLogger.m in Sources */,
+				2EBA17AC1590212600FD31C3 /* DDFileLogger.m in Sources */,
+				2EBA17AD1590212600FD31C3 /* DDLog.m in Sources */,
+				2EBA17AE1590212600FD31C3 /* DDTTYLogger.m in Sources */,
+				2EBA17AF1590214400FD31C3 /* GCDAsyncSocket.m in Sources */,
+				2EBA17B01590215D00FD31C3 /* ContextFilterLogFormatter.m in Sources */,
+				2EBA17B11590215D00FD31C3 /* DispatchQueueLogFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +625,11 @@
 			isa = PBXTargetDependency;
 			target = 2E6D62E41586DB8700E81A6E /* TiRESTExample */;
 			targetProxy = 2E6D630B1586DB8800E81A6E /* PBXContainerItemProxy */;
+		};
+		2EE13F61159041A000409481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EBA178A15901F1400FD31C3 /* TiREST */;
+			targetProxy = 2EE13F60159041A000409481 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -768,7 +775,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/TiREST.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TiREST/TiREST-Prefix.pch";
+				GCC_PREFIX_HEADER = "Classes/TiREST-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -780,7 +787,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/TiREST.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TiREST/TiREST-Prefix.pch";
+				GCC_PREFIX_HEADER = "Classes/TiREST-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -824,6 +831,7 @@
 				2EBA179515901F1400FD31C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

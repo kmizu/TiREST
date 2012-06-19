@@ -26,8 +26,8 @@
 	return self;
 }
 
-- (NSData*)process:(NSDictionary *)params body:(NSData *)body {
-	return action_(params, body);
+- (NSDictionary*)process:(NSDictionary *)params body:(NSData *)body {
+	return action_(self, params, body);
 }
 
 @end

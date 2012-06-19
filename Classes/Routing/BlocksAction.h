@@ -8,6 +8,8 @@
 
 #import "Action.h"
 
+typedef NSDictionary* (^ActionFunction)(Action* action, NSDictionary* params, NSData* body);
+
 @interface BlocksAction : Action {
 	ActionFunction action_;
 }

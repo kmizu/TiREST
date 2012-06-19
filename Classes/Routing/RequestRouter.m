@@ -34,7 +34,7 @@
 	[actions_ addObject:action];
 }
 
-- (NSData*)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body {
+- (NSDictionary*)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body {
 	NSString* pathWithoutQuery = path;
 	NSRange found = [path rangeOfString:QUERY_DELIMITER];
 	if (found.location != NSNotFound) {
