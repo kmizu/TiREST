@@ -43,7 +43,7 @@
 	
 	NSData* responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
 	NSDictionary* result = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:nil];
-	NSDictionary* expected = [NSDictionary dictionaryWithObjectsAndKeys: @"100", @"x", @"200", @"y", @"300", nil];
+	NSDictionary* expected = [NSDictionary dictionaryWithObjectsAndKeys: @"100", @"x", @"200", @"y", @"300", @"z", nil];
 	
 	STAssertEqualObjects(result, expected, @"Query paramters was not parsed correctly");
 }
