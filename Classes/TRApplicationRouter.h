@@ -9,6 +9,6 @@
 #import "TRRequestRouter.h"
 #import "TRCinatraRouter.h"
 
-@interface TRExampleRouter : TRCinatraRouter
+@interface TRApplicationRouter : TRCinatraRouter
 
 @end

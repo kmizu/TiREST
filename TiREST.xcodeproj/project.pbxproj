@@ -64,7 +64,7 @@
 		2ECAEB3C1591A652004241B5 /* TRSimplePOSTTestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB3B1591A652004241B5 /* TRSimplePOSTTestRouter.m */; };
 		2ECAEB3F1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB3E1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m */; };
 		2EE13F63159041E700409481 /* libTiREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA178B15901F1400FD31C3 /* libTiREST.a */; };
-		2EEC8C84159074C500C23FD0 /* TRExampleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */; };
+		2EEC8C84159074C500C23FD0 /* TRApplicationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C83159074C500C23FD0 /* TRApplicationRouter.m */; };
 		2EEC8C881590798800C23FD0 /* TRHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EEC8C891590798800C23FD0 /* TRHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C871590798800C23FD0 /* TRHTTPResponse.m */; };
 		2EEC8C8C15907EBA00C23FD0 /* TRCinatraRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C8A15907EBA00C23FD0 /* TRCinatraRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -180,8 +180,8 @@
 		2EDE085C158F04490048EC9E /* TRAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAction.m; sourceTree = "<group>"; };
 		2EDE085E158F06CD0048EC9E /* TRRoutableHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRoutableHTTPConnection.h; sourceTree = "<group>"; };
 		2EDE085F158F06CD0048EC9E /* TRRoutableHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRoutableHTTPConnection.m; sourceTree = "<group>"; };
-		2EEC8C82159074C500C23FD0 /* TRExampleRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRExampleRouter.h; sourceTree = "<group>"; };
-		2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRExampleRouter.m; sourceTree = "<group>"; };
+		2EEC8C82159074C500C23FD0 /* TRApplicationRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRApplicationRouter.h; sourceTree = "<group>"; };
+		2EEC8C83159074C500C23FD0 /* TRApplicationRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRApplicationRouter.m; sourceTree = "<group>"; };
 		2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRHTTPResponse.h; sourceTree = "<group>"; };
 		2EEC8C871590798800C23FD0 /* TRHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHTTPResponse.m; sourceTree = "<group>"; };
 		2EEC8C8A15907EBA00C23FD0 /* TRCinatraRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCinatraRouter.h; sourceTree = "<group>"; };
@@ -395,8 +395,8 @@
 				2E6D62F91586DB8800E81A6E /* TRAppDelegate.m */,
 				2E6D62FB1586DB8800E81A6E /* TRViewController.h */,
 				2E6D62FC1586DB8800E81A6E /* TRViewController.m */,
-				2EEC8C82159074C500C23FD0 /* TRExampleRouter.h */,
-				2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */,
+				2EEC8C82159074C500C23FD0 /* TRApplicationRouter.h */,
+				2EEC8C83159074C500C23FD0 /* TRApplicationRouter.m */,
 				2E6D62FE1586DB8800E81A6E /* TRViewController.xib */,
 				2E6D62F01586DB8700E81A6E /* Supporting Files */,
 			);
@@ -618,7 +618,7 @@
 				2E6D62F61586DB8800E81A6E /* main.m in Sources */,
 				2E6D62FA1586DB8800E81A6E /* TRAppDelegate.m in Sources */,
 				2E6D62FD1586DB8800E81A6E /* TRViewController.m in Sources */,
-				2EEC8C84159074C500C23FD0 /* TRExampleRouter.m in Sources */,
+				2EEC8C84159074C500C23FD0 /* TRApplicationRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

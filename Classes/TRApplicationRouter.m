@@ -6,10 +6,10 @@
 //
 //
 
-#import "TRExampleRouter.h"
+#import "TRApplicationRouter.h"
 #import "TRBlocksAction.h"
 
-@implementation TRExampleRouter
+@implementation TRApplicationRouter
 
 - (void)configure {
 	[self get:@"/" on:^(TRAction* action, NSDictionary* params, NSData* body) {

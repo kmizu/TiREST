@@ -13,7 +13,7 @@
 #import "DDLog.h"
 #import "DDTTYLogger.h"
 #import "TRRoutableHTTPConnection.h"
-#import "TRExampleRouter.h"
+#import "TRApplicationRouter.h"
 #import "TiREST.h"
 
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
@@ -33,7 +33,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
 	
-	server_ = [TRTiRESTServer newServer:12345 routerClass:[TRExampleRouter class]];
+	server_ = [TRTiRESTServer newServer:12345 routerClass:[TRApplicationRouter class]];
 	
 	NSError* error = nil;
 	if(![server_ start:&error]) {
