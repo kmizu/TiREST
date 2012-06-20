@@ -36,6 +36,11 @@
                BlueprintName = "TiRESTFunctionalTests"
                ReferencedContainer = "container:TiREST.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "TiRESTFunctionalTestsBase">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

@@ -86,11 +86,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Tests/TiRESTFunctionalTests.m"
-         timestampString = "361861795.714495"
+         timestampString = "361862863.867997"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "18"
-         endingLineNumber = "18"
+         startingLineNumber = "20"
+         endingLineNumber = "20"
          landmarkName = "-setUp"
          landmarkType = "5">
       </FileBreakpoint>

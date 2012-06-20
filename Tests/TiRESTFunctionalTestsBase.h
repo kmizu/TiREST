@@ -7,7 +7,10 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "TiREST.h"
 
-@interface TiRESTFunctionalTests : SenTestCase
+@interface TiRESTFunctionalTestsBase : SenTestCase
+
+@property (nonatomic) TRTiRESTServer* server;
 
 @end
