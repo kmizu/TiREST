@@ -15,7 +15,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
                BuildableName = "TiREST.app"
-               BlueprintName = "TiRESTExample"
+               BlueprintName = "TiRESTApplication"
                ReferencedContainer = "container:TiREST.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -31,9 +31,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E6D63051586DB8800E81A6E"
-               BuildableName = "TiRESTTests.octest"
-               BlueprintName = "TiRESTTests"
+               BlueprintIdentifier = "2ECAEB1315917AEE004241B5"
+               BuildableName = "TiRESTFunctionalTests.octest"
+               BlueprintName = "TiRESTFunctionalTests"
                ReferencedContainer = "container:TiREST.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,7 +43,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
             BuildableName = "TiREST.app"
-            BlueprintName = "TiRESTExample"
+            BlueprintName = "TiRESTApplication"
             ReferencedContainer = "container:TiREST.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -62,7 +62,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
             BuildableName = "TiREST.app"
-            BlueprintName = "TiRESTExample"
+            BlueprintName = "TiRESTApplication"
             ReferencedContainer = "container:TiREST.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -80,7 +80,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E6D62E41586DB8700E81A6E"
             BuildableName = "TiREST.app"
-            BlueprintName = "TiRESTExample"
+            BlueprintName = "TiRESTApplication"
             ReferencedContainer = "container:TiREST.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
