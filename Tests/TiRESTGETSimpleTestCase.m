@@ -19,7 +19,7 @@
 	NSData* responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
 	NSString* top = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
 	
-	STAssertEqualObjects(top, @"<html><head><title>Hello, iPad</title></head><body><h1>Hello, iPad</h1>", @"Unexpected HTML");
+	STAssertEqualObjects(top, @"<html><head><title>Hello, TiREST</title></head><body><h1>Hello, TiREST</h1>", @"Unexpected HTML");
 }
 
 - (void)testGETRequestToJSON {

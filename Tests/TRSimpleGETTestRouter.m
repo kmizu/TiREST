@@ -12,7 +12,7 @@
 
 - (void)configure {
 	[self get:@"/" on:^(TRAction* action, NSDictionary* params, NSData* body) {
-		return [action successWithText:@"<html><head><title>Hello, iPad</title></head><body><h1>Hello, iPad</h1>"];
+		return [action successWithText:@"<html><head><title>Hello, TiREST</title></head><body><h1>Hello, TiREST</h1>"];
 	}];
 	[self get:@"/json_hello" on:^(TRAction* action, NSDictionary* params, NSData* body) {
 		return [action successWithJSON:[NSDictionary
