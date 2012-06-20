@@ -14,4 +14,6 @@
 
 @property (nonatomic) TRTiRESTServer* server;
 
+- (Class)routerClass;
+
 @end

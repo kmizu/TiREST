@@ -7,8 +7,13 @@
 //
 
 #import "TiRESTGETSimpleTestCase.h"
+#import "TRSimpleGETTestRouter.h"
 
 @implementation TiRESTGETSimpleTestCase
+
+- (Class)routerClass {
+	return [TRSimpleGETTestRouter class];
+}
 
 - (void)testGETRequestToRoot {
 	NSURL* url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/", TEST_ENDPOINT]];

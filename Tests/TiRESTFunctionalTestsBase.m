@@ -18,9 +18,13 @@
 
 - (void)setUp {
     [super setUp];
-	server_ = [TRTiRESTServer newServer:12345 routerClass:[TRSimpleGETTestRouter class]];
+	server_ = [TRTiRESTServer newServer:12345 routerClass:self.routerClass];
 	
 	[server_ start:nil];
+}
+
+- (Class)routerClass {
+	assert(NO);
 }
 
 - (void)tearDown {

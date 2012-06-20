@@ -62,6 +62,7 @@
 		2ECAEB3615919093004241B5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
 		2ECAEB3915919636004241B5 /* TiRESTGETSimpleTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB3815919636004241B5 /* TiRESTGETSimpleTestCase.m */; };
 		2ECAEB3C1591A652004241B5 /* TRSimplePOSTTestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB3B1591A652004241B5 /* TRSimplePOSTTestRouter.m */; };
+		2ECAEB3F1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB3E1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m */; };
 		2EE13F63159041E700409481 /* libTiREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA178B15901F1400FD31C3 /* libTiREST.a */; };
 		2EEC8C84159074C500C23FD0 /* TRExampleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */; };
 		2EEC8C881590798800C23FD0 /* TRHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -171,6 +172,8 @@
 		2ECAEB3815919636004241B5 /* TiRESTGETSimpleTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiRESTGETSimpleTestCase.m; sourceTree = "<group>"; };
 		2ECAEB3A1591A652004241B5 /* TRSimplePOSTTestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSimplePOSTTestRouter.h; sourceTree = "<group>"; };
 		2ECAEB3B1591A652004241B5 /* TRSimplePOSTTestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSimplePOSTTestRouter.m; sourceTree = "<group>"; };
+		2ECAEB3D1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiRESTPOSTSimpleTestCase.h; sourceTree = "<group>"; };
+		2ECAEB3E1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiRESTPOSTSimpleTestCase.m; sourceTree = "<group>"; };
 		2EDE0858158F03420048EC9E /* TRRequestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRequestRouter.h; sourceTree = "<group>"; };
 		2EDE0859158F03420048EC9E /* TRRequestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRequestRouter.m; sourceTree = "<group>"; };
 		2EDE085B158F04490048EC9E /* TRAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAction.h; sourceTree = "<group>"; };
@@ -422,6 +425,8 @@
 				2ECAEB1F15917AEE004241B5 /* TiRESTFunctionalTestsBase.m */,
 				2ECAEB3715919636004241B5 /* TiRESTGETSimpleTestCase.h */,
 				2ECAEB3815919636004241B5 /* TiRESTGETSimpleTestCase.m */,
+				2ECAEB3D1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.h */,
+				2ECAEB3E1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m */,
 				2ECAEB1915917AEE004241B5 /* Supporting Files */,
 			);
 			path = Tests;
@@ -663,6 +668,7 @@
 				2ECAEB3315918FDF004241B5 /* TRSimpleGETTestRouter.m in Sources */,
 				2ECAEB3915919636004241B5 /* TiRESTGETSimpleTestCase.m in Sources */,
 				2ECAEB3C1591A652004241B5 /* TRSimplePOSTTestRouter.m in Sources */,
+				2ECAEB3F1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,6 +763,10 @@
 				GCC_PREFIX_HEADER = "Classes/TiREST-Prefix.pch";
 				INFOPLIST_FILE = "Classes/TiREST-Info.plist";
 				LIBRARY_SEARCH_PATHS = "Vendor/**";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = TiREST;
 				WRAPPER_EXTENSION = app;
 			};
@@ -771,6 +781,10 @@
 				GCC_PREFIX_HEADER = "Classes/TiREST-Prefix.pch";
 				INFOPLIST_FILE = "Classes/TiREST-Info.plist";
 				LIBRARY_SEARCH_PATHS = "Vendor/**";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = TiREST;
 				WRAPPER_EXTENSION = app;
 			};
@@ -782,7 +796,10 @@
 				DSTROOT = /tmp/TiREST.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/TiREST-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -794,7 +811,10 @@
 				DSTROOT = /tmp/TiREST.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/TiREST-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -813,6 +833,10 @@
 				GCC_PREFIX_HEADER = "Tests/Supporting Files/TiRESTFunctionalTests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Supporting Files/TiRESTFunctionalTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -831,6 +855,10 @@
 				GCC_PREFIX_HEADER = "Tests/Supporting Files/TiRESTFunctionalTests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Supporting Files/TiRESTFunctionalTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
