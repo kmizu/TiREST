@@ -29,7 +29,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-	self.viewController = [[TRViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+	self.viewController = [[TRViewController alloc] initWithNibName:@"TRViewController" bundle:nil];
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
 	
