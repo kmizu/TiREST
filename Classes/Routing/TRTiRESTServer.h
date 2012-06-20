@@ -19,7 +19,7 @@
 
 - (id)init:(NSUInteger)port routerClass:(Class)routerClass;
 
-- (void)start:(NSError *__autoreleasing *)error;
+- (BOOL)start:(NSError *__autoreleasing *)error;
 
 - (void)stop;
 	

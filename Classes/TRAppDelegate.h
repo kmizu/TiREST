@@ -11,9 +11,7 @@
 
 @class TRViewController;
 
-@interface TRAppDelegate : UIResponder <UIApplicationDelegate> {
-	HTTPServer* httpServer_;
-}
+@interface TRAppDelegate : UIResponder <UIApplicationDelegate> 
 
 @property (strong, nonatomic) UIWindow *window;
 

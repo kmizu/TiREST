@@ -40,8 +40,8 @@
 	return [self init:port useBonjour:YES documentRoot:@"Web" routerClass:routerClass];
 }
 
-- (void)start:(NSError *__autoreleasing *)error {
-	[httpServer_ start:error];
+- (BOOL)start:(NSError *__autoreleasing *)error {
+	return [httpServer_ start:error];
 }
 
 - (void)stop {
