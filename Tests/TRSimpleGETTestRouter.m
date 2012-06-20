@@ -6,9 +6,9 @@
 //
 //
 
-#import "TRSimpleTestRouter.h"
+#import "TRSimpleGETTestRouter.h"
 
-@implementation TRSimpleTestRouter
+@implementation TRSimpleGETTestRouter
 
 - (void)configure {
 	[self get:@"/" on:^(TRAction* action, NSDictionary* params, NSData* body) {

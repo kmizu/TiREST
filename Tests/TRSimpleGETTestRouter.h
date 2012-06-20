@@ -8,6 +8,6 @@
 
 #import "TiREST.h"
 
-@interface TRSimpleTestRouter : TRCinatraRouter
+@interface TRSimpleGETTestRouter : TRCinatraRouter
 
 @end

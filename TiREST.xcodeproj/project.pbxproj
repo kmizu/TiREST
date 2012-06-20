@@ -56,7 +56,7 @@
 		2ECAEB2E15918CF7004241B5 /* TRRoutableHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDE085E158F06CD0048EC9E /* TRRoutableHTTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2ECAEB2F15918D13004241B5 /* TRTiRESTServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ECAEB2915917F51004241B5 /* TRTiRESTServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2ECAEB3015918F1C004241B5 /* TRTiRESTServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB2A15917F51004241B5 /* TRTiRESTServer.m */; };
-		2ECAEB3315918FDF004241B5 /* TRSimpleTestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB3215918FDF004241B5 /* TRSimpleTestRouter.m */; };
+		2ECAEB3315918FDF004241B5 /* TRSimpleGETTestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB3215918FDF004241B5 /* TRSimpleGETTestRouter.m */; };
 		2ECAEB3415919065004241B5 /* libTiREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA178B15901F1400FD31C3 /* libTiREST.a */; };
 		2ECAEB3515919083004241B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
 		2ECAEB3615919093004241B5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
@@ -164,8 +164,8 @@
 		2ECAEB2715917D56004241B5 /* TiREST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiREST.h; sourceTree = "<group>"; };
 		2ECAEB2915917F51004241B5 /* TRTiRESTServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTiRESTServer.h; sourceTree = "<group>"; };
 		2ECAEB2A15917F51004241B5 /* TRTiRESTServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTiRESTServer.m; sourceTree = "<group>"; };
-		2ECAEB3115918FDF004241B5 /* TRSimpleTestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSimpleTestRouter.h; sourceTree = "<group>"; };
-		2ECAEB3215918FDF004241B5 /* TRSimpleTestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSimpleTestRouter.m; sourceTree = "<group>"; };
+		2ECAEB3115918FDF004241B5 /* TRSimpleGETTestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSimpleGETTestRouter.h; sourceTree = "<group>"; };
+		2ECAEB3215918FDF004241B5 /* TRSimpleGETTestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSimpleGETTestRouter.m; sourceTree = "<group>"; };
 		2ECAEB3715919636004241B5 /* TiRESTGETSimpleTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; path = TiRESTGETSimpleTestCase.h; sourceTree = "<group>"; };
 		2ECAEB3815919636004241B5 /* TiRESTGETSimpleTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiRESTGETSimpleTestCase.m; sourceTree = "<group>"; };
 		2EDE0858158F03420048EC9E /* TRRequestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRequestRouter.h; sourceTree = "<group>"; };
@@ -411,8 +411,8 @@
 		2E6D630D1586DB8800E81A6E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2ECAEB3115918FDF004241B5 /* TRSimpleTestRouter.h */,
-				2ECAEB3215918FDF004241B5 /* TRSimpleTestRouter.m */,
+				2ECAEB3115918FDF004241B5 /* TRSimpleGETTestRouter.h */,
+				2ECAEB3215918FDF004241B5 /* TRSimpleGETTestRouter.m */,
 				2ECAEB1E15917AEE004241B5 /* TiRESTFunctionalTestsBase.h */,
 				2ECAEB1F15917AEE004241B5 /* TiRESTFunctionalTestsBase.m */,
 				2ECAEB3715919636004241B5 /* TiRESTGETSimpleTestCase.h */,
@@ -655,7 +655,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ECAEB2015917AEE004241B5 /* TiRESTFunctionalTestsBase.m in Sources */,
-				2ECAEB3315918FDF004241B5 /* TRSimpleTestRouter.m in Sources */,
+				2ECAEB3315918FDF004241B5 /* TRSimpleGETTestRouter.m in Sources */,
 				2ECAEB3915919636004241B5 /* TiRESTGETSimpleTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

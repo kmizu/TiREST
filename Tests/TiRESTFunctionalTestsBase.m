@@ -8,7 +8,7 @@
 
 #import "TiRESTFunctionalTestsBase.h"
 #import "TiREST.h"
-#import "TRSimpleTestRouter.h"
+#import "TRSimpleGETTestRouter.h"
 
 @implementation TiRESTFunctionalTestsBase {
 	TRTiRESTServer* server_;
@@ -18,7 +18,7 @@
 
 - (void)setUp {
     [super setUp];
-	server_ = [TRTiRESTServer newServer:12345 routerClass:[TRSimpleTestRouter class]];
+	server_ = [TRTiRESTServer newServer:12345 routerClass:[TRSimpleGETTestRouter class]];
 	
 	[server_ start:nil];
 }
