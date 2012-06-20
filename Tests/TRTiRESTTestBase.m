@@ -6,9 +6,9 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "TRHTTPServerTests.h"
+#import "TRTiRESTTestBase.h"
 
-@implementation TRHTTPServerTests
+@implementation TRTiRESTTestBase
 
 - (void)setUp
 {

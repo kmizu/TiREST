@@ -21,7 +21,7 @@
 		2E6D63091586DB8800E81A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62E91586DB8700E81A6E /* UIKit.framework */; };
 		2E6D630A1586DB8800E81A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62EB1586DB8700E81A6E /* Foundation.framework */; };
 		2E6D63121586DB8800E81A6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E6D63101586DB8800E81A6E /* InfoPlist.strings */; };
-		2E6D63151586DB8800E81A6E /* TRHTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D63141586DB8800E81A6E /* TRHTTPServerTests.m */; };
+		2E6D63151586DB8800E81A6E /* TRTiRESTTestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D63141586DB8800E81A6E /* TRTiRESTTestBase.m */; };
 		2EBA178C15901F1400FD31C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62EB1586DB8700E81A6E /* Foundation.framework */; };
 		2EBA179615901F5700FD31C3 /* TRRequestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE0859158F03420048EC9E /* TRRequestRouter.m */; };
 		2EBA179715901F5B00FD31C3 /* TRAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE085C158F04490048EC9E /* TRAction.m */; };
@@ -62,13 +62,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2E6D630B1586DB8800E81A6E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2E6D62DC1586DB8700E81A6E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2E6D62E41586DB8700E81A6E;
-			remoteInfo = "ubilocal-experiment";
-		};
 		2EE13F60159041A000409481 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2E6D62DC1586DB8700E81A6E /* Project object */;
@@ -148,8 +141,8 @@
 		2E6D63071586DB8800E81A6E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2E6D630F1586DB8800E81A6E /* TiRESTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TiRESTTests-Info.plist"; sourceTree = "<group>"; };
 		2E6D63111586DB8800E81A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2E6D63131586DB8800E81A6E /* TRHTTPServerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRHTTPServerTests.h; sourceTree = "<group>"; };
-		2E6D63141586DB8800E81A6E /* TRHTTPServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRHTTPServerTests.m; sourceTree = "<group>"; };
+		2E6D63131586DB8800E81A6E /* TRTiRESTTestBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRTiRESTTestBase.h; sourceTree = "<group>"; };
+		2E6D63141586DB8800E81A6E /* TRTiRESTTestBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTiRESTTestBase.m; sourceTree = "<group>"; };
 		2EBA178B15901F1400FD31C3 /* libTiREST.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTiREST.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBB079C158F3207004F2E9B /* TRBlocksAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRBlocksAction.h; sourceTree = "<group>"; };
 		2EBB079D158F3207004F2E9B /* TRBlocksAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRBlocksAction.m; sourceTree = "<group>"; };
@@ -395,8 +388,8 @@
 		2E6D630D1586DB8800E81A6E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2E6D63131586DB8800E81A6E /* TRHTTPServerTests.h */,
-				2E6D63141586DB8800E81A6E /* TRHTTPServerTests.m */,
+				2E6D63131586DB8800E81A6E /* TRTiRESTTestBase.h */,
+				2E6D63141586DB8800E81A6E /* TRTiRESTTestBase.m */,
 				2E6D630E1586DB8800E81A6E /* Supporting Files */,
 			);
 			path = Tests;
@@ -486,7 +479,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				2E6D630C1586DB8800E81A6E /* PBXTargetDependency */,
 			);
 			name = TiRESTTests;
 			productName = "local-http-communicationTests";
@@ -589,7 +581,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E6D63151586DB8800E81A6E /* TRHTTPServerTests.m in Sources */,
+				2E6D63151586DB8800E81A6E /* TRTiRESTTestBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,11 +625,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2E6D630C1586DB8800E81A6E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2E6D62E41586DB8700E81A6E /* TiRESTExample */;
-			targetProxy = 2E6D630B1586DB8800E81A6E /* PBXContainerItemProxy */;
-		};
 		2EE13F61159041A000409481 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2EBA178A15901F1400FD31C3 /* TiREST */;

@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface TRHTTPServerTests : SenTestCase
+@interface TRTiRESTTestBase : SenTestCase
 
 @end
