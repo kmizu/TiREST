@@ -14,7 +14,7 @@
 	[self get:@"/" on:^(TRAction* action, NSDictionary* params, NSData* body) {
 		return [action successWithText:@"<html><head><title>Hello, iPad</title></head><body><h1>Hello, iPad</h1>"];
 	}];
-	[self get:@"/hello" on:^(TRAction* action, NSDictionary* params, NSData* body) {
+	[self get:@"/json_hello" on:^(TRAction* action, NSDictionary* params, NSData* body) {
 		return [action successWithJSON:[NSDictionary
 										dictionaryWithObjectsAndKeys:@"Hello", @"message", nil]];
 	}];

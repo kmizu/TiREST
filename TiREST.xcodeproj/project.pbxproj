@@ -60,7 +60,7 @@
 		2ECAEB3415919065004241B5 /* libTiREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA178B15901F1400FD31C3 /* libTiREST.a */; };
 		2ECAEB3515919083004241B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
 		2ECAEB3615919093004241B5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
-		2ECAEB3915919636004241B5 /* TiRESTSimpleTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB3815919636004241B5 /* TiRESTSimpleTestCase.m */; };
+		2ECAEB3915919636004241B5 /* TiRESTGETSimpleTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB3815919636004241B5 /* TiRESTGETSimpleTestCase.m */; };
 		2EE13F63159041E700409481 /* libTiREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA178B15901F1400FD31C3 /* libTiREST.a */; };
 		2EEC8C84159074C500C23FD0 /* TRExampleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */; };
 		2EEC8C881590798800C23FD0 /* TRHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -166,8 +166,8 @@
 		2ECAEB2A15917F51004241B5 /* TRTiRESTServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTiRESTServer.m; sourceTree = "<group>"; };
 		2ECAEB3115918FDF004241B5 /* TRSimpleTestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSimpleTestRouter.h; sourceTree = "<group>"; };
 		2ECAEB3215918FDF004241B5 /* TRSimpleTestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSimpleTestRouter.m; sourceTree = "<group>"; };
-		2ECAEB3715919636004241B5 /* TiRESTSimpleTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiRESTSimpleTestCase.h; sourceTree = "<group>"; };
-		2ECAEB3815919636004241B5 /* TiRESTSimpleTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiRESTSimpleTestCase.m; sourceTree = "<group>"; };
+		2ECAEB3715919636004241B5 /* TiRESTGETSimpleTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; path = TiRESTGETSimpleTestCase.h; sourceTree = "<group>"; };
+		2ECAEB3815919636004241B5 /* TiRESTGETSimpleTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiRESTGETSimpleTestCase.m; sourceTree = "<group>"; };
 		2EDE0858158F03420048EC9E /* TRRequestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRequestRouter.h; sourceTree = "<group>"; };
 		2EDE0859158F03420048EC9E /* TRRequestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRequestRouter.m; sourceTree = "<group>"; };
 		2EDE085B158F04490048EC9E /* TRAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAction.h; sourceTree = "<group>"; };
@@ -415,8 +415,8 @@
 				2ECAEB3215918FDF004241B5 /* TRSimpleTestRouter.m */,
 				2ECAEB1E15917AEE004241B5 /* TiRESTFunctionalTestsBase.h */,
 				2ECAEB1F15917AEE004241B5 /* TiRESTFunctionalTestsBase.m */,
-				2ECAEB3715919636004241B5 /* TiRESTSimpleTestCase.h */,
-				2ECAEB3815919636004241B5 /* TiRESTSimpleTestCase.m */,
+				2ECAEB3715919636004241B5 /* TiRESTGETSimpleTestCase.h */,
+				2ECAEB3815919636004241B5 /* TiRESTGETSimpleTestCase.m */,
 				2ECAEB1915917AEE004241B5 /* Supporting Files */,
 			);
 			path = Tests;
@@ -656,7 +656,7 @@
 			files = (
 				2ECAEB2015917AEE004241B5 /* TiRESTFunctionalTestsBase.m in Sources */,
 				2ECAEB3315918FDF004241B5 /* TRSimpleTestRouter.m in Sources */,
-				2ECAEB3915919636004241B5 /* TiRESTSimpleTestCase.m in Sources */,
+				2ECAEB3915919636004241B5 /* TiRESTGETSimpleTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
