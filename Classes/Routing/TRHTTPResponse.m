@@ -13,14 +13,14 @@
 	NSDictionary* httpHeaders_;
 }
 
-- (id)initWithData:(NSData *)data status:(NSInteger)status {
-	self = [self initWithData:data status:status httpHeaders:nil];
+- (id)initWithData:(NSData *)dataParam status:(NSInteger)status {
+	self = [self initWithData:dataParam status:status httpHeaders:nil];
 	
 	return self;
 }
 
-- (id)initWithData:(NSData *)data status:(NSInteger)status httpHeaders:(NSDictionary*)httpHeaders {
-	self = [super initWithData:data];
+- (id)initWithData:(NSData *)dataParam status:(NSInteger)status httpHeaders:(NSDictionary*)httpHeaders {
+	self = [super initWithData:dataParam];
 	status_ = status;
 	httpHeaders_ = httpHeaders;
 	

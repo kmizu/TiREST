@@ -12,3 +12,4 @@
 #import "TRRoutableHTTPConnection.h"
 #import "TRHTTPResponse.h"
 #import "TRCinatraRouter.h"
+#import "TRTiRESTServer.h"

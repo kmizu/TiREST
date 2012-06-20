@@ -49,15 +49,22 @@
 		2ECAEB1515917AEE004241B5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D63071586DB8800E81A6E /* SenTestingKit.framework */; };
 		2ECAEB1615917AEE004241B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62E91586DB8700E81A6E /* UIKit.framework */; };
 		2ECAEB1715917AEE004241B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62EB1586DB8700E81A6E /* Foundation.framework */; };
-		2ECAEB1D15917AEE004241B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ECAEB1B15917AEE004241B5 /* InfoPlist.strings */; };
 		2ECAEB2015917AEE004241B5 /* TiRESTFunctionalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB1F15917AEE004241B5 /* TiRESTFunctionalTests.m */; };
 		2ECAEB2815917DAC004241B5 /* TiREST.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ECAEB2715917D56004241B5 /* TiREST.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2ECAEB2B15917F51004241B5 /* TiRESTServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB2A15917F51004241B5 /* TiRESTServer.m */; };
+		2ECAEB2C15918CEC004241B5 /* TRAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDE085B158F04490048EC9E /* TRAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ECAEB2D15918CF1004241B5 /* TRBlocksAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EBB079C158F3207004F2E9B /* TRBlocksAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ECAEB2E15918CF7004241B5 /* TRRoutableHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDE085E158F06CD0048EC9E /* TRRoutableHTTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ECAEB2F15918D13004241B5 /* TRTiRESTServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ECAEB2915917F51004241B5 /* TRTiRESTServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ECAEB3015918F1C004241B5 /* TRTiRESTServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB2A15917F51004241B5 /* TRTiRESTServer.m */; };
+		2ECAEB3315918FDF004241B5 /* TRSimpleTestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB3215918FDF004241B5 /* TRSimpleTestRouter.m */; };
+		2ECAEB3415919065004241B5 /* libTiREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA178B15901F1400FD31C3 /* libTiREST.a */; };
+		2ECAEB3515919083004241B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
+		2ECAEB3615919093004241B5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
 		2EE13F63159041E700409481 /* libTiREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA178B15901F1400FD31C3 /* libTiREST.a */; };
 		2EEC8C84159074C500C23FD0 /* TRExampleRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C83159074C500C23FD0 /* TRExampleRouter.m */; };
-		2EEC8C881590798800C23FD0 /* TRHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */; };
+		2EEC8C881590798800C23FD0 /* TRHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EEC8C891590798800C23FD0 /* TRHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C871590798800C23FD0 /* TRHTTPResponse.m */; };
-		2EEC8C8C15907EBA00C23FD0 /* TRCinatraRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C8A15907EBA00C23FD0 /* TRCinatraRouter.h */; };
+		2EEC8C8C15907EBA00C23FD0 /* TRCinatraRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C8A15907EBA00C23FD0 /* TRCinatraRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EEC8C8D15907EBA00C23FD0 /* TRCinatraRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C8B15907EBA00C23FD0 /* TRCinatraRouter.m */; };
 /* End PBXBuildFile section */
 
@@ -150,13 +157,14 @@
 		2EBB079D158F3207004F2E9B /* TRBlocksAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRBlocksAction.m; sourceTree = "<group>"; };
 		2ECAEB1415917AEE004241B5 /* TiRESTFunctionalTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiRESTFunctionalTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECAEB1A15917AEE004241B5 /* TiRESTFunctionalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TiRESTFunctionalTests-Info.plist"; sourceTree = "<group>"; };
-		2ECAEB1C15917AEE004241B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2ECAEB1E15917AEE004241B5 /* TiRESTFunctionalTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TiRESTFunctionalTests.h; path = ../TiRESTFunctionalTests/TiRESTFunctionalTests.h; sourceTree = "<group>"; };
-		2ECAEB1F15917AEE004241B5 /* TiRESTFunctionalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TiRESTFunctionalTests.m; path = ../TiRESTFunctionalTests/TiRESTFunctionalTests.m; sourceTree = "<group>"; };
+		2ECAEB1E15917AEE004241B5 /* TiRESTFunctionalTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiRESTFunctionalTests.h; sourceTree = "<group>"; };
+		2ECAEB1F15917AEE004241B5 /* TiRESTFunctionalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TiRESTFunctionalTests.m; sourceTree = "<group>"; };
 		2ECAEB2115917AEE004241B5 /* TiRESTFunctionalTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TiRESTFunctionalTests-Prefix.pch"; sourceTree = "<group>"; };
 		2ECAEB2715917D56004241B5 /* TiREST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiREST.h; sourceTree = "<group>"; };
-		2ECAEB2915917F51004241B5 /* TiRESTServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiRESTServer.h; sourceTree = "<group>"; };
-		2ECAEB2A15917F51004241B5 /* TiRESTServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiRESTServer.m; sourceTree = "<group>"; };
+		2ECAEB2915917F51004241B5 /* TRTiRESTServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTiRESTServer.h; sourceTree = "<group>"; };
+		2ECAEB2A15917F51004241B5 /* TRTiRESTServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTiRESTServer.m; sourceTree = "<group>"; };
+		2ECAEB3115918FDF004241B5 /* TRSimpleTestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSimpleTestRouter.h; sourceTree = "<group>"; };
+		2ECAEB3215918FDF004241B5 /* TRSimpleTestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSimpleTestRouter.m; sourceTree = "<group>"; };
 		2EDE0858158F03420048EC9E /* TRRequestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRequestRouter.h; sourceTree = "<group>"; };
 		2EDE0859158F03420048EC9E /* TRRequestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRequestRouter.m; sourceTree = "<group>"; };
 		2EDE085B158F04490048EC9E /* TRAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAction.h; sourceTree = "<group>"; };
@@ -197,9 +205,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ECAEB3415919065004241B5 /* libTiREST.a in Frameworks */,
 				2ECAEB1515917AEE004241B5 /* SenTestingKit.framework in Frameworks */,
 				2ECAEB1615917AEE004241B5 /* UIKit.framework in Frameworks */,
 				2ECAEB1715917AEE004241B5 /* Foundation.framework in Frameworks */,
+				2ECAEB3515919083004241B5 /* CFNetwork.framework in Frameworks */,
+				2ECAEB3615919093004241B5 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +411,8 @@
 				2ECAEB1E15917AEE004241B5 /* TiRESTFunctionalTests.h */,
 				2ECAEB1F15917AEE004241B5 /* TiRESTFunctionalTests.m */,
 				2ECAEB1915917AEE004241B5 /* Supporting Files */,
+				2ECAEB3115918FDF004241B5 /* TRSimpleTestRouter.h */,
+				2ECAEB3215918FDF004241B5 /* TRSimpleTestRouter.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -419,11 +432,9 @@
 			isa = PBXGroup;
 			children = (
 				2ECAEB1A15917AEE004241B5 /* TiRESTFunctionalTests-Info.plist */,
-				2ECAEB1B15917AEE004241B5 /* InfoPlist.strings */,
 				2ECAEB2115917AEE004241B5 /* TiRESTFunctionalTests-Prefix.pch */,
 			);
-			name = "Supporting Files";
-			path = ../TiRESTFunctionalTests;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		2EDE0856158F02E80048EC9E /* Routing */ = {
@@ -442,8 +453,8 @@
 				2EEC8C871590798800C23FD0 /* TRHTTPResponse.m */,
 				2EEC8C8A15907EBA00C23FD0 /* TRCinatraRouter.h */,
 				2EEC8C8B15907EBA00C23FD0 /* TRCinatraRouter.m */,
-				2ECAEB2915917F51004241B5 /* TiRESTServer.h */,
-				2ECAEB2A15917F51004241B5 /* TiRESTServer.m */,
+				2ECAEB2915917F51004241B5 /* TRTiRESTServer.h */,
+				2ECAEB2A15917F51004241B5 /* TRTiRESTServer.m */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -456,8 +467,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ECAEB2815917DAC004241B5 /* TiREST.h in Headers */,
+				2ECAEB2C15918CEC004241B5 /* TRAction.h in Headers */,
+				2ECAEB2D15918CF1004241B5 /* TRBlocksAction.h in Headers */,
+				2ECAEB2E15918CF7004241B5 /* TRRoutableHTTPConnection.h in Headers */,
 				2EEC8C881590798800C23FD0 /* TRHTTPResponse.h in Headers */,
 				2EEC8C8C15907EBA00C23FD0 /* TRCinatraRouter.h in Headers */,
+				2ECAEB2F15918D13004241B5 /* TRTiRESTServer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,7 +574,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ECAEB1D15917AEE004241B5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +604,6 @@
 				2E6D62FA1586DB8800E81A6E /* TRAppDelegate.m in Sources */,
 				2E6D62FD1586DB8800E81A6E /* TRViewController.m in Sources */,
 				2EEC8C84159074C500C23FD0 /* TRExampleRouter.m in Sources */,
-				2ECAEB2B15917F51004241B5 /* TiRESTServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +641,7 @@
 				2EBA17B11590215D00FD31C3 /* DispatchQueueLogFormatter.m in Sources */,
 				2EEC8C891590798800C23FD0 /* TRHTTPResponse.m in Sources */,
 				2EEC8C8D15907EBA00C23FD0 /* TRCinatraRouter.m in Sources */,
+				2ECAEB3015918F1C004241B5 /* TRTiRESTServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +650,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ECAEB2015917AEE004241B5 /* TiRESTFunctionalTests.m in Sources */,
+				2ECAEB3315918FDF004241B5 /* TRSimpleTestRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,14 +684,6 @@
 				2E6D62FF1586DB8800E81A6E /* en */,
 			);
 			name = TRViewController.xib;
-			sourceTree = "<group>";
-		};
-		2ECAEB1B15917AEE004241B5 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2ECAEB1C15917AEE004241B5 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -791,8 +798,8 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TiRESTFunctionalTests/TiRESTFunctionalTests-Prefix.pch";
-				INFOPLIST_FILE = "TiRESTFunctionalTests/TiRESTFunctionalTests-Info.plist";
+				GCC_PREFIX_HEADER = "Tests/Supporting Files/TiRESTFunctionalTests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Supporting Files/TiRESTFunctionalTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -809,8 +816,8 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TiRESTFunctionalTests/TiRESTFunctionalTests-Prefix.pch";
-				INFOPLIST_FILE = "TiRESTFunctionalTests/TiRESTFunctionalTests-Info.plist";
+				GCC_PREFIX_HEADER = "Tests/Supporting Files/TiRESTFunctionalTests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Supporting Files/TiRESTFunctionalTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
