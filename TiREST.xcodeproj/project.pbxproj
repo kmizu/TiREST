@@ -408,11 +408,11 @@
 		2E6D630D1586DB8800E81A6E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2ECAEB3115918FDF004241B5 /* TRSimpleTestRouter.h */,
+				2ECAEB3215918FDF004241B5 /* TRSimpleTestRouter.m */,
 				2ECAEB1E15917AEE004241B5 /* TiRESTFunctionalTests.h */,
 				2ECAEB1F15917AEE004241B5 /* TiRESTFunctionalTests.m */,
 				2ECAEB1915917AEE004241B5 /* Supporting Files */,
-				2ECAEB3115918FDF004241B5 /* TRSimpleTestRouter.h */,
-				2ECAEB3215918FDF004241B5 /* TRSimpleTestRouter.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";

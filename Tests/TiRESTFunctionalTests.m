@@ -28,10 +28,6 @@
     [super tearDown];
 }
 
-- (void)testSucceedAlways {
-	STAssertTrue(YES, @"This test must succeed");
-}
-
 - (void)testSimpleGETRequest {
 	NSURL* url = [NSURL URLWithString:@"http://localhost:12345/"];
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
