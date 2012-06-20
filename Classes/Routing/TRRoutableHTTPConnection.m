@@ -12,6 +12,7 @@
 #import "DDNumber.h"
 #import "HTTPLogging.h"
 #import "TRBlocksAction.h"
+#import "TRHTTPResponse.h"
 
 /// TODO
 /// * Support "/:id/checkout" form pattern.
@@ -64,8 +65,8 @@ static Class routerClass__;
 	NSObject* responseObject = [response objectForKey:@"response"];
 	
 	if (statusCode.integerValue != 200) {
-		// TODO kindful error
-		return nil;
+		NSString* message = (NSString*)responseObject;
+		return [[TRHTTPResponse alloc] initWithData:[message dataUsingEncoding:NSUTF8StringEncoding] status:statusCode.integerValue];
 	}
 	
 	NSData* responseData;

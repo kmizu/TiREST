@@ -67,7 +67,7 @@
 			return [action process:params body:body];
 		}
 	}
-	return nil;
+	return [NSDictionary dictionaryWithObjectsAndKeys: @"404", @"status", @"404 Not Found", @"response", nil];
 }
 
 - (void)configure {
