@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E2B923C1588622500C4EC33 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92311588622500C4EC33 /* HTTPAuthenticationRequest.m */; };
-		2E2B923D1588622500C4EC33 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92331588622500C4EC33 /* HTTPConnection.m */; };
-		2E2B923E1588622500C4EC33 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92361588622500C4EC33 /* HTTPMessage.m */; };
-		2E2B923F1588622500C4EC33 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B92391588622500C4EC33 /* HTTPServer.m */; };
-		2E2B92401588622500C4EC33 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B923B1588622500C4EC33 /* WebSocket.m */; };
 		2E2B928B158864BB00C4EC33 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
 		2E2B928E158865BA00C4EC33 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
 		2E6D62EA1586DB8700E81A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62E91586DB8700E81A6E /* UIKit.framework */; };
@@ -595,11 +590,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E6D63151586DB8800E81A6E /* TRHTTPServerTests.m in Sources */,
-				2E2B923C1588622500C4EC33 /* HTTPAuthenticationRequest.m in Sources */,
-				2E2B923D1588622500C4EC33 /* HTTPConnection.m in Sources */,
-				2E2B923E1588622500C4EC33 /* HTTPMessage.m in Sources */,
-				2E2B923F1588622500C4EC33 /* HTTPServer.m in Sources */,
-				2E2B92401588622500C4EC33 /* WebSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,13 +751,13 @@
 		2E6D631C1586DB8800E81A6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/local-http-communication.app/local-http-communication";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TiREST.app/TiREST";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Classes/local-http-communication-Prefix.pch";
+				GCC_PREFIX_HEADER = "Classes/TiREST-Prefix.pch";
 				INFOPLIST_FILE = "Tests/TiRESTTests-Info.plist";
 				PRODUCT_NAME = TiRESTTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -778,13 +768,13 @@
 		2E6D631D1586DB8800E81A6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/local-http-communication.app/local-http-communication";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TiREST.app/TiREST";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Classes/local-http-communication-Prefix.pch";
+				GCC_PREFIX_HEADER = "Classes/TiREST-Prefix.pch";
 				INFOPLIST_FILE = "Tests/TiRESTTests-Info.plist";
 				PRODUCT_NAME = TiRESTTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
