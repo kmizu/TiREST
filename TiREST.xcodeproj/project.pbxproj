@@ -70,6 +70,7 @@
 		2ECAEB561592F6D6004241B5 /* TRSimpleGETUsingPatternTestRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ECAEB541592F6D6004241B5 /* TRSimpleGETUsingPatternTestRouter.h */; };
 		2ECAEB571592F6D6004241B5 /* TRSimpleGETUsingPatternTestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB551592F6D6004241B5 /* TRSimpleGETUsingPatternTestRouter.m */; };
 		2ECAEB5A1592FD45004241B5 /* TiRESTGETUsingPatternTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB591592FD45004241B5 /* TiRESTGETUsingPatternTestCase.m */; };
+		2ECAEB5F159302E6004241B5 /* TiRESTUnitTestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB5E159302E6004241B5 /* TiRESTUnitTestBase.m */; };
 		2EE13F63159041E700409481 /* libTiREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA178B15901F1400FD31C3 /* libTiREST.a */; };
 		2EEC8C84159074C500C23FD0 /* TRApplicationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C83159074C500C23FD0 /* TRApplicationRouter.m */; };
 		2EEC8C881590798800C23FD0 /* TRHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -191,6 +192,8 @@
 		2ECAEB551592F6D6004241B5 /* TRSimpleGETUsingPatternTestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSimpleGETUsingPatternTestRouter.m; sourceTree = "<group>"; };
 		2ECAEB581592FD44004241B5 /* TiRESTGETUsingPatternTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiRESTGETUsingPatternTestCase.h; sourceTree = "<group>"; };
 		2ECAEB591592FD45004241B5 /* TiRESTGETUsingPatternTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiRESTGETUsingPatternTestCase.m; sourceTree = "<group>"; };
+		2ECAEB5D159302E6004241B5 /* TiRESTUnitTestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiRESTUnitTestBase.h; sourceTree = "<group>"; };
+		2ECAEB5E159302E6004241B5 /* TiRESTUnitTestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiRESTUnitTestBase.m; sourceTree = "<group>"; };
 		2EDE0858158F03420048EC9E /* TRRequestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRequestRouter.h; sourceTree = "<group>"; };
 		2EDE0859158F03420048EC9E /* TRRequestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRequestRouter.m; sourceTree = "<group>"; };
 		2EDE085B158F04490048EC9E /* TRAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAction.h; sourceTree = "<group>"; };
@@ -434,24 +437,8 @@
 		2E6D630D1586DB8800E81A6E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2ECAEB1E15917AEE004241B5 /* TiRESTFunctionalTestBase.h */,
-				2ECAEB3115918FDF004241B5 /* TRSimpleGETTestRouter.h */,
-				2ECAEB3215918FDF004241B5 /* TRSimpleGETTestRouter.m */,
-				2ECAEB3A1591A652004241B5 /* TRSimplePOSTTestRouter.h */,
-				2ECAEB3B1591A652004241B5 /* TRSimplePOSTTestRouter.m */,
-				2ECAEB4D1592BA54004241B5 /* TRSimplePUTTestRouter.h */,
-				2ECAEB4E1592BA54004241B5 /* TRSimplePUTTestRouter.m */,
-				2ECAEB541592F6D6004241B5 /* TRSimpleGETUsingPatternTestRouter.h */,
-				2ECAEB551592F6D6004241B5 /* TRSimpleGETUsingPatternTestRouter.m */,
-				2ECAEB1F15917AEE004241B5 /* TiRESTFunctionalTestBase.m */,
-				2ECAEB3715919636004241B5 /* TiRESTGETSimpleTestCase.h */,
-				2ECAEB3815919636004241B5 /* TiRESTGETSimpleTestCase.m */,
-				2ECAEB3D1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.h */,
-				2ECAEB3E1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m */,
-				2ECAEB491592B983004241B5 /* TiRESTPUTSimpleTestCase.h */,
-				2ECAEB4A1592B983004241B5 /* TiRESTPUTSimpleTestCase.m */,
-				2ECAEB581592FD44004241B5 /* TiRESTGETUsingPatternTestCase.h */,
-				2ECAEB591592FD45004241B5 /* TiRESTGETUsingPatternTestCase.m */,
+				2ECAEB5C1593029F004241B5 /* Unit */,
+				2ECAEB5B1593018B004241B5 /* Functional */,
 				2ECAEB1915917AEE004241B5 /* Supporting Files */,
 			);
 			path = Tests;
@@ -475,6 +462,40 @@
 				2ECAEB2115917AEE004241B5 /* TiRESTFunctionalTests-Prefix.pch */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2ECAEB5B1593018B004241B5 /* Functional */ = {
+			isa = PBXGroup;
+			children = (
+				2ECAEB1E15917AEE004241B5 /* TiRESTFunctionalTestBase.h */,
+				2ECAEB3115918FDF004241B5 /* TRSimpleGETTestRouter.h */,
+				2ECAEB3215918FDF004241B5 /* TRSimpleGETTestRouter.m */,
+				2ECAEB3A1591A652004241B5 /* TRSimplePOSTTestRouter.h */,
+				2ECAEB3B1591A652004241B5 /* TRSimplePOSTTestRouter.m */,
+				2ECAEB4D1592BA54004241B5 /* TRSimplePUTTestRouter.h */,
+				2ECAEB4E1592BA54004241B5 /* TRSimplePUTTestRouter.m */,
+				2ECAEB541592F6D6004241B5 /* TRSimpleGETUsingPatternTestRouter.h */,
+				2ECAEB551592F6D6004241B5 /* TRSimpleGETUsingPatternTestRouter.m */,
+				2ECAEB1F15917AEE004241B5 /* TiRESTFunctionalTestBase.m */,
+				2ECAEB3715919636004241B5 /* TiRESTGETSimpleTestCase.h */,
+				2ECAEB3815919636004241B5 /* TiRESTGETSimpleTestCase.m */,
+				2ECAEB3D1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.h */,
+				2ECAEB3E1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m */,
+				2ECAEB491592B983004241B5 /* TiRESTPUTSimpleTestCase.h */,
+				2ECAEB4A1592B983004241B5 /* TiRESTPUTSimpleTestCase.m */,
+				2ECAEB581592FD44004241B5 /* TiRESTGETUsingPatternTestCase.h */,
+				2ECAEB591592FD45004241B5 /* TiRESTGETUsingPatternTestCase.m */,
+			);
+			path = Functional;
+			sourceTree = "<group>";
+		};
+		2ECAEB5C1593029F004241B5 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				2ECAEB5D159302E6004241B5 /* TiRESTUnitTestBase.h */,
+				2ECAEB5E159302E6004241B5 /* TiRESTUnitTestBase.m */,
+			);
+			path = Unit;
 			sourceTree = "<group>";
 		};
 		2EDE0856158F02E80048EC9E /* Routing */ = {
@@ -558,9 +579,9 @@
 			productReference = 2EBA178B15901F1400FD31C3 /* libTiREST.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		2ECAEB1315917AEE004241B5 /* TiRESTFunctionalTest */ = {
+		2ECAEB1315917AEE004241B5 /* TiRESTTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2ECAEB2215917AEE004241B5 /* Build configuration list for PBXNativeTarget "TiRESTFunctionalTest" */;
+			buildConfigurationList = 2ECAEB2215917AEE004241B5 /* Build configuration list for PBXNativeTarget "TiRESTTest" */;
 			buildPhases = (
 				2ECAEB0F15917AEE004241B5 /* Sources */,
 				2ECAEB1015917AEE004241B5 /* Frameworks */,
@@ -572,7 +593,7 @@
 			dependencies = (
 				2ECAEB2615917CF7004241B5 /* PBXTargetDependency */,
 			);
-			name = TiRESTFunctionalTest;
+			name = TiRESTTest;
 			productName = TiRESTFunctionalTests;
 			productReference = 2ECAEB1415917AEE004241B5 /* TiRESTFunctionalTests.octest */;
 			productType = "com.apple.product-type.bundle";
@@ -598,8 +619,8 @@
 			projectRoot = "";
 			targets = (
 				2E6D62E41586DB8700E81A6E /* TiRESTApplication */,
+				2ECAEB1315917AEE004241B5 /* TiRESTTest */,
 				2EBA178A15901F1400FD31C3 /* TiREST */,
-				2ECAEB1315917AEE004241B5 /* TiRESTFunctionalTest */,
 			);
 		};
 /* End PBXProject section */
@@ -703,6 +724,7 @@
 				2ECAEB4C1592B98A004241B5 /* TiRESTPUTSimpleTestCase.m in Sources */,
 				2ECAEB4F1592BA54004241B5 /* TRSimplePUTTestRouter.m in Sources */,
 				2ECAEB5A1592FD45004241B5 /* TiRESTGETUsingPatternTestCase.m in Sources */,
+				2ECAEB5F159302E6004241B5 /* TiRESTUnitTestBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -928,7 +950,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2ECAEB2215917AEE004241B5 /* Build configuration list for PBXNativeTarget "TiRESTFunctionalTest" */ = {
+		2ECAEB2215917AEE004241B5 /* Build configuration list for PBXNativeTarget "TiRESTTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2ECAEB2315917AEE004241B5 /* Debug */,
