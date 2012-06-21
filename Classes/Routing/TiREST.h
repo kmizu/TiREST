@@ -6,6 +6,9 @@
 //
 //
 
+#import "TRPathPattern.h"
+#import "TRRoutingEntry.h"
+#import "TRRoutingTable.h"
 #import "TRRequestRouter.h"
 #import "TRAction.h"
 #import "TRBlocksAction.h"

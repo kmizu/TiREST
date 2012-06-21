@@ -21,3 +21,9 @@
 - (NSDictionary*)match:(NSString*)requestPath;
 
 @end
+
+@interface TRPathPattern(Private)
+
+- (NSArray*)trimEmptyComponents:(NSArray*)components;
+
+@end
