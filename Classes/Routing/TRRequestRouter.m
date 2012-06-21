@@ -6,8 +6,9 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "TRRequestRouter.h"
 #import "HTTPConnection.h"
+#import "TRRequestRouter.h"
+#import "TRPathPattern.h"
 
 @implementation TRRequestRouter {
 	NSMutableArray* pathPatterns_;
@@ -44,7 +45,7 @@
 }
 
 - (void)addRoute:(NSString *)pathPattern to:(TRAction *)action method:(NSString *)httpMethod {
-	[pathPatterns_ addObject:pathPattern];
+	[pathPatterns_ addObject:[TRPathPattern newPathPattern:pathPattern]];
 	[actions_ addObject:action];
 	[httpMethods_ addObject:httpMethod];
 }
@@ -59,11 +60,10 @@
 	NSDictionary* params = [connection_ parseGetParams];
 	
 	for (NSInteger i = 0; i < pathPatterns_.count; i++) {
-		NSString* pattern = [pathPatterns_ objectAtIndex:i];
+		TRPathPattern* pattern = [pathPatterns_ objectAtIndex:i];
 		TRAction* action = [actions_ objectAtIndex:i];
 		NSString* method = [httpMethods_ objectAtIndex:i];
-		// TODO support richer pattern
-		if ([pattern hasPrefix:pathWithoutQuery] && [httpMethod isEqualToString:method]) {
+		if ([pattern match:pathWithoutQuery] && [httpMethod isEqualToString:method]) {
 			return [action process:params body:body];
 		}
 	}
