@@ -539,9 +539,9 @@
 			productReference = 2EBA178B15901F1400FD31C3 /* libTiREST.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		2ECAEB1315917AEE004241B5 /* TiRESTFunctionalTests */ = {
+		2ECAEB1315917AEE004241B5 /* TiRESTUnitTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2ECAEB2215917AEE004241B5 /* Build configuration list for PBXNativeTarget "TiRESTFunctionalTests" */;
+			buildConfigurationList = 2ECAEB2215917AEE004241B5 /* Build configuration list for PBXNativeTarget "TiRESTUnitTest" */;
 			buildPhases = (
 				2ECAEB0F15917AEE004241B5 /* Sources */,
 				2ECAEB1015917AEE004241B5 /* Frameworks */,
@@ -553,7 +553,7 @@
 			dependencies = (
 				2ECAEB2615917CF7004241B5 /* PBXTargetDependency */,
 			);
-			name = TiRESTFunctionalTests;
+			name = TiRESTUnitTest;
 			productName = TiRESTFunctionalTests;
 			productReference = 2ECAEB1415917AEE004241B5 /* TiRESTFunctionalTests.octest */;
 			productType = "com.apple.product-type.bundle";
@@ -580,7 +580,7 @@
 			targets = (
 				2E6D62E41586DB8700E81A6E /* TiRESTApplication */,
 				2EBA178A15901F1400FD31C3 /* TiREST */,
-				2ECAEB1315917AEE004241B5 /* TiRESTFunctionalTests */,
+				2ECAEB1315917AEE004241B5 /* TiRESTUnitTest */,
 			);
 		};
 /* End PBXProject section */
@@ -906,7 +906,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2ECAEB2215917AEE004241B5 /* Build configuration list for PBXNativeTarget "TiRESTFunctionalTests" */ = {
+		2ECAEB2215917AEE004241B5 /* Build configuration list for PBXNativeTarget "TiRESTUnitTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2ECAEB2315917AEE004241B5 /* Debug */,
