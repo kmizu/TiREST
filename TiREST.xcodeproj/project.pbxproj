@@ -63,6 +63,8 @@
 		2ECAEB3915919636004241B5 /* TiRESTGETSimpleTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB3815919636004241B5 /* TiRESTGETSimpleTestCase.m */; };
 		2ECAEB3C1591A652004241B5 /* TRSimplePOSTTestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB3B1591A652004241B5 /* TRSimplePOSTTestRouter.m */; };
 		2ECAEB3F1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB3E1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m */; };
+		2ECAEB4C1592B98A004241B5 /* TiRESTPUTSimpleTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB4A1592B983004241B5 /* TiRESTPUTSimpleTestCase.m */; };
+		2ECAEB4F1592BA54004241B5 /* TRSimplePUTTestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB4E1592BA54004241B5 /* TRSimplePUTTestRouter.m */; };
 		2EE13F63159041E700409481 /* libTiREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA178B15901F1400FD31C3 /* libTiREST.a */; };
 		2EEC8C84159074C500C23FD0 /* TRApplicationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C83159074C500C23FD0 /* TRApplicationRouter.m */; };
 		2EEC8C881590798800C23FD0 /* TRHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -174,6 +176,10 @@
 		2ECAEB3B1591A652004241B5 /* TRSimplePOSTTestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSimplePOSTTestRouter.m; sourceTree = "<group>"; };
 		2ECAEB3D1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiRESTPOSTSimpleTestCase.h; sourceTree = "<group>"; };
 		2ECAEB3E1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiRESTPOSTSimpleTestCase.m; sourceTree = "<group>"; };
+		2ECAEB491592B983004241B5 /* TiRESTPUTSimpleTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiRESTPUTSimpleTestCase.h; sourceTree = "<group>"; };
+		2ECAEB4A1592B983004241B5 /* TiRESTPUTSimpleTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiRESTPUTSimpleTestCase.m; sourceTree = "<group>"; };
+		2ECAEB4D1592BA54004241B5 /* TRSimplePUTTestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSimplePUTTestRouter.h; sourceTree = "<group>"; };
+		2ECAEB4E1592BA54004241B5 /* TRSimplePUTTestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSimplePUTTestRouter.m; sourceTree = "<group>"; };
 		2EDE0858158F03420048EC9E /* TRRequestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRequestRouter.h; sourceTree = "<group>"; };
 		2EDE0859158F03420048EC9E /* TRRequestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRequestRouter.m; sourceTree = "<group>"; };
 		2EDE085B158F04490048EC9E /* TRAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAction.h; sourceTree = "<group>"; };
@@ -421,12 +427,16 @@
 				2ECAEB3215918FDF004241B5 /* TRSimpleGETTestRouter.m */,
 				2ECAEB3A1591A652004241B5 /* TRSimplePOSTTestRouter.h */,
 				2ECAEB3B1591A652004241B5 /* TRSimplePOSTTestRouter.m */,
+				2ECAEB4D1592BA54004241B5 /* TRSimplePUTTestRouter.h */,
+				2ECAEB4E1592BA54004241B5 /* TRSimplePUTTestRouter.m */,
 				2ECAEB1E15917AEE004241B5 /* TiRESTUnitTestBase.h */,
 				2ECAEB1F15917AEE004241B5 /* TiRESTUnitTestBase.m */,
 				2ECAEB3715919636004241B5 /* TiRESTGETSimpleTestCase.h */,
 				2ECAEB3815919636004241B5 /* TiRESTGETSimpleTestCase.m */,
 				2ECAEB3D1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.h */,
 				2ECAEB3E1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m */,
+				2ECAEB491592B983004241B5 /* TiRESTPUTSimpleTestCase.h */,
+				2ECAEB4A1592B983004241B5 /* TiRESTPUTSimpleTestCase.m */,
 				2ECAEB1915917AEE004241B5 /* Supporting Files */,
 			);
 			path = Tests;
@@ -669,6 +679,8 @@
 				2ECAEB3915919636004241B5 /* TiRESTGETSimpleTestCase.m in Sources */,
 				2ECAEB3C1591A652004241B5 /* TRSimplePOSTTestRouter.m in Sources */,
 				2ECAEB3F1591B6B3004241B5 /* TiRESTPOSTSimpleTestCase.m in Sources */,
+				2ECAEB4C1592B98A004241B5 /* TiRESTPUTSimpleTestCase.m in Sources */,
+				2ECAEB4F1592BA54004241B5 /* TRSimplePUTTestRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
