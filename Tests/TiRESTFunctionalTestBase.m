@@ -6,11 +6,11 @@
 //
 //
 
-#import "TiRESTUnitTestBase.h"
+#import "TiRESTFunctionalTestBase.h"
 #import "TiREST.h"
 #import "TRSimpleGETTestRouter.h"
 
-@implementation TiRESTUnitTestBase {
+@implementation TiRESTFunctionalTestBase {
 	TRTiRESTServer* server_;
 }
 

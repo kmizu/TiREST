@@ -33,7 +33,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2ECAEB1315917AEE004241B5"
                BuildableName = "TiRESTFunctionalTests.octest"
-               BlueprintName = "TiRESTUnitTest"
+               BlueprintName = "TiRESTFunctionalTest"
                ReferencedContainer = "container:TiREST.xcodeproj">
             </BuildableReference>
          </TestableReference>

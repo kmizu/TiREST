@@ -27,6 +27,7 @@
 	NSArray* patternComponents = [pattern_ componentsSeparatedByString:@"/"];
 	NSArray* pathComponents = [requestPath componentsSeparatedByString:@"/"];
 	for (NSInteger i = 0; i < patternComponents.count; i++) {
+		if (i >= pathComponents.count) return nil;
 		NSString* patternComponent = [patternComponents objectAtIndex:i];
 		NSString* pathComponent = [pathComponents objectAtIndex:i];
 		if ([patternComponent hasPrefix:@":"]) {

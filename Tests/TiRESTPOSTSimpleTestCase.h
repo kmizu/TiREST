@@ -6,8 +6,8 @@
 //
 //
 
-#import "TiRESTUnitTestBase.h"
+#import "TiRESTFunctionalTestBase.h"
 
-@interface TiRESTPOSTSimpleTestCase : TiRESTUnitTestBase
+@interface TiRESTPOSTSimpleTestCase : TiRESTFunctionalTestBase
 
 @end
