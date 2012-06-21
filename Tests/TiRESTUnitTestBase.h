@@ -10,7 +10,7 @@
 #import "TiREST.h"
 #define TEST_ENDPOINT (@"http://localhost:12345")
 
-@interface TiRESTFunctionalTestsBase : SenTestCase
+@interface TiRESTUnitTestBase : SenTestCase
 
 @property (nonatomic) TRTiRESTServer* server;
 
