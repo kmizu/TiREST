@@ -54,7 +54,7 @@ static Class routerClass__;
 - (BOOL)expectsRequestBodyFromMethod:(NSString *)method atPath:(NSString *)path {
 	HTTPLogTrace();
 	
-	return [method isEqualToString:@"POST"];
+	return [method isEqualToString:@"POST"] || [method isEqualToString:@"PUT"];
 }
 
 - (NSObject<HTTPResponse> *)httpResponseForMethod:(NSString *)method URI:(NSString *)path {
