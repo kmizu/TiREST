@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TRRoutingEntry.h"
 
 @interface TRRoutingTable : NSObject
+
+@property (nonatomic) NSArray* entries;
+
+- (void)add:(NSString*)pathPattern to:(TRAction*)action method:(NSString*)httpMethod;
+
+- (void)clear;
+
+- (TRRoutingEntry*)lookup:(NSString*)pathWithoutQuery method:(NSString*)httpMethod;
 
 @end

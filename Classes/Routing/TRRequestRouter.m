@@ -9,11 +9,11 @@
 #import "HTTPConnection.h"
 #import "TRRequestRouter.h"
 #import "TRPathPattern.h"
+#import "TRRoutingTable.h"
+#import "TRRoutingEntry.h"
 
 @implementation TRRequestRouter {
-	NSMutableArray* pathPatterns_;
-	NSMutableArray* actions_;
-	NSMutableArray* httpMethods_;
+	TRRoutingTable* table_;
 	__weak HTTPConnection* connection_;
 }
 
@@ -25,9 +25,7 @@
 
 - (id)initWithHTTPConnection:(HTTPConnection*)connection {
 	self = [super init];
-	pathPatterns_ = [NSMutableArray array];
-	actions_ = [NSMutableArray array];
-	httpMethods_ = [NSMutableArray array];
+	table_ = [TRRoutingTable new];
 	connection_ = connection;
 	return self;
 }
@@ -45,9 +43,7 @@
 }
 
 - (void)addRoute:(NSString *)pathPattern to:(TRAction *)action method:(NSString *)httpMethod {
-	[pathPatterns_ addObject:[TRPathPattern newPathPattern:pathPattern]];
-	[actions_ addObject:action];
-	[httpMethods_ addObject:httpMethod];
+	[table_ add:pathPattern to:action method:httpMethod];
 }
 
 - (NSDictionary*)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body {
@@ -59,17 +55,12 @@
 	
 	NSDictionary* params = [connection_ parseGetParams];
 	
-	for (NSInteger i = 0; i < pathPatterns_.count; i++) {
-		TRPathPattern* pattern = [pathPatterns_ objectAtIndex:i];
-		TRAction* action = [actions_ objectAtIndex:i];
-		NSString* method = [httpMethods_ objectAtIndex:i];
-		NSDictionary* matchingResult = [pattern match:pathWithoutQuery];
-		if (matchingResult && [httpMethod isEqualToString:method]) {
-			NSMutableDictionary* mapping = [NSMutableDictionary dictionary];
-			[mapping addEntriesFromDictionary:params];
-			[mapping addEntriesFromDictionary:matchingResult];
-			return [action process:mapping body:body];
-		}
+	TRRoutingEntry* result = [table_ lookup:pathWithoutQuery method:httpMethod];
+	if (result) {
+		NSMutableDictionary* mapping = [NSMutableDictionary dictionary];
+		[mapping addEntriesFromDictionary:params];
+		[mapping addEntriesFromDictionary:result.params];
+		return [result.action process:mapping body:body];
 	}
 	return [NSDictionary dictionaryWithObjectsAndKeys: @"404", @"status", @"404 Not Found", @"response", nil];
 }

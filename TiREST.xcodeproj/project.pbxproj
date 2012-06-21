@@ -73,6 +73,8 @@
 		2ECAEB5F159302E6004241B5 /* TiRESTUnitTestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB5E159302E6004241B5 /* TiRESTUnitTestBase.m */; };
 		2ECAEB621593044F004241B5 /* TRRoutingTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ECAEB601593044E004241B5 /* TRRoutingTable.h */; };
 		2ECAEB631593044F004241B5 /* TRRoutingTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB611593044E004241B5 /* TRRoutingTable.m */; };
+		2ECAEB661593100E004241B5 /* TRRoutingEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ECAEB641593100C004241B5 /* TRRoutingEntry.h */; };
+		2ECAEB671593100E004241B5 /* TRRoutingEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECAEB651593100D004241B5 /* TRRoutingEntry.m */; };
 		2EE13F63159041E700409481 /* libTiREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA178B15901F1400FD31C3 /* libTiREST.a */; };
 		2EEC8C84159074C500C23FD0 /* TRApplicationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC8C83159074C500C23FD0 /* TRApplicationRouter.m */; };
 		2EEC8C881590798800C23FD0 /* TRHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEC8C861590798800C23FD0 /* TRHTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -198,6 +200,8 @@
 		2ECAEB5E159302E6004241B5 /* TiRESTUnitTestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiRESTUnitTestBase.m; sourceTree = "<group>"; };
 		2ECAEB601593044E004241B5 /* TRRoutingTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRoutingTable.h; sourceTree = "<group>"; };
 		2ECAEB611593044E004241B5 /* TRRoutingTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRoutingTable.m; sourceTree = "<group>"; };
+		2ECAEB641593100C004241B5 /* TRRoutingEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRoutingEntry.h; sourceTree = "<group>"; };
+		2ECAEB651593100D004241B5 /* TRRoutingEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRoutingEntry.m; sourceTree = "<group>"; };
 		2EDE0858158F03420048EC9E /* TRRequestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRequestRouter.h; sourceTree = "<group>"; };
 		2EDE0859158F03420048EC9E /* TRRequestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRequestRouter.m; sourceTree = "<group>"; };
 		2EDE085B158F04490048EC9E /* TRAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAction.h; sourceTree = "<group>"; };
@@ -510,6 +514,8 @@
 				2ECAEB511592ECDC004241B5 /* TRPathPattern.m */,
 				2ECAEB601593044E004241B5 /* TRRoutingTable.h */,
 				2ECAEB611593044E004241B5 /* TRRoutingTable.m */,
+				2ECAEB641593100C004241B5 /* TRRoutingEntry.h */,
+				2ECAEB651593100D004241B5 /* TRRoutingEntry.m */,
 				2EDE0858158F03420048EC9E /* TRRequestRouter.h */,
 				2EDE0859158F03420048EC9E /* TRRequestRouter.m */,
 				2EDE085B158F04490048EC9E /* TRAction.h */,
@@ -545,6 +551,7 @@
 				2ECAEB521592ECDC004241B5 /* TRPathPattern.h in Headers */,
 				2ECAEB561592F6D6004241B5 /* TRSimpleGETUsingPatternTestRouter.h in Headers */,
 				2ECAEB621593044F004241B5 /* TRRoutingTable.h in Headers */,
+				2ECAEB661593100E004241B5 /* TRRoutingEntry.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +724,7 @@
 				2ECAEB531592ECDC004241B5 /* TRPathPattern.m in Sources */,
 				2ECAEB571592F6D6004241B5 /* TRSimpleGETUsingPatternTestRouter.m in Sources */,
 				2ECAEB631593044F004241B5 /* TRRoutingTable.m in Sources */,
+				2ECAEB671593100E004241B5 /* TRRoutingEntry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
