@@ -63,8 +63,12 @@
 		TRPathPattern* pattern = [pathPatterns_ objectAtIndex:i];
 		TRAction* action = [actions_ objectAtIndex:i];
 		NSString* method = [httpMethods_ objectAtIndex:i];
-		if ([pattern match:pathWithoutQuery] && [httpMethod isEqualToString:method]) {
-			return [action process:params body:body];
+		NSDictionary* matchingResult = [pattern match:pathWithoutQuery];
+		if (matchingResult && [httpMethod isEqualToString:method]) {
+			NSMutableDictionary* mapping = [NSMutableDictionary dictionary];
+			[mapping addEntriesFromDictionary:params];
+			[mapping addEntriesFromDictionary:matchingResult];
+			return [action process:mapping body:body];
 		}
 	}
 	return [NSDictionary dictionaryWithObjectsAndKeys: @"404", @"status", @"404 Not Found", @"response", nil];

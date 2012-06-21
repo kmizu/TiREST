@@ -18,6 +18,6 @@
 
 - (id)initWith:(NSString*)pathPattern;
 
-- (BOOL)match:(NSString*)requestPath;
+- (NSDictionary*)match:(NSString*)requestPath;
 
 @end
