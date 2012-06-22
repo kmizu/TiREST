@@ -16,6 +16,12 @@
 	return [[TRPathPattern alloc] initWith:pathPattern];
 }
 
+- (BOOL)isEqual:(id)object {
+	if (![object isKindOfClass:[TRPathPattern class]]) return NO;
+	TRPathPattern* anotherPattern = object;
+	return [[self pattern] isEqualToString:anotherPattern.pattern];
+}
+
 - (id)initWith:(NSString*)pathPattern {
 	self = [super init];
 	pattern_ = pathPattern;
