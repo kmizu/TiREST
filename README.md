@@ -53,3 +53,12 @@ with specified port number in your iPad or iOS simulator.
 ```
 [server start:&error];
 ```
+
+After you access URL "http://your_device_name:12345/" (iPad) or "http://localhost:12345/" (Simulator)
+with your web browser,  "Hello, TiREST" will be shown in your web browser.
+
+# Note
+
+The documentation of the library is not enough.  If you would like to know the detail, see the 
+source codes.  Specifically, tests under [Tests](https://github.com/kmizu/TiREST/tree/master/Tests)
+directory would be helpful.
