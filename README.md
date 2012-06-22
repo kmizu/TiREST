@@ -10,6 +10,10 @@ in [LICENSE.txt](https:/github.com/kmizu/TiREST/blob/master/LICENSE.txt).
 
 In this software, [CocoaHTTPServer](https://github.com/robbiehanson/CocoaHTTPServer) is used.
 
+# Required (runtime) environment
+* iOS 5.0 or 5.1
+* CFNetwork.framework and Security.framework must be linked
+
 # First example
 
 You can start TiREST with the following simple example codes:
