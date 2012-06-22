@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TiREST.framework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>TiREST.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>2E6D63051586DB8800E81A6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E9366F41594502A00D78754</key>
 		<dict>
 			<key>primary</key>
 			<true/>

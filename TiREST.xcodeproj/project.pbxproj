@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		2E9366F41594502A00D78754 /* TiREST.framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2E9366F51594502A00D78754 /* Build configuration list for PBXAggregateTarget "TiREST.framework" */;
+			buildPhases = (
+				2E9366FA159450B400D78754 /* ShellScript */,
+			);
+			dependencies = (
+				2E9366F91594504200D78754 /* PBXTargetDependency */,
+			);
+			name = TiREST.framework;
+			productName = TiREST.framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		2E2B928B158864BB00C4EC33 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
 		2E2B928E158865BA00C4EC33 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
@@ -86,6 +101,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2E9366F81594504200D78754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E6D62DC1586DB8700E81A6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EBA178A15901F1400FD31C3;
+			remoteInfo = TiREST;
+		};
 		2ECAEB2515917CF7004241B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2E6D62DC1586DB8700E81A6E /* Project object */;
@@ -642,6 +664,7 @@
 				2E6D62E41586DB8700E81A6E /* TiRESTApplication */,
 				2ECAEB1315917AEE004241B5 /* TiRESTTest */,
 				2EBA178A15901F1400FD31C3 /* TiREST */,
+				2E9366F41594502A00D78754 /* TiREST.framework */,
 			);
 		};
 /* End PBXProject section */
@@ -666,6 +689,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2E9366FA159450B400D78754 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run script for building framework ...";
+		};
 		2ECAEB1215917AEE004241B5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -755,6 +791,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2E9366F91594504200D78754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EBA178A15901F1400FD31C3 /* TiREST */;
+			targetProxy = 2E9366F81594504200D78754 /* PBXContainerItemProxy */;
+		};
 		2ECAEB2615917CF7004241B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2EBA178A15901F1400FD31C3 /* TiREST */;
@@ -870,6 +911,20 @@
 			};
 			name = Release;
 		};
+		2E9366F61594502A00D78754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2E9366F71594502A00D78754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		2EBA179415901F1400FD31C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -966,6 +1021,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2E9366F51594502A00D78754 /* Build configuration list for PBXAggregateTarget "TiREST.framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E9366F61594502A00D78754 /* Debug */,
+				2E9366F71594502A00D78754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		2EBA179315901F1400FD31C3 /* Build configuration list for PBXNativeTarget "TiREST" */ = {
 			isa = XCConfigurationList;
