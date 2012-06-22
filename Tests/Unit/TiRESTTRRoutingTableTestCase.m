@@ -51,6 +51,28 @@
 	STAssertEqualObjects(result, expected, nil);
 }
 
+- (void)testPatternMatchingCaseFailure {
+	TRAction* action = [TRAction new];
+	
+	[table_ add:@"/" to:action method:@"GET"];
+	
+	TRRoutingEntry* result;
+	TRRoutingEntry* expected;
+	
+	result = [table_ lookup:@"/" method:@"GET"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/"] action:action httpMethod:@"GET" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
+	
+	result = [table_ lookup:@"/" method:@"POST"];
+	expected = nil;
+	STAssertEqualObjects(result, expected, @"lookup for unregistered HTTP method 'POST' should return nil");
+	
+	result = [table_ lookup:@"/foo" method:@"GET"];
+	expected = nil;
+	STAssertEqualObjects(result, expected, @"lookup for unregisterd pattern should return nil");
+}
+
 - (void)testPatternMatchingCaseMultipleHTTPMethodIsRegistered {
 	TRAction* action1 = [TRAction new];
 	TRAction* action2 = [TRAction new];
