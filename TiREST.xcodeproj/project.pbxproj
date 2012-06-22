@@ -421,7 +421,7 @@
 		2E6D62EF1586DB8700E81A6E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2EDE0856158F02E80048EC9E /* Routing */,
+				2EDE0856158F02E80048EC9E /* TiREST */,
 				2E6D62F81586DB8800E81A6E /* TRAppDelegate.h */,
 				2E6D62F91586DB8800E81A6E /* TRAppDelegate.m */,
 				2E6D62FB1586DB8800E81A6E /* TRViewController.h */,
@@ -511,7 +511,7 @@
 			path = Unit;
 			sourceTree = "<group>";
 		};
-		2EDE0856158F02E80048EC9E /* Routing */ = {
+		2EDE0856158F02E80048EC9E /* TiREST */ = {
 			isa = PBXGroup;
 			children = (
 				2ECAEB2715917D56004241B5 /* TiREST.h */,
@@ -536,7 +536,7 @@
 				2ECAEB2915917F51004241B5 /* TRTiRESTServer.h */,
 				2ECAEB2A15917F51004241B5 /* TRTiRESTServer.m */,
 			);
-			path = Routing;
+			path = TiREST;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
