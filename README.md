@@ -35,7 +35,7 @@ You can start TiREST with the following simple example codes:
   [self get:@"/" on:^(TRAction* action, NSDictionary* params, NSData* body) {
       return [action successWithText:@"<html><head><title>Hello, TiREST</title></head><body><h1>Hello, TiREST</h1>"];
    }];
-
+}
 @end
 ```
 
