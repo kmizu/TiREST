@@ -22,6 +22,37 @@
 @synthesize httpMethod=httpMethod_;
 @synthesize params=params_;
 
+- (BOOL)isEqual:(id)object {
+	if (![object isKindOfClass:[TRRoutingEntry class]]) return NO;
+	TRRoutingEntry* anotherObject = object;
+	
+	if (!pattern_) {
+		if (!anotherObject.pattern) return NO;
+	} else {
+		if (![pattern_ isEqual:anotherObject.pattern]) return NO;
+	}
+	
+	if (!action_) {
+		if (!anotherObject.action) return NO;
+	} else {
+		if (![action_ isEqual:anotherObject.action]) return NO;
+	}
+	
+	if (!httpMethod_) {
+		if (!anotherObject.httpMethod) return NO;
+	} else {
+		if (![httpMethod_ isEqual:anotherObject.httpMethod]) return NO;
+	}
+	
+	if (!params_) {
+		if (!anotherObject.params) return NO;
+	} else {
+		if (![params_ isEqual:anotherObject.params]) return NO;
+	}
+	
+	return YES;
+}
+
 - (id)init:(TRPathPattern*)pattern action:(TRAction*)action httpMethod:(NSString*)httpMethod params:(NSDictionary*)params {
 	self = [super init];
 	pattern_ = pattern;
