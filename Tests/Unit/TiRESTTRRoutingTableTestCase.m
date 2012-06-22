@@ -42,50 +42,50 @@
 	
 	TRRoutingEntry* result;
 	result = [table_ lookup:@"/" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"GET", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/", nil);
+	STAssertEqualObjects(result.httpMethod, @"GET", nil);
+	STAssertEqualObjects(result.action, action1, nil);
 	
 	result = [table_ lookup:@"/" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"POST", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/", nil);
+	STAssertEqualObjects(result.httpMethod, @"POST", nil);
+	STAssertEqualObjects(result.action, action1, nil);
 	
 	result = [table_ lookup:@"/" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"PUT", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/", nil);
+	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
+	STAssertEqualObjects(result.action, action1, nil);
 	
 	
 	result = [table_ lookup:@"/a" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"GET", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action2, @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/a", nil);
+	STAssertEqualObjects(result.httpMethod, @"GET", nil);
+	STAssertEqualObjects(result.action, action2, nil);
 	
 	result = [table_ lookup:@"/a" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"POST", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action2, @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/a", nil);
+	STAssertEqualObjects(result.httpMethod, @"POST", nil);
+	STAssertEqualObjects(result.action, action2, nil);
 	
 	result = [table_ lookup:@"/a" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"PUT", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action2, @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/a", nil);
+	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
+	STAssertEqualObjects(result.action, action2, nil);
 	
 	result = [table_ lookup:@"/a/b" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a/b", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"GET", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action3, @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/a/b", nil);
+	STAssertEqualObjects(result.httpMethod, @"GET", nil);
+	STAssertEqualObjects(result.action, action3, nil);
 	
 	result = [table_ lookup:@"/a/b" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a/b", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"POST", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action3, @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/a/b", nil);
+	STAssertEqualObjects(result.httpMethod, @"POST", nil);
+	STAssertEqualObjects(result.action, action3, nil);
 	
 	result = [table_ lookup:@"/a/b" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a/b", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"PUT", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action3, @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/a/b", nil);
+	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
+	STAssertEqualObjects(result.action, action3, nil);
 	
 }
 
@@ -108,58 +108,58 @@
 	
 	TRRoutingEntry* result;
 	result = [table_ lookup:@"/100" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"GET", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"100", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
+	STAssertEqualObjects(result.httpMethod, @"GET", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"100", nil);
 	
 	result = [table_ lookup:@"/200" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"POST", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"200", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
+	STAssertEqualObjects(result.httpMethod, @"POST", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"200", nil);
 	
 	result = [table_ lookup:@"/300" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"PUT", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"300", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
+	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"300", nil);
 	
 	result = [table_ lookup:@"/a" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"GET", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"a", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
+	STAssertEqualObjects(result.httpMethod, @"GET", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"a", nil);
 	
 	result = [table_ lookup:@"/a" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"POST", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"a", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
+	STAssertEqualObjects(result.httpMethod, @"POST", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"a", nil);
 	
 	result = [table_ lookup:@"/a" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"PUT", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"a", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
+	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"a", nil);
 	
 	result = [table_ lookup:@"/a/b" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a/:id", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"GET", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action3, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"b", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/a/:id", nil);
+	STAssertEqualObjects(result.httpMethod, @"GET", nil);
+	STAssertEqualObjects(result.action, action3, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"b", nil);
 	
 	result = [table_ lookup:@"/a/b" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a/:id", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"POST", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action3, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"b", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/a/:id", nil);
+	STAssertEqualObjects(result.httpMethod, @"POST", nil);
+	STAssertEqualObjects(result.action, action3, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"b", nil);
 	
 	result = [table_ lookup:@"/a/b" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a/:id", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"PUT", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action3, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"b", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/a/:id", nil);
+	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
+	STAssertEqualObjects(result.action, action3, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"b", nil);
 }
 
 - (void)testPatternMatchIsOrdered2 {
@@ -176,37 +176,37 @@
 	
 	TRRoutingEntry* result;
 	result = [table_ lookup:@"/100" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"GET", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"100", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
+	STAssertEqualObjects(result.httpMethod, @"GET", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"100", nil);
 	
 	result = [table_ lookup:@"/200" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"POST", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"200", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
+	STAssertEqualObjects(result.httpMethod, @"POST", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"200", nil);
 	
 	result = [table_ lookup:@"/300" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"PUT", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"300", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
+	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"300", nil);
 	
 	result = [table_ lookup:@"/a" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"GET", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action2, @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/a", nil);
+	STAssertEqualObjects(result.httpMethod, @"GET", nil);
+	STAssertEqualObjects(result.action, action2, nil);
 	
 	result = [table_ lookup:@"/a" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"POST", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action2, @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/a", nil);
+	STAssertEqualObjects(result.httpMethod, @"POST", nil);
+	STAssertEqualObjects(result.action, action2, nil);
 	
 	result = [table_ lookup:@"/a" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"PUT", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action2, @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/a", nil);
+	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
+	STAssertEqualObjects(result.action, action2, nil);
 }
 
 - (void)testMultiParameterizedPatternMatch {
@@ -218,25 +218,25 @@
 	
 	TRRoutingEntry* result;
 	result = [table_ lookup:@"/100/foo" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"GET", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"100", @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"name"], @"foo", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name", nil);
+	STAssertEqualObjects(result.httpMethod, @"GET", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"100", nil);
+	STAssertEqualObjects([result.params objectForKey:@"name"], @"foo", nil);
 	
 	result = [table_ lookup:@"/200/bar" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"POST", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"200", @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"name"], @"bar", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name", nil);
+	STAssertEqualObjects(result.httpMethod, @"POST", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"200", nil);
+	STAssertEqualObjects([result.params objectForKey:@"name"], @"bar", nil);
 	
 	result = [table_ lookup:@"/300/baz" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"PUT", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"300", @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"name"], @"baz", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name", nil);
+	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"300", nil);
+	STAssertEqualObjects([result.params objectForKey:@"name"], @"baz", nil);
 }
 
 - (void)testIgnoreCaseLastPatterhCharacterIsSlash {
@@ -248,25 +248,25 @@
 	
 	TRRoutingEntry* result;
 	result = [table_ lookup:@"/100/foo" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name/", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"GET", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"100", @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"name"], @"foo", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name/", nil);
+	STAssertEqualObjects(result.httpMethod, @"GET", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"100", nil);
+	STAssertEqualObjects([result.params objectForKey:@"name"], @"foo", nil);
 	
 	result = [table_ lookup:@"/200/bar" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name/", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"POST", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"200", @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"name"], @"bar", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name/", nil);
+	STAssertEqualObjects(result.httpMethod, @"POST", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"200", nil);
+	STAssertEqualObjects([result.params objectForKey:@"name"], @"bar", nil);
 	
 	result = [table_ lookup:@"/300/baz" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name/", @"Unexpected match result");
-	STAssertEqualObjects(result.httpMethod, @"PUT", @"Unexpected match result");
-	STAssertEqualObjects(result.action, action1, @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"300", @"Unexpected match result");
-	STAssertEqualObjects([result.params objectForKey:@"name"], @"baz", @"Unexpected match result");
+	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name/", nil);
+	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
+	STAssertEqualObjects(result.action, action1, nil);
+	STAssertEqualObjects([result.params objectForKey:@"id"], @"300", nil);
+	STAssertEqualObjects([result.params objectForKey:@"name"], @"baz", nil);
 }
 
 @end
