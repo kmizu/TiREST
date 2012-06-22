@@ -22,6 +22,10 @@
 	return [[self pattern] isEqualToString:anotherPattern.pattern];
 }
 
+- (NSString*)description {
+	return [NSString stringWithFormat:@"TRPathPattern(pattern=%@)", pattern_];
+}
+
 - (id)initWith:(NSString*)pathPattern {
 	self = [super init];
 	pattern_ = pathPattern;

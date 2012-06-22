@@ -53,6 +53,10 @@
 	return YES;
 }
 
+- (NSString*)description {
+	return [NSString stringWithFormat:@"TRRoutingEntry(pattern=%@, action=%@, httpMethod=%@, params=%@)", pattern_, action_, httpMethod_, params_];
+}
+
 - (id)init:(TRPathPattern*)pattern action:(TRAction*)action httpMethod:(NSString*)httpMethod params:(NSDictionary*)params {
 	self = [super init];
 	pattern_ = pattern;

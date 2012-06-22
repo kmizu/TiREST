@@ -23,250 +23,234 @@
 	[super tearDown];
 }
 
-- (void)testSimplePatternIsValid {
+- (void)testPatternMatchingCaseOnlySimplePattern {
 	TRAction* action1 = [TRAction new];
 	TRAction* action2 = [TRAction new];
 	TRAction* action3 = [TRAction new];
 	
 	[table_ add:@"/" to:action1 method:@"GET"];
-	[table_ add:@"/" to:action1 method:@"POST"];
-	[table_ add:@"/" to:action1 method:@"PUT"];
-	
 	[table_ add:@"/a" to:action2 method:@"GET"];
-	[table_ add:@"/a" to:action2 method:@"POST"];
-	[table_ add:@"/a" to:action2 method:@"PUT"];
-	
 	[table_ add:@"/a/b" to:action3 method:@"GET"];
-	[table_ add:@"/a/b" to:action3 method:@"POST"];
-	[table_ add:@"/a/b" to:action3 method:@"PUT"];
 	
 	TRRoutingEntry* result;
+	TRRoutingEntry* expected;
+	
 	result = [table_ lookup:@"/" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/", nil);
-	STAssertEqualObjects(result.httpMethod, @"GET", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	
-	result = [table_ lookup:@"/" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/", nil);
-	STAssertEqualObjects(result.httpMethod, @"POST", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	
-	result = [table_ lookup:@"/" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/", nil);
-	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/"] action:action1 httpMethod:@"GET" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
 	
 	result = [table_ lookup:@"/a" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a", nil);
-	STAssertEqualObjects(result.httpMethod, @"GET", nil);
-	STAssertEqualObjects(result.action, action2, nil);
-	
-	result = [table_ lookup:@"/a" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a", nil);
-	STAssertEqualObjects(result.httpMethod, @"POST", nil);
-	STAssertEqualObjects(result.action, action2, nil);
-	
-	result = [table_ lookup:@"/a" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a", nil);
-	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
-	STAssertEqualObjects(result.action, action2, nil);
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/a"] action:action2 httpMethod:@"GET" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
 	
 	result = [table_ lookup:@"/a/b" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a/b", nil);
-	STAssertEqualObjects(result.httpMethod, @"GET", nil);
-	STAssertEqualObjects(result.action, action3, nil);
-	
-	result = [table_ lookup:@"/a/b" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a/b", nil);
-	STAssertEqualObjects(result.httpMethod, @"POST", nil);
-	STAssertEqualObjects(result.action, action3, nil);
-	
-	result = [table_ lookup:@"/a/b" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a/b", nil);
-	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
-	STAssertEqualObjects(result.action, action3, nil);
-	
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/a/b"] action:action3 httpMethod:@"GET" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
 }
 
-- (void)testPatternMatchIsOrdered1 {
+- (void)testPatternMatchingCaseMultipleHTTPMethodIsRegistered {
 	TRAction* action1 = [TRAction new];
 	TRAction* action2 = [TRAction new];
 	TRAction* action3 = [TRAction new];
 	
-	[table_ add:@"/:id" to:action1 method:@"GET"];
-	[table_ add:@"/:id" to:action1 method:@"POST"];
-	[table_ add:@"/:id" to:action1 method:@"PUT"];
-	
-	[table_ add:@"/a" to:action2 method:@"GET"];
-	[table_ add:@"/a" to:action2 method:@"POST"];
-	[table_ add:@"/a" to:action2 method:@"PUT"];
-	
-	[table_ add:@"/a/:id" to:action3 method:@"GET"];
-	[table_ add:@"/a/:id" to:action3 method:@"POST"];
-	[table_ add:@"/a/:id" to:action3 method:@"PUT"];
+	[table_ add:@"/" to:action1 method:@"GET"];
+	[table_ add:@"/" to:action2 method:@"POST"];
+	[table_ add:@"/" to:action3 method:@"PUT"];
 	
 	TRRoutingEntry* result;
-	result = [table_ lookup:@"/100" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
-	STAssertEqualObjects(result.httpMethod, @"GET", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"100", nil);
+	TRRoutingEntry* expected;
 	
-	result = [table_ lookup:@"/200" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
-	STAssertEqualObjects(result.httpMethod, @"POST", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"200", nil);
+	result = [table_ lookup:@"/" method:@"GET"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/"] action:action1 httpMethod:@"GET" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
 	
-	result = [table_ lookup:@"/300" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
-	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"300", nil);
+	result = [table_ lookup:@"/" method:@"POST"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/"] action:action2 httpMethod:@"POST" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
 	
-	result = [table_ lookup:@"/a" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
-	STAssertEqualObjects(result.httpMethod, @"GET", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"a", nil);
-	
-	result = [table_ lookup:@"/a" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
-	STAssertEqualObjects(result.httpMethod, @"POST", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"a", nil);
-	
-	result = [table_ lookup:@"/a" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
-	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"a", nil);
-	
-	result = [table_ lookup:@"/a/b" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a/:id", nil);
-	STAssertEqualObjects(result.httpMethod, @"GET", nil);
-	STAssertEqualObjects(result.action, action3, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"b", nil);
-	
-	result = [table_ lookup:@"/a/b" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a/:id", nil);
-	STAssertEqualObjects(result.httpMethod, @"POST", nil);
-	STAssertEqualObjects(result.action, action3, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"b", nil);
-	
-	result = [table_ lookup:@"/a/b" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a/:id", nil);
-	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
-	STAssertEqualObjects(result.action, action3, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"b", nil);
+	result = [table_ lookup:@"/" method:@"PUT"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/"] action:action3 httpMethod:@"PUT" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
 }
 
-- (void)testPatternMatchIsOrdered2 {
+- (void)testPatternMatchingCaseVariablePatternIsPrecedent {
+	TRAction* action1 = [TRAction new];
+	TRAction* action2 = [TRAction new];
+	
+	[table_ add:@"/:id" to:action1 method:@"GET"];
+	[table_ add:@"/a" to:action2 method:@"GET"];
+	
+	TRRoutingEntry* result;
+	TRRoutingEntry* expected;
+	
+	result = [table_ lookup:@"/100" method:@"GET"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/:id"] action:action1 httpMethod:@"GET" params:[NSDictionary dictionaryWithObject:@"100" forKey:@"id"]];
+	STAssertEqualObjects(result, expected, nil);
+	
+	result = [table_ lookup:@"/a" method:@"GET"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/:id"] action:action1 httpMethod:@"GET" params:[NSDictionary dictionaryWithObject:@"a" forKey:@"id"]];
+	STAssertEqualObjects(result, expected, nil);
+}
+
+- (void)testPatternMatchingCaseLiteralPatternIsPrecedent {
 	TRAction* action1 = [TRAction new];
 	TRAction* action2 = [TRAction new];
 	
 	[table_ add:@"/a" to:action2 method:@"GET"];
-	[table_ add:@"/a" to:action2 method:@"POST"];
-	[table_ add:@"/a" to:action2 method:@"PUT"];
-	
 	[table_ add:@"/:id" to:action1 method:@"GET"];
-	[table_ add:@"/:id" to:action1 method:@"POST"];
-	[table_ add:@"/:id" to:action1 method:@"PUT"];
 	
 	TRRoutingEntry* result;
+	TRRoutingEntry* expected;
 	result = [table_ lookup:@"/100" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
-	STAssertEqualObjects(result.httpMethod, @"GET", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"100", nil);
-	
-	result = [table_ lookup:@"/200" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
-	STAssertEqualObjects(result.httpMethod, @"POST", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"200", nil);
-	
-	result = [table_ lookup:@"/300" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id", nil);
-	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"300", nil);
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/:id"] action:action1 httpMethod:@"GET" params:[NSDictionary dictionaryWithObject:@"100" forKey:@"id"]];
+	STAssertEqualObjects(result, expected, nil);
 	
 	result = [table_ lookup:@"/a" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a", nil);
-	STAssertEqualObjects(result.httpMethod, @"GET", nil);
-	STAssertEqualObjects(result.action, action2, nil);
-	
-	result = [table_ lookup:@"/a" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a", nil);
-	STAssertEqualObjects(result.httpMethod, @"POST", nil);
-	STAssertEqualObjects(result.action, action2, nil);
-	
-	result = [table_ lookup:@"/a" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/a", nil);
-	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
-	STAssertEqualObjects(result.action, action2, nil);
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/a"] action:action2 httpMethod:@"GET" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
 }
 
-- (void)testMultiParameterizedPatternMatch {
+- (void)testPatternMatchingCaseMultiVariablePatternIsUsed {
 	TRAction* action1 = [TRAction new];
 	
 	[table_ add:@"/:id/:name" to:action1 method:@"GET"];
-	[table_ add:@"/:id/:name" to:action1 method:@"POST"];
-	[table_ add:@"/:id/:name" to:action1 method:@"PUT"];
 	
 	TRRoutingEntry* result;
+	TRRoutingEntry* expected;
+	
 	result = [table_ lookup:@"/100/foo" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name", nil);
-	STAssertEqualObjects(result.httpMethod, @"GET", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"100", nil);
-	STAssertEqualObjects([result.params objectForKey:@"name"], @"foo", nil);
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/:id/:name"] action:action1 httpMethod:@"GET"
+				params:[NSDictionary dictionaryWithObjectsAndKeys:@"100", @"id", @"foo", @"name", nil]];
+	STAssertEqualObjects(result, expected, nil);
 	
-	result = [table_ lookup:@"/200/bar" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name", nil);
-	STAssertEqualObjects(result.httpMethod, @"POST", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"200", nil);
-	STAssertEqualObjects([result.params objectForKey:@"name"], @"bar", nil);
-	
-	result = [table_ lookup:@"/300/baz" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name", nil);
-	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"300", nil);
-	STAssertEqualObjects([result.params objectForKey:@"name"], @"baz", nil);
+	result = [table_ lookup:@"/foo/100" method:@"GET"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/:id/:name"] action:action1 httpMethod:@"GET"
+				params:[NSDictionary dictionaryWithObjectsAndKeys:@"foo", @"id", @"100", @"name", nil]];
+	STAssertEqualObjects(result, expected, nil);
 }
 
-- (void)testIgnoreCaseLastPatterhCharacterIsSlash {
+- (void)testPatternMatchingLastPatterhCharacterSlashIsIgnored {
 	TRAction* action1 = [TRAction new];
 	
-	[table_ add:@"/:id/:name/" to:action1 method:@"GET"];
-	[table_ add:@"/:id/:name/" to:action1 method:@"POST"];
-	[table_ add:@"/:id/:name/" to:action1 method:@"PUT"];
+	[table_ add:@"/foo/" to:action1 method:@"GET"];
 	
 	TRRoutingEntry* result;
+	TRRoutingEntry* expected;
+	
+	result = [table_ lookup:@"/foo/" method:@"GET"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/foo/"] action:action1 httpMethod:@"GET" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
+	
+	result = [table_ lookup:@"/foo" method:@"GET"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/foo/"] action:action1 httpMethod:@"GET" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
+}
+
+- (void)testPatternMatchingCaseComplexPatterns {
+	TRAction* action1 = [TRAction new];
+	TRAction* action2 = [TRAction new];
+	TRAction* action3 = [TRAction new];
+	
+	[table_ add:@"/foo" to:action1 method:@"GET"];
+	[table_ add:@"/foo" to:action2 method:@"POST"];
+	[table_ add:@"/foo" to:action3 method:@"PUT"];
+	[table_ add:@"/hoge/" to:action1 method:@"GET"];
+	[table_ add:@"/hoge/" to:action2 method:@"POST"];
+	[table_ add:@"/hoge/" to:action3 method:@"PUT"];
+	[table_ add:@"/:id" to:action1 method:@"GET"];
+	[table_ add:@"/:id" to:action2 method:@"POST"];
+	[table_ add:@"/:id" to:action3 method:@"PUT"];
+	[table_ add:@"/:id/:name" to:action1 method:@"GET"];
+	[table_ add:@"/:id/:name" to:action2 method:@"POST"];
+	[table_ add:@"/:id/:name" to:action3 method:@"PUT"];
+	
+	
+	TRRoutingEntry* result;
+	TRRoutingEntry* expected;
+	
+	NSLog(@"Assertions that simple patterns behave correctly");
+	result = [table_ lookup:@"/foo" method:@"GET"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/foo"] action:action1 httpMethod:@"GET" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
+	
+	result = [table_ lookup:@"/foo" method:@"POST"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/foo"] action:action2 httpMethod:@"POST" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
+	
+	result = [table_ lookup:@"/foo" method:@"PUT"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/foo"] action:action3 httpMethod:@"PUT" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
+	
+	
+	NSLog(@"Assertions that case when last character of pattern is '/' doesn't have any effect");
+	result = [table_ lookup:@"/hoge" method:@"GET"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/hoge/"] action:action1 httpMethod:@"GET" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
+	
+	result = [table_ lookup:@"/hoge" method:@"POST"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/hoge/"] action:action2 httpMethod:@"POST" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
+	
+	result = [table_ lookup:@"/hoge" method:@"PUT"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/hoge/"] action:action3 httpMethod:@"PUT" params:[NSDictionary dictionary]];
+	STAssertEqualObjects(result, expected, nil);
+	
+	
+	NSLog(@"Assertions that variable patterns behave correctly");
+	result = [table_ lookup:@"/bar" method:@"GET"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/:id"] action:action1 httpMethod:@"GET" params:[NSDictionary dictionaryWithObject:@"bar" forKey:@"id"]];
+	STAssertEqualObjects(result, expected, nil);
+	
+	result = [table_ lookup:@"/bar" method:@"POST"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/:id"] action:action2 httpMethod:@"POST" params:[NSDictionary dictionaryWithObject:@"bar" forKey:@"id"]];
+	STAssertEqualObjects(result, expected, nil);
+	
+	result = [table_ lookup:@"/bar" method:@"PUT"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/:id"] action:action3 httpMethod:@"PUT" params:[NSDictionary dictionaryWithObject:@"bar" forKey:@"id"]];
+	STAssertEqualObjects(result, expected, nil);
+	
+	
+	NSLog(@"Assertions that multiple variable patterns behave correctly");
 	result = [table_ lookup:@"/100/foo" method:@"GET"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name/", nil);
-	STAssertEqualObjects(result.httpMethod, @"GET", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"100", nil);
-	STAssertEqualObjects([result.params objectForKey:@"name"], @"foo", nil);
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/:id/:name"] action:action1 httpMethod:@"GET"
+				params:[NSDictionary dictionaryWithObjectsAndKeys:@"100", @"id", @"foo", @"name", nil]];
+	STAssertEqualObjects(result, expected, nil);
 	
-	result = [table_ lookup:@"/200/bar" method:@"POST"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name/", nil);
-	STAssertEqualObjects(result.httpMethod, @"POST", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"200", nil);
-	STAssertEqualObjects([result.params objectForKey:@"name"], @"bar", nil);
+	result = [table_ lookup:@"/100/foo" method:@"POST"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/:id/:name"] action:action2 httpMethod:@"POST"
+				params:[NSDictionary dictionaryWithObjectsAndKeys:@"100", @"id", @"foo", @"name", nil]];
+	STAssertEqualObjects(result, expected, nil);
 	
-	result = [table_ lookup:@"/300/baz" method:@"PUT"];
-	STAssertEqualObjects(result.pattern.pattern, @"/:id/:name/", nil);
-	STAssertEqualObjects(result.httpMethod, @"PUT", nil);
-	STAssertEqualObjects(result.action, action1, nil);
-	STAssertEqualObjects([result.params objectForKey:@"id"], @"300", nil);
-	STAssertEqualObjects([result.params objectForKey:@"name"], @"baz", nil);
+	result = [table_ lookup:@"/100/foo" method:@"PUT"];
+	expected = [TRRoutingEntry
+				newEntry:[TRPathPattern newPathPattern:@"/:id/:name"] action:action3 httpMethod:@"PUT"
+				params:[NSDictionary dictionaryWithObjectsAndKeys:@"100", @"id", @"foo", @"name", nil]];
+	STAssertEqualObjects(result, expected, nil);
 }
 
 @end
