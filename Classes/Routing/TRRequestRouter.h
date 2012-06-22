@@ -12,6 +12,14 @@
 
 #define QUERY_DELIMITER (@"?")
 
+/**
+ * This class provides main functionality of TiREST to users.
+ * Users can create RESTful APIs by extending this class and
+ * overriding |configure| method appreciately.  In the overriden method,
+ * User should register routes using |addRouteForGET:|, |addRouteForPOST:|,
+ * or |addRouteForPOST:|. Each of the 3 method corresponds GET, POST, and PUT
+ * request.
+ */
 @interface TRRequestRouter : NSObject
 
 @property (nonatomic, weak) HTTPConnection* connection;
@@ -30,6 +38,9 @@
 
 - (NSDictionary*)dispatchFor:(NSString*)httpMethod path:(NSString*)path body:(NSData*)body;
 
+/**
+ * This is an abstract method.  User should override this method to craete RESTful APIs.
+ */
 - (void)configure;
 
 @end
