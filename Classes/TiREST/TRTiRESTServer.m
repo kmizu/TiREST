@@ -15,6 +15,10 @@
 	HTTPServer* httpServer_;
 }
 
+static NSString* defaultProtocolType__ = @"_http._tcp.";
+
+@synthesize protocolType=protocolType_;
+
 @synthesize routerClass=routerClass_;
 
 - (id)init:(NSUInteger)port useBonjour:(BOOL)useBonjour documentRoot:(NSString*)documentRoot routerClass:(Class)routerClass {
@@ -22,7 +26,7 @@
 	
 	httpServer_ = [[HTTPServer alloc] init];
 	[httpServer_ setPort:port];
-	if (useBonjour) [httpServer_ setType:@"_http._tcp."];
+	if (useBonjour) [httpServer_ setType:defaultProtocolType__];
 	NSString* webPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:documentRoot];
 	[httpServer_ setDocumentRoot:webPath];
 	routerClass_ = routerClass;
@@ -52,6 +56,14 @@
 
 + (TRTiRESTServer*)newServer:(NSUInteger)port routerClass:(Class)routerClass {
 	return [[TRTiRESTServer alloc] init:port routerClass:routerClass];
+}
+
++ (NSString*)defaultProtocolType {
+	return defaultProtocolType__;
+}
+
++ (void)setDefaultProtocolType:(NSString*)defaultProtocolType {
+	defaultProtocolType__ = defaultProtocolType;
 }
 
 @end

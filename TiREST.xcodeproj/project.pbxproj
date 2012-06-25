@@ -30,6 +30,11 @@
 		2E0CD8D615983CB900EDBD4A /* HTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92381588622500C4EC33 /* HTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E0CD8E61598407C00EDBD4A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
 		2E0CD8E81598408500EDBD4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
+		2E0CD934159848F600EDBD4A /* HTTPAsyncFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92531588627A00C4EC33 /* HTTPAsyncFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD936159848FC00EDBD4A /* HTTPDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92551588627A00C4EC33 /* HTTPDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD9371598490000EDBD4A /* HTTPDynamicFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92571588627A00C4EC33 /* HTTPDynamicFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD9381598490500EDBD4A /* HTTPFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92591588627A00C4EC33 /* HTTPFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD9391598490700EDBD4A /* HTTPRedirectResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B925B1588627A00C4EC33 /* HTTPRedirectResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E2B928B158864BB00C4EC33 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
 		2E2B928E158865BA00C4EC33 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
 		2E6D62EA1586DB8700E81A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62E91586DB8700E81A6E /* UIKit.framework */; };
@@ -607,6 +612,11 @@
 				2E0CD8D415983CB900EDBD4A /* HTTPMessage.h in Headers */,
 				2E0CD8D515983CB900EDBD4A /* HTTPResponse.h in Headers */,
 				2E0CD8D615983CB900EDBD4A /* HTTPServer.h in Headers */,
+				2E0CD934159848F600EDBD4A /* HTTPAsyncFileResponse.h in Headers */,
+				2E0CD936159848FC00EDBD4A /* HTTPDataResponse.h in Headers */,
+				2E0CD9371598490000EDBD4A /* HTTPDynamicFileResponse.h in Headers */,
+				2E0CD9381598490500EDBD4A /* HTTPFileResponse.h in Headers */,
+				2E0CD9391598490700EDBD4A /* HTTPRedirectResponse.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
