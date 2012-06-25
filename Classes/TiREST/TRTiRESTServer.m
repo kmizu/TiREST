@@ -27,8 +27,6 @@
 	[httpServer_ setDocumentRoot:webPath];
 	routerClass_ = routerClass;
 	
-	[DDLog addLogger:[DDTTYLogger sharedInstance]];
-	
 	///Note: Ordering of two statments is important in the following two statement.
 	[TRRoutableHTTPConnection setRouterClass:routerClass_];
 	[httpServer_ setConnectionClass:[TRRoutableHTTPConnection class]];
