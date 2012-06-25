@@ -33,6 +33,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
 	
+	[DDLog addLogger:[DDTTYLogger sharedInstance]];
 	server_ = [TRTiRESTServer newServer:12345 routerClass:[TRApplicationRouter class]];
 	
 	NSError* error = nil;

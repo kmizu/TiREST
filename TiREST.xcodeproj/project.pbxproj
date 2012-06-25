@@ -22,6 +22,14 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2E0CD8D115983CB900EDBD4A /* HTTPAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92301588622500C4EC33 /* HTTPAuthenticationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD8D215983CB900EDBD4A /* HTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92321588622500C4EC33 /* HTTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD8D315983CB900EDBD4A /* HTTPLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92341588622500C4EC33 /* HTTPLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD8D415983CB900EDBD4A /* HTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92351588622500C4EC33 /* HTTPMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD8D515983CB900EDBD4A /* HTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92371588622500C4EC33 /* HTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD8D615983CB900EDBD4A /* HTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92381588622500C4EC33 /* HTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD8E61598407C00EDBD4A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
+		2E0CD8E81598408500EDBD4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
 		2E2B928B158864BB00C4EC33 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
 		2E2B928E158865BA00C4EC33 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
 		2E6D62EA1586DB8700E81A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62E91586DB8700E81A6E /* UIKit.framework */; };
@@ -125,6 +133,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E0CD8EA159841D800EDBD4A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		2E2B92301588622500C4EC33 /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
 		2E2B92311588622500C4EC33 /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
 		2E2B92321588622500C4EC33 /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConnection.h; sourceTree = "<group>"; };
@@ -261,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EBA178C15901F1400FD31C3 /* Foundation.framework in Frameworks */,
+				2E0CD8E81598408500EDBD4A /* Security.framework in Frameworks */,
+				2E0CD8E61598407C00EDBD4A /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +291,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E0CD8E91598417D00EDBD4A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E0CD8EA159841D800EDBD4A /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2E2B92271588610500C4EC33 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -413,6 +432,7 @@
 				2E4FE5CD15883B210012C41C /* Vendor */,
 				2E6D62EF1586DB8700E81A6E /* Classes */,
 				2E6D630D1586DB8800E81A6E /* Tests */,
+				2E0CD8E91598417D00EDBD4A /* Resources */,
 				2E6D62E81586DB8700E81A6E /* Frameworks */,
 				2E6D62E61586DB8700E81A6E /* Products */,
 			);
@@ -581,6 +601,12 @@
 				2ECAEB621593044F004241B5 /* TRRoutingTable.h in Headers */,
 				2ECAEB661593100E004241B5 /* TRRoutingEntry.h in Headers */,
 				2E9366F31594439700D78754 /* TRRequestRouter.h in Headers */,
+				2E0CD8D115983CB900EDBD4A /* HTTPAuthenticationRequest.h in Headers */,
+				2E0CD8D215983CB900EDBD4A /* HTTPConnection.h in Headers */,
+				2E0CD8D315983CB900EDBD4A /* HTTPLogging.h in Headers */,
+				2E0CD8D415983CB900EDBD4A /* HTTPMessage.h in Headers */,
+				2E0CD8D515983CB900EDBD4A /* HTTPResponse.h in Headers */,
+				2E0CD8D615983CB900EDBD4A /* HTTPServer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,7 +726,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run script for building framework ...\n# Environment Variables\nFRAMEWORK_NAME=${PROJECT_NAME}\nFRAMEWORK_VERSION=A\nFRAMEWORK_VERSION_NUMBER=1.0\nFRAMEWORK_BUILD_PATH=\"${SRCROOT}/build/${CONFIGURATION}-framework\"\nFRAMEWORK_DIR=\"${FRAMEWORK_BUILD_PATH}/${FRAMEWORK_NAME}.framework\"\nFRAMEWORK_PACKAGE_NAME=\"${FRAMEWORK_NAME}.${FRAMEWORK_VERSION_NUMBER}.zip\"\n\n# Clean directories\nrm -rf \"${FRAMEWORK_BUILD_PATH}\"\n\n# Build simulator and device binaries.\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator${IPHONEOS_DEPLOYMENT_TARGET} -target \"TestFramework\" -configuration ${CONFIGURATION} clean build\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos${IPHONEOS_DEPLOYMENT_TARGET} -target \"TestFramework\" -configuration ${CONFIGURATION} clean build\n\n# create framework directories.\nmkdir -p ${FRAMEWORK_DIR}\nmkdir -p ${FRAMEWORK_DIR}/Versions\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}/Resources\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}/Headers\n\n# create symlinks\nln -s ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION} ${FRAMEWORK_DIR}/Versions/Current\nln -s ${FRAMEWORK_DIR}/Versions/Current/Headers ${FRAMEWORK_DIR}/Headers\nln -s ${FRAMEWORK_DIR}/Versions/Current/Resources ${FRAMEWORK_DIR}/Resources\nln -s ${FRAMEWORK_DIR}/Versions/Current/${FRAMEWORK_NAME} ${FRAMEWORK_DIR}/${FRAMEWORK_NAME}\n\n# create the universal library\nlipo ${SRCROOT}/build/${CONFIGURATION}-iphoneos/lib${FRAMEWORK_NAME}.a ${SRCROOT}/build/${CONFIGURATION}-iphonesimulator/lib${FRAMEWORK_NAME}.a -create -output \"${FRAMEWORK_DIR}/Versions/Current/${FRAMEWORK_NAME}\"\n\n# copy files\ncp ${SRCROOT}/build/${CONFIGURATION}-iphoneos/Headers/*.h ${FRAMEWORK_DIR}/Headers/\ncp Info.plist ${FRAMEWORK_DIR}/Resources\n                                                      \n# zip archive\n# cd ${FRAMEWORK_BUILD_PATH}\n# zip -ry ${FRAMEWORK_PACKAGE_NAME} $(basename $FRAMEWORK_DIR)";
+			shellScript = "# Run script for building framework ...\n# Environment Variables\nFRAMEWORK_NAME=${PROJECT_NAME}\nFRAMEWORK_VERSION=A\nFRAMEWORK_VERSION_NUMBER=1.0\nFRAMEWORK_BUILD_PATH=\"${SRCROOT}/build/${CONFIGURATION}-framework\"\nFRAMEWORK_DIR=\"${FRAMEWORK_BUILD_PATH}/${FRAMEWORK_NAME}.framework\"\nFRAMEWORK_PACKAGE_NAME=\"${FRAMEWORK_NAME}.${FRAMEWORK_VERSION_NUMBER}.zip\"\n\n# Clean directories\nrm -rf \"${FRAMEWORK_BUILD_PATH}\"\n\n# Build simulator and device binaries.\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator${IPHONEOS_DEPLOYMENT_TARGET} -target \"TiREST\" -configuration ${CONFIGURATION} clean build\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos${IPHONEOS_DEPLOYMENT_TARGET} -target \"TiREST\" -configuration ${CONFIGURATION} clean build\n\n# create framework directories.\nmkdir -p ${FRAMEWORK_DIR}\nmkdir -p ${FRAMEWORK_DIR}/Versions\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}/Resources\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}/Headers\n\n# create symlinks\nln -s ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION} ${FRAMEWORK_DIR}/Versions/Current\nln -s ${FRAMEWORK_DIR}/Versions/Current/Headers ${FRAMEWORK_DIR}/Headers\nln -s ${FRAMEWORK_DIR}/Versions/Current/Resources ${FRAMEWORK_DIR}/Resources\nln -s ${FRAMEWORK_DIR}/Versions/Current/${FRAMEWORK_NAME} ${FRAMEWORK_DIR}/${FRAMEWORK_NAME}\n\n# create the universal library\nlipo ${SRCROOT}/build/${CONFIGURATION}-iphoneos/lib${FRAMEWORK_NAME}.a ${SRCROOT}/build/${CONFIGURATION}-iphonesimulator/lib${FRAMEWORK_NAME}.a -create -output \"${FRAMEWORK_DIR}/Versions/Current/${FRAMEWORK_NAME}\"\n\n# copy files\ncp ${SRCROOT}/build/${CONFIGURATION}-iphoneos/usr/local/include/*.h ${FRAMEWORK_DIR}/Headers\ncp \"Resources/Info.plist\" ${FRAMEWORK_DIR}/Resources/Info.plist\n                                                      \n# zip archive\n# cd ${FRAMEWORK_BUILD_PATH}\n# zip -ry ${FRAMEWORK_PACKAGE_NAME} $(basename $FRAMEWORK_DIR)";
 		};
 		2ECAEB1215917AEE004241B5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1029,6 +1055,7 @@
 				2E9366F71594502A00D78754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EBA179315901F1400FD31C3 /* Build configuration list for PBXNativeTarget "TiREST" */ = {
 			isa = XCConfigurationList;
