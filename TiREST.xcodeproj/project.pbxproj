@@ -39,6 +39,12 @@
 		2E0CD95F1599523C00EDBD4A /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92711588635D00C4EC33 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E0CD9601599524500EDBD4A /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92751588635D00C4EC33 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E0CD9611599525100EDBD4A /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92771588635D00C4EC33 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD9661599555600EDBD4A /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92431588624500C4EC33 /* DDNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD9681599555E00EDBD4A /* DDRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92451588624500C4EC33 /* DDRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD9691599556500EDBD4A /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B92411588624500C4EC33 /* DDData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD96A1599557300EDBD4A /* MultipartFormDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B924A1588626000C4EC33 /* MultipartFormDataParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD96B1599557900EDBD4A /* MultipartMessageHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B924C1588626000C4EC33 /* MultipartMessageHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0CD96C1599557F00EDBD4A /* MultipartMessageHeaderField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2B924E1588626000C4EC33 /* MultipartMessageHeaderField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E2B928B158864BB00C4EC33 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928A158864BB00C4EC33 /* Security.framework */; };
 		2E2B928E158865BA00C4EC33 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B928C158864FD00C4EC33 /* CFNetwork.framework */; };
 		2E6D62EA1586DB8700E81A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6D62E91586DB8700E81A6E /* UIKit.framework */; };
@@ -625,6 +631,12 @@
 				2E0CD95F1599523C00EDBD4A /* DDASLLogger.h in Headers */,
 				2E0CD9601599524500EDBD4A /* DDLog.h in Headers */,
 				2E0CD9611599525100EDBD4A /* DDTTYLogger.h in Headers */,
+				2E0CD9661599555600EDBD4A /* DDNumber.h in Headers */,
+				2E0CD9681599555E00EDBD4A /* DDRange.h in Headers */,
+				2E0CD9691599556500EDBD4A /* DDData.h in Headers */,
+				2E0CD96A1599557300EDBD4A /* MultipartFormDataParser.h in Headers */,
+				2E0CD96B1599557900EDBD4A /* MultipartMessageHeader.h in Headers */,
+				2E0CD96C1599557F00EDBD4A /* MultipartMessageHeaderField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
