@@ -992,8 +992,9 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/${PRODUCT_NAME}";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "armv7 i386";
+				VALID_ARCHS = "armv7 i386 armv7s";
 			};
 			name = Debug;
 		};
@@ -1008,8 +1009,9 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/${PRODUCT_NAME}";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "armv7 i386";
+				VALID_ARCHS = "armv7 i386 armv7s";
 			};
 			name = Release;
 		};
