@@ -10,11 +10,11 @@
 #import "TRRoutableHTTPConnection.h"
 
 @interface TRTiRESTServer : NSObject {
-	Class routerClass_;
+	__unsafe_unretained Class routerClass_;
 	NSString* protocolType_;
 }
 
-@property (nonatomic) Class routerClass;
+@property (nonatomic, unsafe_unretained) Class routerClass;
 @property (nonatomic) NSString* protocolType;
 
 - (id)init:(NSUInteger)port useBonjour:(BOOL)useBonjour documentRoot:(NSString*)documentRoot routerClass:(Class)routerClass;
